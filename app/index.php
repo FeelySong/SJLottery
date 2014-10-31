@@ -245,8 +245,8 @@ if($row_jc['kg']==1){
         </div>
         
 <script>
-   function checkRegist() {
-        var HomeUrl = "http://new.1hssc.com";
+    function checkRegist() {
+        var HomeUrl = "http://vip.yhssc1.com";
         window.location.href = HomeUrl + "/Member/Regist?r=" + "";
     }
     $(document).ready(function () {
@@ -255,22 +255,19 @@ if($row_jc['kg']==1){
             $("#fp").hide();
             $("#btnRegist").show();
         }
-    }
-    
+    });
     function displayyz() {
         $("#vs").val("");
-        $("#veid").html("<img width='90' height='35' src='ValiCode_New.php?"+"' onclick='displayyz()' style='cursor: pointer;' title='重新获取验证码'>");
+        $("#veid").html("<img width='90' height='35' src='ValiCode_New.php?'"+" style='cursor: pointer;' title='重新获取验证码'>");
     }
-
-
     function LoginNow(){
-    alert('请填写 通行证账号');
-    var loginuser = $("#username").val();
-    var loginpwd = $("#Password").val();
-    var randnum = $("#validcode_source").val();
-    if (loginuser == ''){
         alert('请填写 通行证账号');
-        return false;
+        var loginuser = $("#username").val();
+        var loginpwd = $("#Password").val();
+        var randnum = $("#validcode_source").val();
+        if (loginuser == ''){
+            alert('请填写 通行证账号');
+            return false;
     }
     if (loginpwd == ''){
         alert('请填写 通行证账号');
