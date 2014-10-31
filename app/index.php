@@ -207,7 +207,7 @@ if($row_jc['kg']==1){
                                                     <span class="veid" id="veid">
                                                         <img width="90" height="35" onclick="this.src" src="ValiCode_New.php"  style="cursor:pointer;" title="重新获取验证码">
                                                     </span>
-                                                    <a class="fresh" href="javascript:displayyz();" title="重新获取验证码" >重新获取验证码</a> 
+                                                    <a class="fresh" onclick="dispalyyz()" title="重新获取验证码" >重新获取验证码</a> 
                                                   </span>
                                               </li>
                                               <li>
