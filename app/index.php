@@ -257,8 +257,8 @@ if($row_jc['kg']==1){
         }
     };
     function displayyz() {
-        $("#vs").val("");
-        $("#veid").html("<img width='90' height='35' src='ValiCode_New.php' onclick='this.src='ValiCode_New.php?';return false;' style='cursor: pointer;' title='重新获取验证码'>");
+        var el =document.getElementById(“veid”);
+        el.src=el.src+’?';
     }
 
     function LoginNow(){
