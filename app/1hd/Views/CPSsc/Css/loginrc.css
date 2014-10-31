@@ -1,0 +1,39 @@
+﻿html{background:#871a01;overflow:hidden;}
+ body{min-height:750px;_height:expression(this.scrollHeight < 610 ? "610px" : "auto");margin:0px;
+    background-color:#881a01;background-image: url("/Views/CPSsc/Images/11.jpg");TEXT-ALIGN: center;background-size:100% 100%;_background-position:-150px -350px;}
+.login-main {float:left;width:650px;}
+
+.login{width:650px;height:auto;box-shadow:0 0 20px #9b0a08;position: absolute;background:url(/Views/CPSsc/Images/login-bg-1.png) repeat;border-radius:20px;}
+        
+.hei350px{height:auto;}
+.hei570px{height:576px;overflow:hidden;}
+.login-main div{margin:0px auto;width:323px;height:76px;background:url("/Views/CPSsc/Images/login-top.gif") no-repeat;}
+.login-main ul li.jg{float:left;height:321px;width:11px;margin:0px;overflow:hidden;}
+.login-main ul{float:left;width:100%;}
+.login-main ul li{float:left;width:59%;height:22px;margin-top:43px;display:inline;line-height:22px;text-align:left;}
+.login-main ul li span{float:left;width:100px;text-align:right;font-size:14px;color:#7a0400;font-weight:bold;overflow:hidden;}
+.login-main ul.register1 li span{width:130px;}
+.login-main ul li span.login-span{margin:0px auto;width:200px;margin-left:250px;padding-top:20px;}
+.login-main ul li input{float:left;height:22px;width:204px;border:1px solid #cecccc}
+.login-main ul li span.login-span input{float:left;width:15px;height:15px;margin-top:3px;display:inline;overflow:hidden;}
+.login-main ul li span.login-span a{float:left;color:#f21600;padding:0px;}
+.login-main ul li span.login-span em{float:left;width:60px;text-align:left;}
+.login-main ul li a{color:#7a0400;font-weight:bold;text-decoration:underline;padding-left:15px;}
+.login-main ul li.login-text,.login-main ul li.register-text,.login-main ul li.cpassword-text{float:left;width:35%;height:154px;overflow:hidden;}
+.login-main ul li.login-text{background:url(/Views/CPSsc/Images/login-text.png) 50px 50px no-repeat;}
+.login-main ul li.register-text{overflow:hidden;background:url(/Views/CPSsc/Image
+                                s/registr-text.png) 50px 50px no-repeat;}
+.login-main ul li.cpassword-text{overflow:hidden;background:url(/Views/CPSsc/Images/cpassword-txt.png) 50px 50px no-repeat;}
+.login-main ul li.findpassword-text{float:left;width:35%;height:284px;overflow:hidden;overflow:hidden;background:url(/Views/CPSsc/Images/cpassword-txt.png) 50px 50px no-repeat;}
+ 
+
+.login-main ul li input.login-bottom{width:114px;height:27px;font-weight:bold;border:0px;color:#fff;font-size:14px;line-height:27px;margin:20px 0px 0px 250px;display:inline;padding:0px;text-decoration:none;background:url("/Views/Myaccount/Images/myaccount-bottom.gif") no-repeat scroll -80px 0;text-align:center;}
+.login-main ul li.login-li{width:100%;margin-top:0px;border-top:1px solid #e0dddd;height:50px;margin-bottom:20px;display:inline;}
+.login-main ul li input.login-inp{width:60px;}
+.login-main ul li i{float:left;width:60px;height:30px;margin-left:10px;display:inline;overflow:hidden;}
+
+.error{float:left;width:56%;min-width:450px;height:30px;background:#fdf0e3;overflow:hidden;margin:10px 0px 0px 20%;border:1px solid #fcd9b7}
+
+.error span{float:left;background:url(/Views/CPSsc/Images/error.gif) 5px 7px no-repeat;height:30px;*background-position:0px 5px;text-indent:10px;height:30px;padding-left:18px;line-height:30px;font-size:14px;color:#db6e01;}
+.error span.yes{background:url(/Views/CPSsc/Images/cgg.gif) 5px 7px no-repeat;}
+#manage div.editk{width:90%;}

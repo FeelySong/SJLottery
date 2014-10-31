@@ -1,0 +1,450 @@
+/* 全局 */
+#gov_contain,#nbs_contain {width:100%; height:100%; margin:0 auto;}
+.red {color:#f00;}
+.blue {color:#00f;}
+.nbt {border-bottom:none !important;}
+.nmr {margin-right:0 !important;}
+.nml {margin-left:0 !important;}
+.npl {padding-left:0 !important;}
+
+.h85 {height:84px !important;}.h332{height:332px;}
+.w510{width:510px !important;}.w60{width:60px !important;}.w524 {width:524px !important;}.w300 {width:300px !important;}.w200 {width:200px !important;}
+.product-list li a.fl,.pt-list ul li .pl-main a.fl,.nm-org a:hover {filter:alpha(opacity=90);opacity:0.90;}
+.product-list li a.fl:hover,.pt-list ul li .pl-main a.fl:hover {filter:alpha(opacity=100);opacity:1.0;}
+
+/* 首页 */
+#gov_index,.top-nav {background:url(Image/gov_repx.jpg) repeat-x;}
+#gov_index {background-position:0 -47px;}
+#com_head .inner{ background:url(Image/gov_topbg.jpg) no-repeat;}
+#gov_index #gov_contain { background:url(Image/ind_topbg.jpg) no-repeat center 0;}
+#ind_head {width:1011px; height:249px; margin:0 auto; overflow:hidden; background:url(Image/gov_topbg.jpg) center 0;}
+#ind_head .wrp {width:1011px; margin:0 auto;}
+#ind_head .inner {width:1011px; height:203px; margin:0 auto; overflow:hidden;}
+#ind_head .inner h1,#ind_head .inner i,#com_head .inner h1,#com_head .inner i {display:none;}
+#ind_head .inner .user-msg,#com_head .inner .user-msg {height:19px; line-height:19px; float:right; color:#fff; margin:10px 5px 0 0;}
+#ind_head .inner .user-msg a,#com_head .inner .user-msg a {color:#fff; margin:0 8px;}
+#com_head .inner .user-msg a:hover {color:#fff !important; text-decoration:underline;}
+#com_head .inner .user-msg a.pre-user {color:#FC0;}
+#com_head .inner .user-msg a.pre-user:hover {color:#FC0 !important; text-decoration:underline;}
+.top-nav {width:1011px; height:46px; margin:0 auto; background-position:0 0; overflow:hidden;}
+.top-nav ul,.top-nav ul li {float:left; display:inline; overflow:hidden;}
+.top-nav ul li {width:135px; height:45px; line-height:45px; margin:1px 15px 0 15px;}
+.top-nav ul li a {display:block; width:135px; height:45px; font-size:16px; color:#fff ; _color:#fff !important; text-align:center;}
+
+.top-nav ul li.in,.sev-main li span,.sev-main li.s-b a,.sev-main li .sev-t a.fr,.sev-main li a.sch,.pub-tabs dt a.Cm,.pub-tabs dd .pt-msg a.fr,.gov-btn_a,.gb-yes,.gb-no,.reg-dl dt a.Cm,.gov-btn_b,.rc-step li,.iw-ask,.review-pro li,.gov-btn_c,.gov-btn_d,.gov-btn_e,.rev-cp-tps,.no-clk {background:url(Image/gov_mbg.png) no-repeat;}
+.top-nav ul li.in {background-position:-163px -1px;}
+.top-nav ul li.in a,.top-nav ul li.in a:hover {color:#002245 !important;}
+
+#com_main {width:1011px; margin:0 auto; background:#fff; overflow:hidden; min-height:580px;}
+#com_main:before,#com_foot:before,#com_main:after,#com_foot:after,.pt-fiter li:before,.pt-fiter li:after,.product-list li:before,.product-list li:after,.nbs-box:before,.nbs-box:after {content:"";display:table;}
+#com_main:after,#com_foot:after,.pt-fiter li:after,.product-list li:after,.nbs-box:after {clear:both;}
+#com_main,#com_foot,.pt-fiter li,.product-list li,.nbs-box {zoom:1;}
+
+.ind-mfl {float:left; display:inline; width:632px; margin:13px 0 0 12px; overflow:hidden;}
+.ind-mfl .ind-mla {height:326px; overflow:hidden;}
+.ind-mfl .ind-mlb {margin-top:15px;}
+.jg-msg {margin-top:10px; height:28px; line-height:28px; padding-left:10px; overflow:hidden; background:#EDEDED; color:#000; font-size:14px;}
+.jg-msg a,.jg-msg span {margin:0 6px;}
+.jg-msg a.blue {color:#00f;}
+
+.ind-mfl .ind-mla dl {width:626px; height:320px; border:#0D4C8D 3px solid; position:relative; overflow:hidden;}
+.ind-mfl .ind-mla dl dt,.ind-mfl .ind-mla dl dd {position:absolute; width:626px; left:0;}
+.ind-mfl .ind-mla dl dt {height:29px; background:#F2F2F2; top:292px;}
+.ind-mfl .ind-mla dl dt a {float:left; /*width:78px;*/ width:155px; height:28px; line-height:26px; text-align:center; color:#666; border-top:#0D4C8D 1px solid; border-right:#0D4C8D 1px solid; font-size:14px;}
+.ind-mfl .ind-mla dl dt a.lst {/*width:73px;*/ width:158px; border-right:none;}
+.ind-mfl .ind-mla dl dt a.Cm {background:#fff; border-top-color:#fff; color:#DC1117; cursor:default;}
+.ind-mfl .ind-mla dl dd {height:291px; background:#fff; top:0; display:none;}
+.ind-mfl .ind-mla dl dd div.fl {width:468px; height:272px; overflow:hidden; display:inline; margin:10px 0 0 10px; background:url(Image/z_map/gov_map.gif) no-repeat center 20px;}
+.ind-mfl .ind-mla dl dd div.fl span {position:absolute; width:15px; height:50px; overflow:hidden;}
+.ind-mfl .ind-mla dl dd div.fl span img {position:absolute; left:0; bottom:0; width:15px; height:1px;}
+.z-ba {left:68px; top:103px;}
+.z-ft {left:164px; top:153px;}
+.z-gm {left:100px; top:32px;}
+.z-lg {left:269px; top:62px;}
+.z-lh {left:216px; top:137px;}
+.z-ns {left:124px; top:132px;}
+.z-lha {left:157px; top:71px;}
+.z-ps {left:331px; top:79px;}
+.z-yt {left:277px; top:124px;}
+.z-dp {left:385px; top:116px;}
+
+.ind-mfl .ind-mla dl dd table.fr {width:128px; margin:10px 10px 0 0; border-top:#ccc 1px solid; border-left:#ccc 1px solid; position:relative;}
+.ind-mfl .ind-mla dl dd table.fr th,.ind-mfl .ind-mla dl dd table.fr td {height:26px; line-height:26px; border-bottom:#ccc 1px solid; border-right:#ccc 1px solid; color:#333; text-align:center; font-weight:normal; font-size:13px;}
+.ind-mfl .ind-mla dl dd table.fr th {width:60px;}
+.ind-mfl .ind-mla dl dd table.fr td {width:65px;}
+
+.sev-main li {float:left; display:inline; width:300px; margin-top:22px; padding:0 16px 22px 0; border-bottom:#C6C6C6 1px dashed; height:88px; overflow:hidden;}
+.sev-main li span {float:left; display:inline; width:80px; height:87px; margin-right:16px;}
+.sev-main li .sev-t {float:left; display:inline; height:25px; line-height:25px; width:200px; overflow:hidden; margin-bottom:4px;}
+.sev-main li .sev-t h3 {float:left; display:inline; line-height:25px; font-size:16px; color:#012C5E}
+.sev-main li .sev-t a.fr {width:63px; height:20px; line-height:999px; overflow:hidden; background-position:-163px -103px; margin:3px 6px 0 0;}
+.sev-main li p {float:left; line-height:21px; color:#666; width:203px; overflow:hidden;}
+.sev-main li p a.fr {color:#064687; margin-right:10px;}
+
+.sev-main li.s-a {width:410px;}
+.sev-main li.s-a .sev-t,.sev-main li.s-a p {width:310px;}
+.sev-main li.s-a .sev-t {margin-top:8px;}
+.sev-main li.s-a p {line-height:25px;}
+.sev-main li.s-b {width:188px;}
+.sev-main li.s-b a {float:left; width:165px; height:55px; background-position:-163px -47px; line-height:999px; overflow:hidden; margin:15px 0 0 10px;}
+.sev-main li.s-b a:hover,.sev-main li .sev-t a.fr:hover,.sev-main li a.sch:hover,.pub-tabs dd .pt-msg a.fr:hover,.gov-btn_a:hover,.gov-btn_b:hover,.iw-ask:hover,.gov-btn_c:hover,.gov-btn_d:hover,.gov-btn_e:hover {filter:alpha(opacity=90);opacity:0.90;}
+.gov-btn_a:visited,.gov-btn_b:visited,.gov-btn_c:visited,.gov-btn_d:visited,.gov-btn_e:visited {color:#fff !important;}
+.sev-main li.s-a span {background-position:0 -1px;}
+.sev-main li.s-c span {background-position:-1px -91px;}
+.sev-main li.s-d span {background-position:-82px -91px;}
+.sev-main li.s-e span {background-position:-1px -179px;}
+.sev-main li.s-f span {background-position:-82px -179px;}
+.sev-main li.s-g span {background-position:-1px -267px;}
+.sev-main li.s-h span {background-position:-82px -267px;}
+
+.sev-main li.s-g,.sev-main li.s-h {border-bottom:none; padding-bottom:10px;}
+.sev-main li.s-e,.sev-main li.s-f {height:162px;}
+.sev-main li.s-e dl,.sev-main li.s-f dl {float:left; display:inline; width:300px; overflow:hidden;}
+.sev-main li.s-e dl dt,.sev-main li.s-f dl dt,.sev-main li.s-e dl dd,.sev-main li.s-f dl dd {float:left; height:27px; line-height:27px; margin-top:8px; overflow:hidden;}
+.sev-main li.s-e dl dt,.sev-main li.s-f dl dt {width:86px; margin-right:10px; color:#064687; font-size:14px; text-align:right;}
+.sev-main li.s-e dl dd,.sev-main li.s-f dl dd {width:203px;}
+.sev-main li.s-e dl dd input,.sev-main li.s-f dl dd input,.sev-main li.s-e dl dd select,.sev-main li.s-f dl dd select {vertical-align:middle; float:left; margin:2px 10px 0 0; font-size:13px;}
+.sev-main li.s-e dl dd input,.sev-main li.s-f dl dd input {width:187px;}
+.gov_ipt_a {height:21px; line-height:21px; padding-left:3px; color:#333; font-size:14px; font-family:"Microsoft YaHei",tahoma,"宋体"; margin: 3px 3px 3px 0;}
+.sev-main li.s-e dl dd select,.sev-main li.s-f dl dd select {height:23px; width:130px; color:#333;}
+.sev-main li a.sch {display:inline-block; vertical-align:middle; width:57px; height:25px; line-height:999px; overflow:hidden; background-position:-163px -124px; float:left; margin-top:2px;}
+
+.ind-mfr {float:right; display:inline; width:342px; margin:13px 12px 0 0; overflow:hidden;}
+.ind-mfr .ind-mra {height:326px; overflow:hidden;}
+.ind-mfr .ind-mrb {margin-top:15px;}
+
+/*焦点图切换*/
+.smallslider {width:342px; height:195px; overflow:hidden; position:relative;}
+.smallslider h3 {color:#EEE; font-size:12px; font-weight:bold; height:25px; line-height:25px; position:absolute; padding-left:10px; width:252px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; z-index:102;}
+.smallslider h3 a {color:#FFF; _color:#FFF !important; text-decoration:none; font-weight:normal;}
+.smallslider h3 a:hover {color:#fff !important;}
+.smallslider li img {width:342px; height:195px; display:block;}
+.smallslider-btns {position:absolute; z-index:103; padding-bottom:3px;}
+.smallslider-btns .current-btn {filter:Alpha(Opacity=100); opacity:1.0; background:#0958A7;}
+.smallslider-btns span {background:#000; color:#FFF; cursor:pointer; float:left; font-family:arial; font-size:12px; height:17px; line-height:17px; margin-left: 5px; opacity:0.6; overflow: hidden; text-align: center;  width: 17px;}
+.smallslider-lay {background-color:#000; height:25px; position:absolute; width:100%; z-index:101;}
+
+.ind-t1 {height:37px; line-height:39px; border-bottom:#0D4C8D 2px solid; overflow:hidden;}
+.ind-t1 h2,.gov-lka li,.gov-lkb li,.tm-nav,.gov-lkc li,.apply ul li,.faq-t h3,.ask-edit .ae-wel,.rev-h3-a,.rev-h3-b,.rev-h3-c,.rev-h3-d,.rev-h3-e,.rev-h3-f {background:url(Image/gov_ico.png) no-repeat;}
+.ind-t1 h2 {float:left; display:inline; height:37px; padding-left:30px; color:#000; font-size:16px; background-position:-30px 13px;}
+.ind-t1 a.more {float:right; color:#767474; font-size:12px; line-height:39px;}
+
+.ind-t2 {margin:10px 0 5px 0; height:28px; line-height:28px; padding:0 10px; overflow:hidden;}
+.ind-t2 h3 {float:left; display:inline; height:28px; font-size:14px;}
+.ind-t2 a.more {float:right; color:#767474; font-size:12px; line-height:28px;}
+.cla {background:#DEECFC;}.cla h3 {color:#012C5E;}
+.clb {background:#FCEDDE;}.clb h3 {color:#6F2601;}
+.clc {background:#FFDFE4;}.clc h3 {color:#790013;}
+.cld {background:#DEF9F2;}.cld h3 {color:#003427;}
+
+.gov-lka li {height:23px; line-height:23px; padding-left:20px; background-position:-33px -79px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.gov-lka li a,.gov-lka li span {color:#333; font-size:14px;}
+.gov-lkb li {height:25px; line-height:25px; padding-left:15px; background-position:-38px -40px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.gov-lkb li a {color:#003366; font-size:14px;}
+.gov-lkc li {height:31px; padding-left:25px; background-position:-31px -103px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.gov-lkc li a {color:#003366; font-size:16px; float:left; line-height:31px; height:31px; max-width:830px; overflow:hidden;  white-space:nowrap; text-overflow:ellipsis;}
+.gov-lkc li span {float:right; line-height:31px; width:100px; height:31px; overflow:hidden; font-size:14px; color:#666;}
+
+#com_foot {height:75px; font-size:14px; margin-top:15px; background:#002E68;}
+#com_foot .inner {height:75px; width:1011px; overflow:hidden; margin:0 auto; line-height:23px; background:#002E68;}
+#com_foot .fl {margin:15px 0 0 12px; color:#fff;}
+#com_foot .fr {margin:25px 0 0 0; color:#fff;}
+#com_foot a {color:#fff; margin:0 10px;}
+#com_foot a:hover {color:#fff !important; text-decoration:underline;}
+
+/* 列表页 */
+#com_head,.msg-show .ms-cont {background:url(Image/gov_repxt.jpg) repeat-x;}
+#com_head {height:130px; background-position:0 -85px;}
+#com_head .inner {width:1011px; margin:0 auto; height:84px; overflow:hidden; background-position:0 -250px;}
+.tm-nav {height:25px; line-height:25px; padding:0 0 5px 25px; border-bottom:#0D4C8D 3px solid; background-position:-31px -145px; font-size:13px; margin-top:15px; overflow:hidden;  white-space:nowrap; text-overflow:ellipsis; }
+/*分页*/
+.page-bar {height:27px; margin-top:25px; padding-bottom:10px; color:#003366;}
+.page-bar a,.page-bar span,.page-bar input {float:left;}
+.page-bar a,.page-bar span {height:23px; line-height:23px; padding:0 7px;}
+.page-bar a {font-size:13px; border:#9EC3E8 1px solid; margin-right:2px;}
+.page-bar a.in,.page-bar a:hover,.faq-t {background:url(Image/gov_repy.jpg) repeat-x;}
+.page-bar a.in,.page-bar a:hover {background-position:0 0; color:#fff !important; border:none; height:25px; line-height:25px; padding:0 8px;}
+.page-bar a.grey {background:none; color:#ccc; border-color:#ccc;}
+.page-bar a.grey:hover {color:#ccc !important; border:#ccc 1px solid; height:23px; line-height:23px; padding:0 7px;}
+.page-ipt {height:23px; line-height:23px; width:40px; text-align:center; color:#003366}
+.page-sm {cursor:pointer;}
+/*文章页*/
+.gov-article {padding:15px 10px;}
+.gov-article h1.art-h1 {line-height:35px; text-align:center; margin-top:15px; font-size:20px;}
+.gov-article .art-tmsg {height:25px; line-height:25px; overflow:hidden; text-align:center; margin-top:10px; padding-bottom:30px; font-size:13px; color:#666;}
+.gov-article .art-main img {display:block; margin:10px auto; }
+.gov-article .art-main p {font-size:14px; text-indent:2em; line-height:25px; margin-top:25px;}
+/*公示平台*/
+.pub-tabs dt {width:1011px; height:45px; float:left; position:relative; border-bottom:3px solid #0D4C8D; z-index:1;}
+.pub-tabs dt a {float:left; width:149px; height:25px; padding-bottom:9px; line-height:25px; overflow:hidden; color:#666; text-align:center; font-size:14px; position:relative; top:14px;}
+.pub-tabs dt a.Cm {color:#fff; background-position:-163px -150px; cursor:default;}
+.pub-tabs dt a.Cm:hover,.pub-tabs dd .pt-msg a.fr:hover,.gov-btn_b:hover,.gov-btn_c:hover,.gov-btn_d:hover,.gov-btn_e:hover {color:#fff !important;}
+.pub-tabs dd {width:1011px; float:left; margin-top:-3px; position:relative; z-index:2; display:none;  padding-top:15px}
+.pub-tabs dd .pt-msg {position:absolute; right:0; top:-34px; width:390px; height:25px; line-height:25px; font-size:14px; color:#002245;}
+.pub-tabs dd .pt-msg span.red {margin:0 6px;}
+.pub-tabs dd .pt-msg a.fr,.gov-btn_b {width:123px; height:25px; line-height:24px; color:#fff !important; text-align:center; font-size:14px; margin-left:10px; background-position:-163px -185px;}
+
+.pt-fiter {width:1011px;}
+.pt-fiter ul {border:#C4D8EA 1px solid; padding:5px 10px;}
+.pt-fiter ul li {height:35px; line-height:35px; border-bottom:#ccc 1px dotted; font-size:14px;}
+.pt-fiter ul li .ft-title {float:left; height:35px; line-height:35px; overflow:hidden; text-align:right; font-weight:normal; width:80px;}
+.pt-fiter ul li .ft-cont {float:left; height:35px; line-height:35px; width:908px; overflow:hidden;}
+.pt-fiter ul li .ft-cont a {float:left; height:21px; line-height:21px; padding:1px 5px; margin:6px 2px 0 0;}
+.pt-fiter ul li .ft-cont a.fl {line-height:22px;}
+.pt-fiter ul li .ft-cont a.in {color:#fff !important; background:#0451A1; cursor: text;}
+.pt-fiter ul li .ft-cont a.in:hover {color:#fff !important;}
+.pt-fiter ul li .ft-cont .gov_ipt_a {float:left; width:300px; margin:6px 10px 0 0;}
+.gov-btn_a {display:inline-block; width:57px; height:25px; line-height:25px; color:#fff !important; font-size:14px; text-align:center; overflow:hidden; background-position:-221px -124px;}
+.pt-fiter ul li .ft-cont .gov-btn_a {padding:0; margin:0; width:57px; height:25px; margin-top:5px;}
+.gov-btn_a:hover {color:#fff !important;}
+
+.pt-table {width:100%; border-top:#C4D8EA 1px solid; border-left:#C4D8EA 1px solid; margin-top:15px;}
+.pt-table th,.pt-table td {height:35px; line-height:21px; text-align:center; font-size:14px; border-right:#C4D8EA 1px solid; border-bottom:#C4D8EA 1px solid; word-break:break-all;}
+.pt-table th {background:#0451A1; color:#fff;}
+.gb-yes,.gb-no {display:inline-block; width:23px; height:23px; line-height:999px; overflow:hidden; vertical-align:middle;}
+.gb-yes {background-position:-82px -1px;}
+.gb-no {background-position:-107px -1px;}
+
+.pt-list ul li {width:1011px; margin-bottom:25px;}
+.pt-list ul li .pl-h3 {height:27px; line-height:27px; width:1011px; background:#EDEDED; overflow:hidden;}
+.pt-list ul li .pl-h3 h3{float:left; display:inline; padding-left:10px; font-size:16px; font-weight:normal;}
+.pt-list ul li .pl-h3 span {float:left; color:#666; margin-left:15px; font-size:14px;}
+.pt-list ul li .pl-h3 a.all {float:right; font-size:14px; margin-right:10px; font-size:14px;}
+.pt-list ul li .pl-main {width:1011px; height:100px; overflow:hidden; margin-top:7px;}
+.pt-list ul li .pl-main a.fl {border:#ddd 1px solid;}
+.pt-list ul li .pl-main a.fl img {width:160px; height:100px;}
+.pt-list ul li .pl-main p.fr {width:820px; height:100px; overflow:hidden; line-height:25px; font-size:14px; text-indent:2em; margin-right:10px;}
+
+/* 监管服务 */
+.reg-main {width:1011px; padding-top:15px;}
+.reg-dl {width:1011px;}
+.reg-dl dt {float:left; display:inline; width:200px; margin-right:15px;}
+.reg-dl dt a {float:left; width:198px; height:39px; line-height:39px; overflow:hidden; border:#C4D8EA 1px solid; border-bottom:none; background-color:#ededed; text-align:center; font-size:16px; color:#333;}
+.reg-dl dt a.last {border-bottom:#C4D8EA 1px solid;}
+.reg-dl dt a.Cm {background-color:transparent; background-position:-164px -212px; color:#fff; border-color:#02407C;}
+.reg-dl dt a.Cm:hover {color:#fff !important;}
+.reg-dl dd {float:left; display:inline; width:795px; overflow:hidden; display:none;}
+.reg-title {height:39px; border-bottom:#ccc 2px solid; position:relative;}
+.reg-title h2 {height:29px; line-height:29px; padding:0 60px 3px 10px; font-size:16px; color:#333; border-bottom:#014F9F 2px solid; position:absolute; left:0; top:7px;}
+.reg-title .gov-btn_b {margin-top:5px;}
+.rd-main {padding:10px;}
+.rd-main h3 {height:39px; line-height:39px; text-align:center; font-size:18px; color:#333; padding:20px 10px 0;}
+.rd-main p {font-size:14px; text-indent:2em; line-height:23px; margin-top:15px;}
+.apply {background:url(Image/gov_temp.png) no-repeat;}
+.apply {height:680px; background-position:125px 50px; position:relative;}
+.reg-process {margin-top:15px;}
+.reg-process h5 {height:23px; line-height:23px; font-size:16px; padding:0 0 15px 15px;}
+.apply ul {width:180px; position:absolute; left:600px; top:550px;}
+.apply ul li {height:29px; line-height:29px; overflow:hidden; padding-left:30px;}
+.apply ul li a {font-size:14px;}
+.apply ul li.cur-a {background-position:-25px -268px;}
+.apply ul li.cur-b {background-position:-25px -308px;} 
+.apply ul li.cur-c {background-position:-25px -348px;} 
+.reg-process .ret-mtps {line-height:25px; padding-left:10px; font-size:14px;}
+.reg-process .ret-mtps a {margin-left:30px; color:#014F9F; text-decoration:underline;}
+.reg-process .ret-mtps a:hover {text-decoration:underline;}
+.rc-step {height:53px; margin:15px 0 0 10px; padding-bottom:30px;}
+.rc-step li {width:141px; height:53px; line-height:53px; text-align:center; font-size:14px; float:left; padding-right:67px;}
+.rc-step li.st-a { background-position:-163px -253px;}
+.rc-step li.st-b { background-position:-163px -307px;}
+.rc-step li.st-c { background-position:-163px -361px; padding-right:0;}
+.re-sch {height:29px; line-height:29px; margin:25px 0 0 10px;}
+.re-sch .gov_ipt_a {width:360px; margin:0 10px 0 28px; height:23px; line-height:23px;}
+
+/*经营主体查询列表*/
+.bs-list li {border-bottom:#ccc 1px dotted; padding:0 10px 15px; margin-top:15px;}
+.bs-list li .bls-t {height:23px; line-height:23px; overflow:hidden; padding-bottom:5px;}
+.bs-list li .bls-t h3 {height:23px; font-size:16px; overflow:hidden; font-weight:normal; float:left; display:inline; margin-right:10px;}
+.bs-list li .bls-t h3 span {float:left;}
+.bs-list li .bls-p {font-size:14px; line-height:21px; color:#666;}
+
+/*产品查验列表*/
+.product-list li {border-bottom:1px dotted #ccc; margin-top:15px; padding:0 10px 15px;}
+.product-list li a.fl {width:86px; height:86px; overflow:hidden; margin-right:15px; border:#ccc 1px solid;}
+.product-list li .pro-cont {float:left; display:inline; width:580px;}
+.product-list li .pro-cont h3 {display:inline; float:left; font-size:16px; font-weight:normal; height:23px; line-height:23px; width:580px; overflow:hidden;}
+.product-list li .pro-cont p {float:left; display:inline; height:21px; line-height:21px; color:#666; margin-right:10px; font-size:13px; width:260px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.product-list li .pro-cont p.w300 {width:300px;}
+.msg-show {display:inline-block; position:relative; background:#acacac; width:200px; height:15px; overflow:hidden; vertical-align:middle; border-radius:4px;}
+.msg-show .ms-cont {display:inline-block; float:left; height:15px; width:1px; background-position:0 -216px; border-radius:4px;}
+.per-val {position:absolute; height:15px; line-height:15px; font-size:12px; left:85px; top:0; color:#fff; width:35px; overflow:hidden; text-align:center;}
+
+/*产品查验详情*/
+.product-art table td,.product-art table th {text-align:left; padding:0 10px;}
+.product-art table td.cle {text-align:right; background:#f0f0f0;}
+
+/*联系我们*/
+.contact-main {position:relative; height:500px;}
+.contact-main ul {width:800px; padding:30px 0;}
+.contact-main ul li {line-height:25px; padding:0 10px; font-size:14px; margin-top:10px;}
+.contact-main ul li .ct-qq {margin-left:10px; vertical-align:text-top; display:inline-block;}
+.contact-main ul li .ct-spn {color:#666; font-size:12px; padding-left:10px;}
+.contact-main .my-maps {position:absolute; left:550px; top:85px; width:445px; height:297px; padding:2px; background:#fff; border:#ccc 1px solid;}
+
+/*帮助中心*/
+.help-sch {height:25px; line-height:25px; margin-top:7px;}
+.gov-faq .faq-fl {float:left; display:inline; width:260px;}
+.gov-faq .faq-fr {float:right; display:inline; width:740px;}
+.faq-t {height:39px; line-height:39px; font-size:14px; background-position:0 -26px; color:#fff;}
+.faq-t h3 {height:39px; padding-left:30px; background-position:-24px -390px;}
+.faq-lst {border:#C4D8EA 1px solid; border-top:none; padding-bottom:10px;}
+.faq-lst li {font-size:14px; color:#333; line-height:23px; padding:10px; padding-bottom:0;}
+.faq-lst li a {color:#333;}
+.faq-cont {padding:10px;}
+.hello-cont {padding-left:205px; background:url(Image/help_bg.jpg) no-repeat 29px 6px; line-height:35px; font-size:14px; min-height:225px;}
+.hello-cont .bb-dot {margin:15px 0; padding-bottom:15px; border-bottom:#ccc 1px dashed;}
+.bb-dot * {margin:0 !important; padding:0 !important; line-height:35px !important; font-size:14px !important; color:#333 !important; font-family:Microsoft YaHei,tahoma,"宋体" !important; letter-spacing:0 !important;}
+.bb-dot a:hover {color:#DD1143 !important;}
+
+/*问题反馈*/
+.iw-ask{width:98px; height:25px; line-height:999px; overflow:hidden; background-position:-279px -124px; margin-top:5px;}
+.ask-cont h1 {padding-top:30px;}
+.ask-cont .as-t {height:35px; line-height:35px; font-size:14px; border-bottom:#ccc 1px dashed; padding-top:30px;}
+.ask-edit {padding:10px;}
+.ask-edit .ae-wel {height:41px; line-height:41px; padding-left:50px; font-size:16px; background-position:-11px -459px; color:#ED3825; margin-top:15px;}
+.ask-edit .ae-tab {margin-top:35px; width:100%;}
+.ask-edit .ae-tab th,.ask-edit .ae-tab td {height:48px; line-height:48px; font-size:16px;}
+.ask-edit .ae-tab td input {width:150px;}
+.ask-edit .ae-tab td textarea {height:50px; line-height:23px; color:#333; font-size:14px; width:508px; height:130px; padding:5px 0 0 5px;}
+.ask-edit .ae-tab th span.red {display:inline-block; margin-right:5px;}
+.ask-edit .ae-tab th {text-align:right;}
+.yz-img {width:64px; height:23px; border:#ccc 1px solid; margin-left:10px; vertical-align:top; cursor:pointer;}
+
+/*审核流程*/
+.review-pro {height:33px; overflow:hidden; margin-top:10px;}
+.review-pro li {float:left; font-size:14px; width:145px; padding-left:23px; height:33px; line-height:33px; overflow:hidden; background-position:0 -494px;}
+.review-pro li.on {background-position:0 -460px; color:#fff;}
+.review-pro li.fs-on {background-position:0 -596px; color:#fff; width:152px; padding-left:16px;}
+.review-pro li.ls-on {background-position:0 -528px; color:#fff; width:133px; padding-left:35px;}
+.review-pro li.first {background-position:0 -630px;}
+.review-pro li.last {background-position:0 -562px; width:133px; padding-left:35px;}
+.review-cont {margin-top:15px; padding:25px 35px; border:#ccc 1px solid;}
+.rev-h3-a,.rev-h3-b,.rev-h3-c,.rev-h3-d,.rev-h3-e,.rev-h3-f {height:29px; line-height:29px; padding-left:40px; font-size:16px;}
+.rev-h3-a {background-position:-18px -541px;}
+.rev-h3-b {background-position:-18px -591px;}
+.rev-h3-c {background-position:-18px -641px;}
+.rev-h3-d {background-position:-18px -691px;}
+.rev-h3-e {background-position:-18px -741px;}
+.rev-h3-f {background-position:-18px -791px;}
+.review-cont p {line-height:25px; margin-top:25px; font-size:14px;}
+.gov-btn_c {display:inline-block; height:44px; width:242px; line-height:43px; text-align:center; color:#fff; font-size:18px !important; background-position:0 -415px;}
+.rev-submit {height:44px; padding:30px 0;}
+.rev-table,.rev-table-ns {width:100%; margin:15px 0;}
+.rev-table-ns {border-top:#C4D8EA 1px solid; border-left:#C4D8EA 1px solid;}
+.rev-table td,.rev-table th {height:55px; line-height:55px; font-size:14px;}
+.rev-table-ns td,.rev-table-ns th {height:37px; line-height:37px; font-size:14px; border-right:#C4D8EA 1px solid; border-bottom:#C4D8EA 1px solid;}
+.rev-table td,.rev-table-ns td {padding-left:5px; text-align:left;}
+.rev-table th,.rev-table-ns th {text-align:right; font-weight:normal;}
+.rev-label {margin-right:30px;}
+.rev-ipt {height:39px; line-height:39px; width:350px; margin-right:30px;}
+.rev-tps1 {padding-left:15px; line-height:20px; font-size:14px; color:#666;}
+.gov-btn_d,.no-clk {display:inline-block; width:76px; height:25px; line-height:23px; color:#fff; text-align:center; font-size:14px; background-position:-287px -185px;}
+.no-clk {color:#666; background-position:-243px -415px;}
+.gov-btn_e {display:inline-block; width:130px; height:41px; line-height:39px; text-align:center; font-size:18px; color:#fff; background-position:0 -373px;}
+.rev-submit a {font-size:14px; margin:0 10px;}
+.n-tps {color:#999; margin-left:15px;}
+.redb {color:#f00; font-weight:bold;}
+.redb:visited {color:#f00;}
+.redb:hover {color:#f00; text-decoration:underline;}
+.rev-img-view {min-height:82px; line-height:21px; margin:5px 0;}
+.rev-img-view img {float:left; border:#ccc 1px solid;}
+.gov-textarea-a {height:50px; line-height:23px; color:#333; font-size:14px; width:508px; height:130px; padding:5px 0 0 5px;}
+.pre {position:relative;}
+#gt_tps {position:absolute; left:-5px; top:5px; z-index: 9;}
+.rev-img-view .n-tps {float:left; width:505px;}
+.rev-table-ns .gov-textarea-a {margin:5px 0;}
+.rev-yyzz {height:217px;}
+.rev-yyzz img {width:303px; height:215px;}
+.rev-yyzz .n-tps {width:470px; float:left;}
+.rev-cp-tps {width:480px; min-height:100px; margin:60px auto 0; padding-left:150px; background-position:-258px -454px;}
+.rev-cp-tps li {line-height:25px; font-size:14px; margin-top:10px;}
+.rev-cp-tps li h3 {font-size:20px; line-height:35px;}
+.tabtd-pl5 td {padding-left:5px;}
+.rev-mtb {width:939px; float:left; margin-top:15px;}
+.rev-mtb th,.rev-mtb td {height:30px !important; line-height:30px !important; text-align:center;}
+.zs-slect {padding-left:245px; margin:30px; line-height:23px !important; background:url(Image/zs_bg.jpg) no-repeat 17px -14px; min-height:110px;}
+.zs-slect .zs-sm {padding-bottom:20px;}
+
+/**验证样式开始**/
+.field-validation-valid{
+    background: url(http://img.ebs.org.cn/frontEndFiles/images/vIcon.png) no-repeat -61px -52px;
+    padding: 3px 3px 1px 23px;
+    vertical-align: middle;
+    display: inline-block;
+    height: 18px;
+    line-height:18px;
+}
+.field-validation-error{
+    background: #fbfbfb url(http://img.ebs.org.cn/frontEndFiles/images/vIcon.png) no-repeat -61px -1px;
+    padding: 3px 3px 1px 23px;
+    font-size: 12px;
+    vertical-align: middle;
+    color: #666;
+    border: 1px solid #CF0040;
+    height: 18px;
+    line-height:16px;
+    display: inline-block;
+    margin-bottom:3px;
+}
+/**验证样式结束**/
+
+/* 网站经营者信息公示 */
+#nbs_head,.nbs-t3-a,.nbs-t3-b,.nbs-left-meun li.in,.nm-org a,#nbs_foot .tc span.nf-log,.op-left,.op-right,.bigv,.nbs-bsm {background:url(Image/gov_nbs_mbg.png) no-repeat;}
+.nbs-t2,.nm-bg {background:url(Image/gov_nbs_vbg.jpg) repeat-x;}
+
+#nbs_head,#nbs_main,#nbs_foot {margin:0 auto; width:1011px; overflow:hidden;}
+#nbs_head {height:136px; background-position:0 0;}
+#nbs_head h1 {display:none;}
+.nbs-t1 {height:60px; line-height:60px; margin-top:10px; text-align:center; font-size:26px; color:#000; border-bottom:#458CB8 2px solid; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+#nm_left {width:725px; float:left; display:inline; overflow:hidden;}
+#nm_right {width:276px; float:right; display:inline; overflow:hidden;}
+.nm-bg {background-position:0 -3px; background-color:#F3FBFE;}
+.nbs-t2 {height:37px; line-height:35px; font-weight:normal; border:#D0D0D0 1px solid; text-align:center; font-size:18px; color:#000; margin-bottom:10px;}
+.nbs-t3-a,.nbs-t3-b {height:33px; line-height:32px; font-size:16px; color:#01304C; font-weight:normal; padding-left:15px; border-bottom:#fff 1px solid;}
+.nbs-t3-a {background-position:0 -137px;}
+.nbs-t3-b {background-position:0 -171px;}
+.nbs-tab1 {width:100%; border-left:#6DB5E0 1px solid; border-top:#6DB5E0 1px solid;}
+.nbs-tab1 th,.nbs-tab1 td {height:30px; line-height:30px; font-size:12px; font-family:"宋体"; text-align:left; color:#000; border-right:#6DB5E0 1px solid; border-bottom:#6DB5E0 1px solid; padding:0 5px;}
+.nbs-tab1 th {font-weight:bold; text-align:center;}
+.nbs-tab1 p {line-height:21px; padding:10px; color:#333;}
+.nbs-tab1 p b {color:#000;}
+.nbs-left-meun {padding:10px 0;}
+.nbs-left-meun li {height:33px; line-height:33px; overflow:hidden;}
+.nbs-left-meun li a {display:block; height:33px; text-align:center; font-size:16px; color:#505050;}
+.nbs-left-meun li.in {background-position:-726px -137px;}
+.nbs-left-meun li.in a {color:#0164A1;}
+.nm-org {padding-bottom:10px;}
+.nm-org a {display:block; margin:0 auto 10px; width:184px; height:38px; line-height:38px; padding-left:42px; text-align:center; font-size:16px; color:#fff; overflow:hidden;}
+.nm-org a:hover {color:#fff !important;}
+.nm-org a.ng1 {background-position:-283px -175px;}
+.nm-org a.ng2 {background-position:-510px -175px;}
+.nm-org a.ng3 {background-position:-737px -175px;}
+.nbs-cus p {line-height:23px; padding:20px 0 0 20px;}
+#nbs_foot {border-top:#458CB8 2px solid; margin-top:20px;}
+#nbs_foot .tc {padding:15px 0; line-height:33px;}
+#nbs_foot .tc a {color:#333; margin:0 5px;}
+#nbs_foot .tc span.nf-log {display:inline-block; width:48px; height:60px; line-height:999px; overflow:hidden; background-position:-7px -214px; margin-top:10px;}
+.nbs-box {border:#6DB5E0 1px solid; background:#fff;}
+.op-left,.op-right {display:inline-block; width:10px; height:39px; margin-top:40px;}
+.op-left {background-position:-71px -223px; margin-left:10px;}
+.op-right {background-position:-91px -223px; margin-right:10px;}
+.nbs-img-view {width:682px; margin-top:20px; padding-bottom:15px;}
+.niv-body {float:left; display:inline; width:341px; overflow:hidden;}
+.niv-body img.fl {width:122px; height:84px; border:#D2D2D2 1px solid; margin:0 10px;}
+.niv-body div.fl {width:197px; line-height:23px; font-family:"宋体";}
+.niv-body div.fl dl dd {height:23px; line-height:23px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; font-family:"宋体"}
+.bigv {display:inline-block; height:20px; line-height:20px; padding-left:25px; background-position:-992px -176px; margin-top:10px;}
+.niv-inner {margin:20px 20px 0; padding-bottom:15px;}
+.nbs-tab {width:100%;}
+.nbs-tab th,.nbs-tab td {height:45px; line-height:45px; font-family:"宋体";}
+.nbs-tab th {text-align:right; font-weight:bold;}
+.nbs-tab td {text-align:left; padding-left:5px;}
+.nbs-tab td p {line-height:21px; padding:5px 5px 5px 0;}
+.nbs-tsm {width:650px; height:639px; overflow:hidden; margin:65px auto 0;}
+.nbs-tsm .rev-label {margin-right:20px;}
+.nbs-bsm {display:inline-block; width:128px; height:30px; line-height:30px; font-size:14px; text-align:center; overflow:hidden; background-position:-155px -228px;}
+.nbs-tab td input,.nbs-tab td select,.nbs-tab td textarea {font-size:12px; font-family:"宋体"}
+.nbs-tab td input.w60 {line-height:19px; padding:1px;}
+.f-ipt {height:28px; line-height:28px; border:#ccc 1px solid; background:#eee; color:000; font-size:14px; cursor:pointer;}
+.f-h3 {height:30px; line-height:30px; height:auto\9; line-height:25px\9; padding-top:1px\9; +height:28px; +line-height:22px}
+.ct-qq {display: inline-block; vertical-align: middle; height:24px; margin-right:3px;}

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Refresh" content="4; url=/Shishicai/Chance"/>
+    <link href="/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="/Views/CPSsc/Css/base.css">
+    <script src="/Views/Script/jquery-1.4.1.min.js"></script>
+    <style>
+        html {
+            background:url(/Views/CPSsc/Images/login-bg-1.png) repeat;
+            }
+    </style>
+</head>
+<body>
+    <div class="fleft login">
+        <img src="/Views/CPSsc/Images/404.png" />
+    </div>
+</body>
+</html>
+<script>
+   
+    ##设置登录框始终显示在最中间
+
+    var width = $("body").width();
+    var height = $("body").height();
+    $(".login").css({ "left": (width - 650) / 2, "top": (height - 380) / 2, "_left": "expression(eval(document.documentElement.scrollLeft + " + (width - 650) / 2 + "))", "_top": "expression(eval(document.documentElement.scrollLeft + " + (height - 350) / 2 + "))" });
+ </script>

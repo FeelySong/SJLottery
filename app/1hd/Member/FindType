@@ -1,0 +1,52 @@
+<html lang="ch">
+<head>
+    <meta charset="utf-8" />
+	<title>壹号平台--修改密码</title>    
+    <link href="/Views/CPSsc/Css/base.css" rel="stylesheet" />
+    <link href="/Views/CPSsc/Css/loginrc.css" rel="stylesheet" />
+    <style>
+        .login-main ul li{margin: 0px 0px 46px 215px;display:inline;font-size: 25px;} 
+        .login{ left:50%; Top:50%; margin-top: -175px; z-index: 1; margin-left: -325px; 
+}
+.login-main ul li input{ 
+height: 22px;
+width: 55px; 
+}
+.login-main{background:url('/Views/CPSsc/Images/help.png') 60px 100px no-repeat; }
+
+    </style>
+</head>
+<body>
+    <div class="fleft login rb">
+        <div class="hei350px login-main rb">  
+            <ul>   <li class="password-text"></li>
+            <li>通过下面方式可找回密码！</li>
+                <li><input type="radio"  name="findEmail" id="findEmail" onclick="findPwd(1)" value="邮箱找回" >邮箱验证找回</input></li>
+                <li><input type="radio"  name="findEmail" id="findQustion" onclick="findPwd(2)" value="问题验证" >问题验证找回</input></li>
+                 <li></li>
+            </ul> 
+        </div>
+    </div>                         
+</body>
+</html>
+
+
+
+
+<script language="JavaScript" type="text/javascript">
+
+    findPwd = function (fid) {
+        //邮箱找回
+        if (fid == 1) {
+            location.href = 'FindPass';
+            this.checked = true;
+        } else {
+            location.href = 'FindPwd'; this.checked = true;
+        }
+
+
+    } 
+
+   
+
+</script>
