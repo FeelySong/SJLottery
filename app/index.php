@@ -207,7 +207,7 @@ if($row_jc['kg']==1){
                                                     <span class="veid" id="veid">
                                                         <img width="90" height="35" onclick="this.src='ValiCode_New.php?';return false;" src="ValiCode_New.php"  style="cursor:pointer;" title="重新获取验证码">
                                                     </span>
-                                                    <a class="fresh" href="javascript:;" title="重新获取验证码" onclick="displayyz();return false;">重新获取验证码</a> 
+                                                    <a onclick="displayyz();return false;" title="重新获取验证码" href="javascript:;" class="fresh">重新获取验证码</a> 
                                                   </span>
                                               </li>
                                               <li>
@@ -255,11 +255,13 @@ if($row_jc['kg']==1){
             $("#fp").hide();
             $("#btnRegist").show();
         }
-    };
-    function displayyz() {
-        var el =document.getElementById(“veid”);
-        el.src=el.src+’?';
     }
+    
+    function displayyz() {
+        $("#vs").val("");
+        $("#veid").html("<img width='90' height='35' src='ValiCode_New.php" + Math.random() + "' onclick='displayyz()' style='cursor: pointer;' title='重新获取验证码'>");
+    }
+
 
     function LoginNow(){
     alert('请填写 通行证账号');
