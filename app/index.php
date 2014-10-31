@@ -259,7 +259,7 @@ if($row_jc['kg']==1){
     
     function displayyz() {
         $("#vs").val("");
-        $("#veid").html("<img width='90' height='35' src='ValiCode_New.php" + Math.random() + "' onclick='displayyz()' style='cursor: pointer;' title='重新获取验证码'>");
+        $("#veid").html("<img width='90' height='35' src='ValiCode_New.php?"+"' onclick='displayyz()' style='cursor: pointer;' title='重新获取验证码'>");
     }
 
 
