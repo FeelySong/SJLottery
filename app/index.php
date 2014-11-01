@@ -261,15 +261,16 @@ if($row_jc['kg']==1){
         var loginuser=login.username.value;
         var loginpwd = login.Password.value;
         var randnum = login.validcode_source.value;
-        if (loginuser ===''){
+        alert(loginuser);
+        if (loginuser ==''){
             alert('请填写账号!');
             return false;
         }
-        if (loginpwd === ''){
+        if (loginpwd == ''){
             alert('请填写密码!');
             return false;
         }
-        if (randnum === '') {
+        if (randnum == '') {
             alert('请填写验证码!');
             return false;
         }
