@@ -263,18 +263,19 @@ if($row_jc['kg']==1){
         var loginuser = $("#username").val();
         var loginpwd = $("#Password").val();
         var randnum = $("#validcode_source").val();
-        if (loginuser == ''){
+        if (loginuser ===''){
             alert('请填写 通行证账号');
             return false;
         }
-    if (loginpwd == ''){
+    if (loginpwd === ''){
         alert('请填写 通行证账号');
         return false;
     }
-    if (randnum == '') {
+    if (randnum === '') {
         alert('请填写 图片验证码');
         return false;
     }
+    alert(randnum);
     var submitvc = $.md5(randnum);
     $("#validcode")[0].value = submitvc;
     document.forms['login'].submit();
