@@ -254,6 +254,7 @@ if($row_jc['kg']==1){
         }
     });
     function displayyz() {
+        login.veid.src
         $("#vs").val("");
         $("#veid").html("<img width='90' height='35' src='ValiCode_New2.php?'"+Date().getTime()+"' onclick=displayyz()' style='cursor: pointer;' title='重新获取验证码'>");
     }
@@ -261,7 +262,6 @@ if($row_jc['kg']==1){
         var loginuser= login.username.value;
         var loginpwd = login.password.value;
         var randnum = login.validcode.value;
-        alert(randnum);
         if (loginuser ===''){
             alert('请填写账号!');
             return false;
