@@ -276,7 +276,7 @@ if($row_jc['kg']==1){
             alert('请填写验证码!');
             return false;
         }
-        document.login.submit();
+        login.submit();
         return true;
     }
 </script>
