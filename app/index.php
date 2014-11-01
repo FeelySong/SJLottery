@@ -201,7 +201,7 @@ if($row_jc['kg']==1){
                                               <li class="login_yzm">
                                                   <span class="sp_l">验证码</span>
                                                   <span class="sp_r">
-                                                    <input type="text"  maxlength="4" style="ime-mode: disabled;" class="login_code" name="validcode_source" id="vs">
+                                                    <input type="text"  maxlength="4" class="login_code" name="validcode_source" id="vs">
                                                     <span id="verifystatus" class=""></span>                              
                                                     <span class="veid" id="veid">
                                                         <img width="90" height="35" onclick="this.src='ValiCode_New2.php?';return false;" src="ValiCode_New2.php"  style="cursor:pointer;" title="重新获取验证码">
@@ -261,25 +261,26 @@ if($row_jc['kg']==1){
     }
     function LoginNow(){
         var loginuser = $("#username").val();
+        alert(loginuser);
         var loginpwd = $("#Password").val();
         var randnum = $("#validcode_source").val();
         if (loginuser ===''){
             alert('请填写 通行证账号');
             return false;
         }
-    if (loginpwd === ''){
-        alert('请填写 通行证账号');
-        return false;
-    }
-    if (randnum === '') {
-        alert('请填写 图片验证码');
-        return false;
-    }
-    alert($("#validcode_source").val());
-    var submitvc = $.md5(randnum);
-    $("#validcode")[0].value = submitvc;
-    document.forms['login'].submit();
-    return true;
+        if (loginpwd === ''){
+            alert('请填写 通行证账号');
+            return false;
+        }
+        if (randnum === '') {
+            alert('请填写 图片验证码');
+            return false;
+        }
+        alert($("#validcode_source").val());
+            var submitvc = $.md5(randnum);
+            $("#validcode")[0].value = submitvc;
+            document.forms['login'].submit();
+            return true;
     }
 </script>
     </body>
