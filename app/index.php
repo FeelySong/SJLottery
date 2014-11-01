@@ -259,7 +259,7 @@ if($row_jc['kg']==1){
     }
     function LoginNow(){
         
-        var loginuser = document.getElementById("username");
+        var loginuser = document.getElementById("username").value;
         alert(loginuser);
         /*var loginusertmp = $("#username").val();*/
         var loginpwd = $("#Password").val();
