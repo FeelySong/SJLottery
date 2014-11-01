@@ -258,9 +258,13 @@ if($row_jc['kg']==1){
         $("#veid").html("<img width='90' height='35' src='ValiCode_New2.php?'"+Date().getTime()+"' onclick=displayyz()' style='cursor: pointer;' title='重新获取验证码'>");
     }
     function LoginNow(){
-        
+        /*
         var loginuser = document.getElementById("username").value;
         alert(loginuser);
+        */
+        var test=login.username.value;
+        alert(test);
+        
         /*var loginusertmp = $("#username").val();*/
         var loginpwd = $("#Password").val();
         var randnum = $("#validcode_source").val();
