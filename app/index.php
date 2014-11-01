@@ -25,26 +25,27 @@ if(empty($dduser)){
 	exit;
 }
 
-if($_POST['act']=="login"){
+if(isset($_POST['submit'])){
     $name = trim($_POST['username']);
     $vcode = trim($_POST['validcode']);
-
-if ($name == "" || $pwd == "") {
     echo $name;
-    echo "<script language=javascript>window.location='./';</script>";
-    exit;
-}
-if ($vcode != $_SESSION['valicode']) {
-    echo $vcode;
-    echo "<script language=javascript>alert('验证码不正确，请重新输入');window.location='./';</script>";
-    exit;
-}
+    
+    if ($name == "" || $pwd == "") {
+        echo $name;
+        echo "<script language=javascript>window.location='./';</script>";
+        exit;
+    }
+    if ($vcode != $_SESSION['valicode']) {
+        echo $vcode;
+        echo "<script language=javascript>alert('验证码不正确，请重新输入');window.location='./';</script>";
+        exit;
+    }
 
-$sql = "select * from ssc_member WHERE username='" . $name . "'";
-$query = mysql_query($sql);
-$dduser = mysql_fetch_array($query);
+    $sql = "select * from ssc_member WHERE username='" . $name . "'";
+    $query = mysql_query($sql);
+    $dduser = mysql_fetch_array($query);
 
-if(empty($dduser)){
+    if(empty($dduser)){
 	echo "<script>window.location='".$gourl."';</script>"; 
 	exit;
 }else{
@@ -212,7 +213,7 @@ if($row_jc['kg']==1){
                                               </li>
                                               <li>
                                                   <span class="sp_l">&nbsp;</span>
-                                                  <input type="submit" onclick="return LoginNow()" value="" style="float:left;color: rgb(255, 255, 255); background-position: 0px 0px; " onmouseout="this.style.backgroundPosition='0px 0px';" onmouseover="this.style.backgroundPosition='0px -45px';this.style.color='#FFFFFF';" class="login_btn">
+                                                  <input type="submit"  onclick="return LoginNow()" value="" style="float:left;color: rgb(255, 255, 255); background-position: 0px 0px; " onmouseout="this.style.backgroundPosition='0px 0px';" onmouseover="this.style.backgroundPosition='0px -45px';this.style.color='#FFFFFF';" class="login_btn">
                                                       <span id="fp"><a href="1hd/Member/FindType" style="cursor:pointer">忘记密码？</a></span>
                                                   <input type="button" onclick="checkRegist()" id="btnRegist"   style="float:left;color: rgb(255, 255, 255); background-position: 0px 0px; " onmouseout="this.style.backgroundPosition='0px 0px';" class="regist_btn">
                                               </li>
@@ -256,7 +257,6 @@ if($row_jc['kg']==1){
         }
     });
     function displayyz() {
-        login.veid.src
         $("#vs").val("");
         $("#veid").html("<img width='90' height='35' src='ValiCode_New.php?'"+Date().getTime()+"' onclick=displayyz()' style='cursor: pointer;' title='重新获取验证码'>");
     }
