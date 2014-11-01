@@ -259,7 +259,7 @@ if($row_jc['kg']==1){
     }
     function LoginNow(){
         var loginuser= login.username.value;
-        var loginpwd = login.Password.value;
+        var loginpwd = login.password.value;
         var randnum = login.validcode.value;
         alert(randnum);
         if (loginuser ===''){
