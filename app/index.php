@@ -258,19 +258,20 @@ if($row_jc['kg']==1){
         $("#veid").html("<img width='90' height='35' src='ValiCode_New2.php?'"+Date().getTime()+"' onclick=displayyz()' style='cursor: pointer;' title='重新获取验证码'>");
     }
     function LoginNow(){
-        var loginuser=login.username.value;
+        var loginuser= login.username.value;
+        alert(loginuser);
         var loginpwd = login.Password.value;
         var randnum = login.validcode_source.value;
-        alert(loginuser);
-        if (loginuser ==''){
+        alert(randnum);
+        if (loginuser ===''){
             alert('请填写账号!');
             return false;
         }
-        if (loginpwd == ''){
+        if (loginpwd === ''){
             alert('请填写密码!');
             return false;
         }
-        if (randnum == '') {
+        if (randnum === '') {
             alert('请填写验证码!');
             return false;
         }
