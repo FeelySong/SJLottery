@@ -147,7 +147,6 @@ if($row_jc['kg']==1){
    <script src="/Views/Script/uaredirect.js" type="text/javascript"></script>
    <script type="text/javascript">uaredirect("http://new.1hssc.com/Mobile");</script>
    <link href="/1hd/Views/CPSsc/Member/ttn/Noname3.css" rel="stylesheet" type="text/css" />
-
 </head>
     <body class="body_bg">
         <div id="header">
@@ -261,14 +260,13 @@ if($row_jc['kg']==1){
         $("#veid").html("<img width='90' height='35' src='ValiCode_New2.php?'"+" style='cursor: pointer;' title='重新获取验证码'>");
     }
     function LoginNow(){
-        alert('请填写 通行证账号');
         var loginuser = $("#username").val();
         var loginpwd = $("#Password").val();
         var randnum = $("#validcode_source").val();
         if (loginuser == ''){
             alert('请填写 通行证账号');
             return false;
-    }
+        }
     if (loginpwd == ''){
         alert('请填写 通行证账号');
         return false;
