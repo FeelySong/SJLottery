@@ -26,16 +26,18 @@ if(empty($dduser)){
 }
 
 if($_POST['act']=="login"){
-$name = trim($_POST['username']);
-$vcode = trim($_POST['validcode']);
+    $name = trim($_POST['username']);
+    $vcode = trim($_POST['validcode']);
 
 if ($name == "" || $pwd == "") {
-	echo "<script language=javascript>window.location='./';</script>";
-	exit;
+    echo $name;
+    echo "<script language=javascript>window.location='./';</script>";
+    exit;
 }
 if ($vcode != $_SESSION['valicode']) {
-	echo "<script language=javascript>alert('验证码不正确，请重新输入');window.location='./';</script>";
-	exit;
+    echo $vcode;
+    echo "<script language=javascript>alert('验证码不正确，请重新输入');window.location='./';</script>";
+    exit;
 }
 
 $sql = "select * from ssc_member WHERE username='" . $name . "'";
