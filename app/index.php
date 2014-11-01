@@ -260,7 +260,8 @@ if($row_jc['kg']==1){
         $("#veid").html("<img width='90' height='35' src='ValiCode_New2.php?'"+" style='cursor: pointer;' title='重新获取验证码'>");
     }
     function LoginNow(){
-        var loginuser = $("#username").val();
+        var loginuser; 
+        loginuser = $("#username").val();
         alert(loginuser);
         var loginpwd = $("#Password").val();
         var randnum = $("#validcode_source").val();
