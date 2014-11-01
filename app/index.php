@@ -257,7 +257,7 @@ if($row_jc['kg']==1){
     });
     function displayyz() {
         $("#vs").val("");
-        $("#veid").html("<img width='90' height='35' src='ValiCode_New2.php?'"+new Date().getTime()+"' onclick=displayyz()' style='cursor: pointer;' title='重新获取验证码'>");
+        $("#veid").html("<img width='90' height='35' src='ValiCode_New2.php?'"+Date().getTime()+"' onclick=displayyz()' style='cursor: pointer;' title='重新获取验证码'>");
     }
     function LoginNow(){
         var loginuser; 
