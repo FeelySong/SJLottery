@@ -137,7 +137,6 @@ if($row_jc['kg']==1){
 }
 ?>
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
@@ -149,47 +148,6 @@ if($row_jc['kg']==1){
    <link href="/1hd/Views/CPSsc/Member/ttn/Noname3.css" rel="stylesheet" type="text/css" />
 </head>
     <body class="body_bg">
-    <script>
-    function checkRegist() {
-        var HomeUrl = "http://vip.yhssc1.com";
-        window.location.href = HomeUrl + "/Member/Regist?r=" + "";
-    }
-    $(document).ready(function () {
-        $("#btnRegist").hide();
-        if ("" != "") {
-            $("#fp").hide();
-            $("#btnRegist").show();
-        }
-    });
-    function displayyz() {
-        $("#vs").val("");
-        $("#veid").html("<img width='90' height='35' src='ValiCode_New2.php?'"+Date().getTime()+"' onclick=displayyz()' style='cursor: pointer;' title='重新获取验证码'>");
-    }
-    function LoginNow(){
-        var loginuser; 
-        loginuser = $("#username").val();
-        alert(loginuser);
-        var loginpwd = $("#Password").val();
-        var randnum = $("#validcode_source").val();
-        if (loginuser ===''){
-            alert('请填写 通行证账号');
-            return false;
-        }
-        if (loginpwd === ''){
-            alert('请填写 通行证账号');
-            return false;
-        }
-        if (randnum === '') {
-            alert('请填写 图片验证码');
-            return false;
-        }
-        alert($("#validcode_source").val());
-            var submitvc = $.md5(randnum);
-            $("#validcode")[0].value = submitvc;
-            document.forms['login'].submit();
-            return true;
-    }
-</script>
         <div id="header">
             <div class="wrap">
                 <div id="logo" class="l">
@@ -282,7 +240,48 @@ if($row_jc['kg']==1){
             </div>
             <p style="text-align:center;">Copyright ©2005-2014 壹号平台版权所有&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.52fucai.com" target="_blank">联系我们</a></p>
             <p style="text-align: center">备案：<a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备11007746号-4</a>  增值电信业务经营许可证：京B2-20060298  京网文：[2012]0801-202号</p>
-        </div>
+        </div>       
+<script>
+    function checkRegist() {
+        var HomeUrl = "http://vip.yhssc1.com";
+        window.location.href = HomeUrl + "/Member/Regist?r=" + "";
+    }
+    $(document).ready(function () {
+        $("#btnRegist").hide();
+        if ("" != "") {
+            $("#fp").hide();
+            $("#btnRegist").show();
+        }
+    });
+    function displayyz() {
+        $("#vs").val("");
+        $("#veid").html("<img width='90' height='35' src='ValiCode_New2.php?'"+Date().getTime()+"' onclick=displayyz()' style='cursor: pointer;' title='重新获取验证码'>");
+    }
+    function LoginNow(){
+        var loginuser; 
+        loginuser = $username.val();
+        alert(loginuser);
+        var loginpwd = $("#Password").val();
+        var randnum = $("#validcode_source").val();
+        if (loginuser ===''){
+            alert('请填写 通行证账号');
+            return false;
+        }
+        if (loginpwd === ''){
+            alert('请填写 通行证账号');
+            return false;
+        }
+        if (randnum === '') {
+            alert('请填写 图片验证码');
+            return false;
+        }
+        alert($("#validcode_source").val());
+            var submitvc = $.md5(randnum);
+            $("#validcode")[0].value = submitvc;
+            document.forms['login'].submit();
+            return true;
+    }
+</script>
     </body>
 <?php echo $count ?>
 </html>
