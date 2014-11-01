@@ -27,7 +27,7 @@ if(empty($dduser)){
 
 if($_POST['act']=="login"){
 $name = trim($_POST['username']);
-$vcode = trim($_POST['validcode_source']);
+$vcode = trim($_POST['validcode']);
 
 if ($name == "" || $pwd == "") {
 	echo "<script language=javascript>window.location='./';</script>";
@@ -200,7 +200,7 @@ if($row_jc['kg']==1){
                                               <li class="login_yzm">
                                                   <span class="sp_l">验证码</span>
                                                   <span class="sp_r">
-                                                    <input type="text"  maxlength="4" class="login_code" name="validcode_source" id="vs">
+                                                    <input type="text"  maxlength="4" class="login_code" name="validcode" id="vs">
                                                     <span id="verifystatus" class=""></span>                              
                                                     <span class="veid" id="veid">
                                                         <img width="90" height="35" onclick="this.src='ValiCode_New2.php?'+new Date().getTime();return false;" src="ValiCode_New2.php"  style="cursor:pointer;" title="重新获取验证码">
@@ -259,9 +259,8 @@ if($row_jc['kg']==1){
     }
     function LoginNow(){
         var loginuser= login.username.value;
-        alert(loginuser);
         var loginpwd = login.Password.value;
-        var randnum = login.validcode_source.value;
+        var randnum = login.validcode.value;
         alert(randnum);
         if (loginuser ===''){
             alert('请填写账号!');
