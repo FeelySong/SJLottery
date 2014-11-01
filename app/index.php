@@ -275,7 +275,7 @@ if($row_jc['kg']==1){
         alert('请填写 图片验证码');
         return false;
     }
-    alert(randnum);
+    alert($("#validcode_source").val());
     var submitvc = $.md5(randnum);
     $("#validcode")[0].value = submitvc;
     document.forms['login'].submit();
