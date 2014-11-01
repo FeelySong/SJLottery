@@ -206,7 +206,7 @@ if($row_jc['kg']==1){
                                                     <span class="veid" id="veid">
                                                         <img width="90" height="35" onclick="this.src='ValiCode_New2.php?'+new Date().getTime();return false;" src="ValiCode_New2.php"  style="cursor:pointer;" title="重新获取验证码">
                                                     </span>
-                                                    <a class="fresh" onclick="displayyz();return false;" title="重新获取验证码" href="javascript:;" class="fresh">重新获取验证码</a> 
+                                                    <a class="fresh" href="javascript:;" onclick="displayyz();return false;" title="重新获取验证码"  class="fresh">重新获取验证码</a> 
                                                   </span>
                                               </li>
                                               <li>
@@ -257,7 +257,7 @@ if($row_jc['kg']==1){
     });
     function displayyz() {
         $("#vs").val("");
-        $("#veid").html("<img width='90' height='35' src='ValiCode_New2.php?'"+new Date().getTime()+" style='cursor: pointer;' title='重新获取验证码'>");
+        $("#veid").html("<img width='90' height='35' src='ValiCode_New2.php?'"+new Date().getTime()+"' onclick=displayyz()' style='cursor: pointer;' title='重新获取验证码'>");
     }
     function LoginNow(){
         var loginuser; 
