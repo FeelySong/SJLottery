@@ -4,6 +4,8 @@ session_start();
 error_reporting(0);
 require_once 'conn.php';
 
+echo "<script language=javascript>window.location='default_frame.php';</script>";
+
 if($webzt!='1'){
 	echo "<script>window.location='".$gourl."';</script>"; 
 	exit;
@@ -38,7 +40,7 @@ if(isset($_POST['submit'])){
         echo "<script language=javascript>window.location='./';</script>";
         exit;
     }
-    if ($vcode != $_SESSION['valicode']) {
+    if ($vcode != $_SESSION['validcode_source']) {
         echo $vcode;
         echo "<script language=javascript>alert('验证码不正确，请重新输入');window.location='./';</script>";
         exit;
