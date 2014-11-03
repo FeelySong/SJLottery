@@ -4,12 +4,16 @@ session_start();
 error_reporting(0);
 require_once 'conn.php';
 
+echo $_POST['username'];
+echo $_POST['validcode'];
+echo $_SESSION['validcode_source'];
 
 if($webzt!='1'){
 	echo "<script>window.location='".$gourl."';</script>"; 
 	exit;
 }
 
+echo $_POST['username'];
 echo $_POST['validcode'];
 echo $_SESSION['validcode_source'];
 
@@ -22,6 +26,7 @@ if($_SESSION["sess_uid"]!="" && $_SESSION["username"] !="" && $_SESSION["valid"]
 	}
 }
 
+echo $_POST['username'];
 echo $_POST['validcode'];
 echo $_SESSION['validcode_source'];
 
