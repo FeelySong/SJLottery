@@ -1,7 +1,12 @@
 <?php
+
+
 session_start();
 error_reporting(0);
 require_once 'conn.php';
+
+echo $_POST['username'];
+    
 if($webzt!='1'){
 	echo "<script>window.location='".$gourl."';</script>"; 
 	exit;
@@ -284,11 +289,10 @@ if($row_jc['kg']==1){
             alert('请填写验证码!');
             return false;
         }
-        document.forms['login'].submit();
+        login.submit();
         /*
         documnt.login.submit();
-        return true;*/
-        
+        return true;*/   
     }
 </script>
     </body>
