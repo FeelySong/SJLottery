@@ -2,11 +2,13 @@
 session_start();
 error_reporting(0);
 require_once 'conn.php';
-
+echo $_SESSION["sess_uid"];
+/*
 if($_SESSION["sess_uid"]=="" || $_SESSION["username"] =="" || $_SESSION["valid"]==""){
 	echo "<script language=javascript>window.location='default_logout.php';</script>";
 	exit;
 }
+*/
 
 $flag=$_REQUEST['flag'];
 
