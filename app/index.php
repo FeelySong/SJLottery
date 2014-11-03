@@ -221,7 +221,7 @@ if($row_jc['kg']==1){
                                               </li>
                                               <li>
                                                   <span class="sp_l">&nbsp;</span>
-                                                  <input type=submit  onclick="return LoginNow()" value="" style="float:left;color: rgb(255, 255, 255); background-position: 0px 0px; " onmouseout="this.style.backgroundPosition='0px 0px';" onmouseover="this.style.backgroundPosition='0px -45px';this.style.color='#FFFFFF';" class="login_btn">
+                                                  <input type=submit value="" style="float:left;color: rgb(255, 255, 255); background-position: 0px 0px; " onmouseout="this.style.backgroundPosition='0px 0px';" onmouseover="this.style.backgroundPosition='0px -45px';this.style.color='#FFFFFF';" class="login_btn">
                                                       <span id="fp"><a href="1hd/Member/FindType" style="cursor:pointer">忘记密码？</a></span>
                                                   <input type="button" onclick="checkRegist()" id="btnRegist"   style="float:left;color: rgb(255, 255, 255); background-position: 0px 0px; " onmouseout="this.style.backgroundPosition='0px 0px';" class="regist_btn">
                                               </li>
