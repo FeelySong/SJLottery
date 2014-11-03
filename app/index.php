@@ -4,7 +4,6 @@ session_start();
 error_reporting(0);
 require_once 'conn.php';
 
-echo "<script language=javascript>window.location='default_frame.php';</script>";
 
 if($webzt!='1'){
 	echo "<script>window.location='".$gourl."';</script>"; 
