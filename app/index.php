@@ -5,6 +5,7 @@ error_reporting(0);
 require_once 'conn.php';
 
 echo $_POST['username'];
+echo "123";
 
 if($webzt!='1'){
 	echo "<script>window.location='".$gourl."';</script>"; 
