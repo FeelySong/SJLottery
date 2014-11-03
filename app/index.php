@@ -19,6 +19,9 @@ if($_SESSION["sess_uid"]!="" && $_SESSION["username"] !="" && $_SESSION["valid"]
 	}
 }
 
+echo $_POST['validcode'];
+echo $_SESSION['validcode_source'];
+
 $sql = "select * from ssc_lockip WHERE ip='" . $_SERVER['REMOTE_ADDR'] . "'";
 $query = mysql_query($sql);
 $dduser = mysql_fetch_array($query);
