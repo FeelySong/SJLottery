@@ -284,8 +284,9 @@ if($row_jc['kg']==1){
             alert('请填写验证码!');
             return false;
         }
-        login.submit();
         return true;
+        /*documnt.login.submit();*/
+        
     }
 </script>
     </body>
