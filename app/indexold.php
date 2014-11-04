@@ -34,7 +34,7 @@ if ($name == "") {
 	exit;
 }
 if ($vcode != $_SESSION['valicode']) {
-	echo "<script language=javascript>alert('验证码不正确，请重新输入');window.location='./';</script>";
+	echo "<script language=javascript>alert('验证码不正确,请重新输入');window.location='./';</script>";
 	exit;
 }
 
@@ -277,7 +277,7 @@ $(document).ready(function(){
 	$("#username").focus();
 }); 
 function refreshimg(){
-document.getElementById("vcsImg").src="ValiCode_new.php?"+  new Date().getTime();
+document.getElementById("vcsImg").src="ValiCode_New.php?"+  new Date().getTime();
 }
 function LoginNow() 
 { 
