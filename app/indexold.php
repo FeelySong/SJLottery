@@ -334,8 +334,10 @@ function LoginNow()
                     </div>
 					<div class="content_reg_line">
                     	<div class="form_title">图片验证码：</div>
-                        <div class="form_word"><span class="inputBox input60"><cite><input type="text" name="randnum" id="randnum" maxlength="4" value="" class="text"/></cite></span></div> 
+                        <div class="form_word"><span class="inputBox input60"><cite><input type="text" name="validcode_source" id="validcode_source" maxlength="4" value="" class="text"/></cite></span></div> 
+                                                <img id="vcsImg" src="ValiCode_New.php"  name="validate" align="absbottom" style="margin-left:6px;cursor:pointer; border: 1px solid #999" onClick="refreshimg()" alt="点击图片更新验证码">
                     </div>
+
                     <div style="border-top:1px dotted #ccc; width:90%; margin:5px auto; height:1px; font-size:0; overflow:hidden;margin-bottom:20px;"></div>
 					<div style="height:30px; text-align:center;">
                     <input name="Submit" type="image" id="Submit" src="images/comm/t.gif" class='inputNext' title="下一步" width="104" height="30"/>
