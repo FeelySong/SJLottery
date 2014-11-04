@@ -332,7 +332,14 @@ function LoginNow()
 						<span class="inputBox input180"><cite><input type="text" name="username" id="username" maxlength="32" value="" class="text"/></cite></span>
 						</div>
                     </div>
-					<div class="content_reg_line">
+                         <div class="content_reg_line">
+                    	<div class="form_title">登陆密码：</div>
+                        <div class="form_word"><span class="inputBox input180"><cite><input type="password" name="loginpass_source" id="loginpass_source" maxlength="20" value="" class="text"/></cite></span></div>
+                    </div>
+                    <div style="border-top:1px dotted #ccc; width:90%; margin:5px auto; height:1px; font-size:0; overflow:hidden;margin-bottom:20px;"></div>
+					<div style="height:30px; text-align:center;">
+                    <input name="Submit" type="image" id="Submit" src="images/comm/t.gif" class='inputSubmit' title="点击开始游戏" width="104" height="30"/>
+                    &nbsp;&nbsp;<a href="default_getpass.php">忘记密码？</a>
                     	<div class="form_title">图片验证码：</div>
                         <div class="form_word"><span class="inputBox input60"><cite><input type="text" name="validcode_source" id="validcode_source" maxlength="4" value="" class="text"/></cite></span></div> 
                                                 <img id="vcsImg" src="ValiCode_New.php"  name="validate" align="absbottom" style="margin-left:6px;cursor:pointer; border: 1px solid #999" onClick="refreshimg()" alt="点击图片更新验证码">
