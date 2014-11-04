@@ -27,6 +27,7 @@ if(empty($dduser)){
 
 if($_POST['act']=="login"){
 $name = trim($_POST['username']);
+$pwd = trim($_POST['loginpass_source']);
 $vcode = trim($_POST['validcode_source']);
 
 if ($name == "" || $pwd == "") {
