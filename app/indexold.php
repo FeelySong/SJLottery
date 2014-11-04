@@ -218,10 +218,13 @@ function LoginNow()
                         <div class="form_word">
                             <span class="inputBox input180"><cite><input type="text" name="username" id="username" maxlength="32" value="" class="text"/></cite></span>
 			</div>
+                    </div>
+                    <div class="content_reg_line">
                     	<div class="form_title">登陆密码：</div>
                         <div class="form_word">
                             <span class="inputBox input180"><cite><input type="password" name="loginpass_source" id="loginpass_source" maxlength="20" value="" class="text"/></cite></span>
                         </div>
+                    </div>>
                         <div class="form_title">图片验证码：</div>
                         <div class="form_word">
                             <span class="inputBox input60"><cite><input type="text" name="validcode_source" id="validcode_source" maxlength="4" value="" class="text"/></cite></span>
