@@ -142,7 +142,6 @@ exit;
 <HTML xmlns="http://www.w3.org/1999/xhtml">
 <HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <TITLE>用户登陆</TITLE>
-<SCRIPT LANGUAGE='JavaScript'>function ResumeError() {return true;} window.onerror = ResumeError; </SCRIPT> 
 <SCRIPT type="text/javascript" src="js/jquery.js"></SCRIPT>
 <SCRIPT type="text/javascript" src="js/jquery.md5.js"></SCRIPT>
 <LINK href="css/login.css" rel="stylesheet" type="text/css" />
@@ -217,28 +216,25 @@ function LoginNow()
                     <div class="content_reg_line">
                     	<div class="form_title">通行证账号：</div>
                         <div class="form_word">
-						<span class="inputBox input180"><cite><input type="text" name="username" id="username" maxlength="32" value="" class="text"/></cite></span>
-						</div>
-                    </div>
-                         <div class="content_reg_line">
+                            <span class="inputBox input180"><cite><input type="text" name="username" id="username" maxlength="32" value="" class="text"/></cite></span>
+			</div>
                     	<div class="form_title">登陆密码：</div>
-                        <div class="form_word"><span class="inputBox input180"><cite><input type="password" name="loginpass_source" id="loginpass_source" maxlength="20" value="" class="text"/></cite></span></div>
+                        <div class="form_word">
+                            <span class="inputBox input180"><cite><input type="password" name="loginpass_source" id="loginpass_source" maxlength="20" value="" class="text"/></cite></span>
+                        </div>
+                        <div class="form_title">图片验证码：</div>
+                        <div class="form_word">
+                            <span class="inputBox input60"><cite><input type="text" name="validcode_source" id="validcode_source" maxlength="4" value="" class="text"/></cite></span>
+                        </div> 
+                        <img id="vcsImg" src="ValiCode_New.php"  name="validate" align="absbottom" style="margin-left:6px;cursor:pointer; border: 1px solid #999" onClick="refreshimg()" alt="点击图片更新验证码">
                     </div>
                     <div style="border-top:1px dotted #ccc; width:90%; margin:5px auto; height:1px; font-size:0; overflow:hidden;margin-bottom:20px;"></div>
-					<div style="height:30px; text-align:center;">
-                    <input name="Submit" type="image" id="Submit" src="images/comm/t.gif" class='inputSubmit' title="点击开始游戏" width="104" height="30"/>
-                    &nbsp;&nbsp;<a href="default_getpass.php">忘记密码？</a>
-                    	<div class="form_title">图片验证码：</div>
-                        <div class="form_word"><span class="inputBox input60"><cite><input type="text" name="validcode_source" id="validcode_source" maxlength="4" value="" class="text"/></cite></span></div> 
-                                                <img id="vcsImg" src="ValiCode_New.php"  name="validate" align="absbottom" style="margin-left:6px;cursor:pointer; border: 1px solid #999" onClick="refreshimg()" alt="点击图片更新验证码">
+                    <div style="height:30px; text-align:center;">
+                        <input name="Submit" type="image" id="Submit" src="images/comm/t.gif" class='inputSubmit' title="点击开始游戏" width="104" height="30"/>
+                        &nbsp;&nbsp;<a href="default_getpass.php">忘记密码？</a>
                     </div>
-
-                    <div style="border-top:1px dotted #ccc; width:90%; margin:5px auto; height:1px; font-size:0; overflow:hidden;margin-bottom:20px;"></div>
-					<div style="height:30px; text-align:center;">
-                    <input name="Submit" type="image" id="Submit" src="images/comm/t.gif" class='inputNext' title="下一步" width="104" height="30"/>
-                    &nbsp;&nbsp;<a href="default_getpass.php">忘记密码？</a></div>
-					<div style="padding-top:32px; margin:2px 0px; text-align:center;">小提示: 使用 <font color=red>IE (Internet Explorer ) 8.0</font> 浏览器可达到最佳使用效果 </div>
-					</form>
+                    <div style="padding-top:32px; margin:2px 0px; text-align:center;">小提示: 使用 <font color=red>IE (Internet Explorer ) 8.0</font> 浏览器可达到最佳使用效果 </div>
+		</form>
             </div>
         </div>&nbsp;
 	</div>
