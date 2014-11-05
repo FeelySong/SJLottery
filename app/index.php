@@ -4,7 +4,8 @@ session_start();
 error_reporting(0);
 require_once 'conn.php';
 
-echo 'Post act:',$_POST;
+echo 'Post Key:',array_keys($_POST);
+echo 'Post Value:',array_values($_POST);
 echo 'Post act:',$_POST['act'];
 
 echo 'this is session',$_SESSION['valicode'];
