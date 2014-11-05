@@ -4,15 +4,14 @@ session_start();
 error_reporting(0);
 require_once 'conn.php';
 
-echo $_POST['username'];
-echo "123";
+echo $_POST['valid'];
+echo $_POST['validcode_source'];
 
 if($webzt!='1'){
 	echo "<script>window.location='".$gourl."';</script>"; 
 	exit;
 }
 
-echo $_POST['username'];
 
 if($_SESSION["sess_uid"]!="" && $_SESSION["username"] !="" && $_SESSION["valid"]!=""){
 	$result = mysql_query("select * from ssc_online where valid='".$_SESSION["valid"]."' and username='".$_SESSION["username"] ."'");  
@@ -23,7 +22,6 @@ if($_SESSION["sess_uid"]!="" && $_SESSION["username"] !="" && $_SESSION["valid"]
 	}
 }
 
-echo $_POST['username'];
 
 $sql = "select * from ssc_lockip WHERE ip='" . $_SERVER['REMOTE_ADDR'] . "'";
 $query = mysql_query($sql);
