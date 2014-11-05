@@ -4,6 +4,14 @@ session_start();
 error_reporting(0);
 require_once 'conn.php';
 
+$name = trim($_POST['username']);
+$vcode = trim($_POST['validcode']);
+
+if ($vcode != $_SESSION['validcode_source']) {
+echo "<script language=javascript>alert('验证码不正确，请重新输入');window.location='./';</script>";
+exit;
+}
+
 
 if($webzt!='1'){
     echo "<script>window.location='".$gourl."';</script>"; 
@@ -20,31 +28,23 @@ if($_SESSION["sess_uid"]!="" && $_SESSION["username"] !="" && $_SESSION["valid"]
 	}
 }
 
-
 $sql = "select * from ssc_lockip WHERE ip='" . $_SERVER['REMOTE_ADDR'] . "'";
 $query = mysql_query($sql);
 $dduser = mysql_fetch_array($query);
 if(empty($dduser)){
 }else{
-	echo "<script>window.location='".$gourl."';</script>"; 
-	exit;
-}
+    echo "<script>window.location='".$gourl."';</script>"; 
+    exit;
+    }
 
-echo "submit";
-$name = trim($_POST['username']);
-$vcode = trim($_POST['validcode']);
-echo $name;
+
     
 if ($name == "" || $pwd == "") {
     echo $name;
     echo "<script language=javascript>window.location='./';</script>";
     exit;
     }
-if ($vcode != $_SESSION['validcode_source']) {
-echo $vcode;
-echo "<script language=javascript>alert('验证码不正确，请重新输入');window.location='./';</script>";
-exit;
-}
+
 
 $sql = "select * from ssc_member WHERE username='" . $name . "'";
 $query = mysql_query($sql);
