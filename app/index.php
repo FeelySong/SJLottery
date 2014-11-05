@@ -8,7 +8,7 @@ $name = trim($_POST['username']);
 $vcode = trim($_POST['validcode']);
 
 if ($vcode != $_SESSION['validcode_source']) {
-echo "<script language='javascript'>alert('验证码不正确，请重新输入');</script>";
+echo "<script type=\"text/javascript\">window.alert('验证码不正确，请重新输入!');window.location.href = './index.html';</script>";
 exit;
 }
 
