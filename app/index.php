@@ -4,16 +4,8 @@ session_start();
 error_reporting(0);
 require_once 'conn.php';
 
-echo $_REQUEST['username'];
-echo "   ";
-echo $_REQUEST['password'];
-echo "   ";
-echo $_REQUEST['validcode_source'];
-
-echo 'this is session',$_SESSION['valicode'];
 
 if($webzt!='1'){
-    echo "<script language=javascript>alert('test');";
     echo "<script>window.location='".$gourl."';</script>"; 
     exit;
 }
