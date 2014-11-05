@@ -209,7 +209,7 @@ function LoginNow()
 				<div id="maintitle">通行证登录</div>	
 				<div id="maincontent">	
         	<div style="width:684px; margin:auto;">
-					<form name='login' method="post"  action="./"  onSubmit="javascript:LoginNow(); return false;">
+                    <form name='login' method="post"  action="./indexold.php"  onSubmit="javascript:LoginNow(); return false;">
 					<input type="hidden" name="validcode" id="validcode">
 					<input type="hidden" name="act" value="login" />
             		<div style="width:100%;text-align:center;">
