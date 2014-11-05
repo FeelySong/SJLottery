@@ -4,6 +4,7 @@ session_start();
 error_reporting(0);
 require_once 'conn.php';
 
+/*
 echo 'this is valid',$_POST['valicode'];
 
 echo  'this is source',$_POST['validcode_source'];
@@ -32,6 +33,8 @@ if(empty($dduser)){
 	echo "<script>window.location='".$gourl."';</script>"; 
 	exit;
 }
+ 
+ */
 
 if(isset($_POST['login'])){
     echo "submit";
