@@ -5,7 +5,7 @@ error_reporting(0);
 require_once 'conn.php';
 
 echo 'this is session',$_SESSION['valicode'];
-echo 'this is valid post',$_POST['valicode'];
+echo 'this is valid post',$_POST['validcode_source'];
 
 echo  'this is source',$_POST['validcode_source'];
 
