@@ -33,7 +33,7 @@ if(empty($dduser)){
 	exit;
 }
 
-if(isset($_POST['submit'])){
+if(isset($_POST['login'])){
     echo "submit";
     $name = trim($_POST['username']);
     $vcode = trim($_POST['validcode']);
@@ -147,4 +147,3 @@ if($row_jc['kg']==1){
 	}
     }
 }
-?>
