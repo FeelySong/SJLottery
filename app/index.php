@@ -4,6 +4,8 @@ session_start();
 error_reporting(0);
 require_once 'conn.php';
 
+echo "<script language=javascript>window.location='default_frame.php';</script>";
+
 /*
 echo 'this is valid',$_POST['valicode'];
 
