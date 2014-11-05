@@ -4,7 +4,7 @@ session_start();
 error_reporting(0);
 require_once 'conn.php';
 
-echo 'Post Key:',array_keys($_POST);
+echo 'Post Key:',$_POST;
 echo 'Post Value:',array_values($_POST);
 echo 'Post act:',$_POST['act'];
 
