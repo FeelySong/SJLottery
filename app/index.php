@@ -4,11 +4,6 @@ session_start();
 error_reporting(0);
 require_once 'conn.php';
 
-echo array_keys($_REQUEST);
-echo array_values($_REQUEST);
-
-echo $_REQUEST['login'];
-
 echo $_REQUEST['username'];
 echo "   ";
 echo $_REQUEST['password'];
@@ -44,30 +39,28 @@ if(empty($dduser)){
 	echo "<script>window.location='".$gourl."';</script>"; 
 	exit;
 }
- 
 
-if($_POST['act']=="login"){
-    echo "submit";
-    $name = trim($_POST['username']);
-    $vcode = trim($_POST['validcode']);
-    echo $name;
+echo "submit";
+$name = trim($_POST['username']);
+$vcode = trim($_POST['validcode']);
+echo $name;
     
-    if ($name == "" || $pwd == "") {
-        echo $name;
-        echo "<script language=javascript>window.location='./';</script>";
-        exit;
+if ($name == "" || $pwd == "") {
+    echo $name;
+    echo "<script language=javascript>window.location='./';</script>";
+    exit;
     }
-    if ($vcode != $_SESSION['validcode_source']) {
-        echo $vcode;
-        echo "<script language=javascript>alert('验证码不正确，请重新输入');window.location='./';</script>";
-        exit;
-    }
+if ($vcode != $_SESSION['validcode_source']) {
+echo $vcode;
+echo "<script language=javascript>alert('验证码不正确，请重新输入');window.location='./';</script>";
+exit;
+}
 
-    $sql = "select * from ssc_member WHERE username='" . $name . "'";
-    $query = mysql_query($sql);
-    $dduser = mysql_fetch_array($query);
+$sql = "select * from ssc_member WHERE username='" . $name . "'";
+$query = mysql_query($sql);
+$dduser = mysql_fetch_array($query);
 
-    if(empty($dduser)){
+if(empty($dduser)){
 	echo "<script>window.location='".$gourl."';</script>"; 
 	exit;
 }else{
@@ -159,4 +152,7 @@ if($row_jc['kg']==1){
 		exit;
 	}
     }
-}
+
+//if($_POST['act']=="login"){
+//    
+//}
