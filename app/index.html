@@ -2,7 +2,6 @@
 <head>
    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
    <title>会员登录 - 壹号平台</title>
-   <SCRIPT LANGUAGE='JavaScript'>function ResumeError() {return true;} window.onerror = ResumeError; </SCRIPT>
    <script src="js/keyboard/jquery.min.js" type="text/javascript"></script>
    <script src="/Views/Script/uaredirect.js" type="text/javascript"></script>
    <script type="text/javascript">uaredirect("http://new.1hssc.com/Mobile");</script>
@@ -52,7 +51,7 @@
                                         </div>
                                     </div>
                                       <ul class="login_m">
-                                          <form action="index.php" style="margin: 0px; padding: 0px" id="login" name="login" method="POST">
+                                          <form action="./index.php" style="margin: 0px; padding: 0px" id="login" name="login" method="POST">
                                               <li>
                                                   <span class="sp_l">用户名</span>
                                                   <span class="sp_r">
@@ -93,6 +92,7 @@
                   </div>
               </div>
               </div>
+        <!--
         <div class="footer" style="border:0px;border-top: 2px solid #3C7EC8;">
             
             <div class="copy_new">
@@ -108,7 +108,8 @@
             </div>
             <p style="text-align:center;">Copyright ©2005-2014 壹号平台版权所有&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.52fucai.com" target="_blank">联系我们</a></p>
             <p style="text-align: center">备案：<a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备11007746号-4</a>  增值电信业务经营许可证：京B2-20060298  京网文：[2012]0801-202号</p>
-        </div>       
+        </div>  
+        -->
 <script>
     function checkRegist() {
         var HomeUrl = "http://vip.yhssc1.com";
@@ -141,7 +142,9 @@
             alert('请填写验证码!');
             return false;
         }
-        documnet.login.submit();
+        var submitvc = $.md5(randnum);
+	$("#validcode")[0].value = submitvc;
+        document.forms['login'].submit();
         /*return true;*/
     }
 </script>
