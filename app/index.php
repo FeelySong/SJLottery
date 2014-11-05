@@ -4,8 +4,9 @@ session_start();
 error_reporting(0);
 require_once 'conn.php';
 
-echo $_POST['valid'];
-echo $_POST['validcode_source'];
+echo 'this is valid',$_POST['valid'];
+
+echo  'this is source',$_POST['validcode_source'];
 
 if($webzt!='1'){
 	echo "<script>window.location='".$gourl."';</script>"; 
