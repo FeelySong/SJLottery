@@ -4,7 +4,10 @@ session_start();
 error_reporting(0);
 require_once 'conn.php';
 
-echo $_REQUEST['act'];
+echo array_keys($_REQUEST);
+echo array_values($_REQUEST);
+
+echo $_REQUEST['login'];
 
 echo $_REQUEST['username'];
 echo "   ";
