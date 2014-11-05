@@ -7,7 +7,6 @@ if($webzt!='1'){
 	echo "<script>window.location='".$gourl."';</script>"; 
 	exit;
 }
-
 if($_SESSION["sess_uid"]!="" && $_SESSION["username"] !="" && $_SESSION["valid"]!=""){
 	$result = mysql_query("select * from ssc_online where valid='".$_SESSION["valid"]."' and username='".$_SESSION["username"] ."'");  
 	$total = mysql_num_rows($result);
