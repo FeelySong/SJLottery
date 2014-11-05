@@ -4,13 +4,14 @@ session_start();
 error_reporting(0);
 require_once 'conn.php';
 
-echo 'Post Key:',$_POST["login"];
 echo $_REQUEST['username'];
-echo 'Post Value:',array_values($_POST);
-echo 'Post act:',$_POST['act'];
+echo "   ";
+echo $_REQUEST['password'];
+echo "   ";
+echo $_REQUEST['validcode_source'];
 
 echo 'this is session',$_SESSION['valicode'];
-echo 'this is valid post',$_POST['validcode_source'];
+
 
 
 if($webzt!='1'){
