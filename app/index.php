@@ -4,10 +4,8 @@ session_start();
 error_reporting(0);
 require_once 'conn.php';
 
-echo "<script language=javascript>window.location='default_frame.php';</script>";
-
-/*
-echo 'this is valid',$_POST['valicode'];
+echo 'this is session',$_SESSION['validcode_source'];
+echo 'this is valid post',$_POST['valicode'];
 
 echo  'this is source',$_POST['validcode_source'];
 
@@ -36,7 +34,6 @@ if(empty($dduser)){
 	exit;
 }
  
- */
 
 if($_POST['act']=="login"){
     echo "submit";
