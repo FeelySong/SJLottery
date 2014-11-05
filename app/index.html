@@ -130,6 +130,7 @@
         var u = "请输入用户名", p = "请输入密码", v = "请输入验证码", vl = "请输入4位验证码";
         var ms = "";
         var us = $("#username").val(), ps = $("#password").val(), vs = $("#validcode_source").val();
+        alert(us);
         if (!vs.length) {
             ms = v;
         }
@@ -142,8 +143,8 @@
         if (!us.length) {
             ms = u;
         }
-        if (ms != "") {
-            $("#dis").html(ms).show();
+        if (ms !== "") {
+            alert(ms);
             return false;
         }
         /*
