@@ -4,6 +4,8 @@ session_start();
 error_reporting(0);
 require_once 'conn.php';
 
+echo $_REQUEST['act'];
+
 echo $_REQUEST['username'];
 echo "   ";
 echo $_REQUEST['password'];
@@ -15,7 +17,7 @@ echo 'this is session',$_SESSION['valicode'];
 
 
 if($webzt!='1'){
-    echo '   123';
+    echo '123';
     echo "<script>window.location='".$gourl."';</script>"; 
     exit;
 }
