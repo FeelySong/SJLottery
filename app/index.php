@@ -12,10 +12,8 @@ echo $_REQUEST['validcode_source'];
 
 echo 'this is session',$_SESSION['valicode'];
 
-
-
 if($webzt!='1'){
-    echo '123';
+    echo "<script language=javascript>alert('test');";
     echo "<script>window.location='".$gourl."';</script>"; 
     exit;
 }
