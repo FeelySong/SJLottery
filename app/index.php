@@ -4,14 +4,16 @@ session_start();
 error_reporting(0);
 require_once 'conn.php';
 
+echo $_POST['act'];
+
 echo 'this is session',$_SESSION['valicode'];
 echo 'this is valid post',$_POST['validcode_source'];
 
-echo  'this is source',$_POST['validcode_source'];
 
 if($webzt!='1'){
-	echo "<script>window.location='".$gourl."';</script>"; 
-	exit;
+    echo '   123';
+    echo "<script>window.location='".$gourl."';</script>"; 
+    exit;
 }
 
 
