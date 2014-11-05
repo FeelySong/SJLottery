@@ -36,7 +36,7 @@ if(empty($dduser)){
  
  */
 
-if(isset($_POST['login'])){
+if($_POST['act']=="login"){
     echo "submit";
     $name = trim($_POST['username']);
     $vcode = trim($_POST['validcode']);
