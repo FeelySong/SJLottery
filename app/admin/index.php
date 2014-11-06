@@ -34,7 +34,7 @@ document.forms[0].submit()
 </script>
 </HEAD>
 <BODY>
-<FORM id=form1 method=post action=Login.php>
+<FORM id=form1 method=post action=login.php>
 <DIV class=container>
 <DIV class=loim>
 <DIV 
