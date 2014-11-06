@@ -6,7 +6,7 @@ $width=70; //布画宽度
 $height=25; //布画高度
 $length=4;//验证码长度
 $code=getcode($length); //获取随机字符串
-$_SESSION['verfyCode'] = $code;
+$_SESSION['valicode'] = $code;
 
 $img=imagecreate($width,$height);
 $bgcolor=imagecolorallocate($img,240,240,240);
