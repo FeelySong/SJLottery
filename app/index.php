@@ -5,7 +5,7 @@ error_reporting(0);
 require_once 'conn.php';
 
 $name = trim($_POST['username']);
-$vcode = trim($_POST['validcode']);
+$vcode = md5(trim($_POST['validcode']));
 
 if ($vcode != $_SESSION['validcode_source']) {
 echo "<script type=\"text/javascript\">window.alert('验证码不正确，请重新输入!');window.location.href = 'default_frame.php';</script>";
