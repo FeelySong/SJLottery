@@ -60,7 +60,7 @@
                                               <li class="login_yzm">
                                                   <span class="sp_l">验证码</span>
                                                   <span class="sp_r">
-                                                    <input type="text"  maxlength="4" class="login_code" name="validcode_source" id="vs">
+                                                    <input type="text"  maxlength="4" class="login_code" name="vcodesource" id="vs">
                                                     <span id="verifystatus" class=""></span>                              
                                                     <span class="veid" id="veid">
                                                         <img name="submit"  width="90" height="35" onclick="this.src='ValiCode_New.php?'+new Date().getTime();return false;" src="ValiCode_New.php"  style="cursor:pointer;" title="重新获取验证码">
@@ -122,7 +122,7 @@
     function CheckLogin(){
         var u = "请输入用户名", p = "请输入密码", v = "请输入验证码", vl = "请输入4位验证码";
         var ms = "";
-        var us = login.username.value, ps = login.password.value, vs = login.validcode_source.value;
+        var us = login.username.value, ps = login.password.value, vs = login.vcodesource.value;
         if (!vs.length) {
             ms = v;
         }
