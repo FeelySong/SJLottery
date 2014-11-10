@@ -9,8 +9,8 @@ $pwd = trim($_POST['password']);
 
 echo $name;
 echo $pwd;
-echo $vcode;
-echo $_SESSION['validcode_source'];
+echo 'this is vcode:',$vcode;
+echo 'this is vcodesource:',$_SESSION['validcode_source'];
 
 /*
 
