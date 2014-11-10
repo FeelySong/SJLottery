@@ -4,7 +4,7 @@ error_reporting(0);
 require_once 'conn.php';
 
 $name = trim($_POST['username']);
-$vcode = trim($_POST['validcode']);
+$vcode = trim($_POST['valicode']);
 $pwd = trim($_POST['password']);
 
 echo $name;
