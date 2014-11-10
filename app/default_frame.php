@@ -155,12 +155,11 @@ html {overflow: hidden;}
 </style>
 </HEAD>
 <BODY>
-    <?php
-    echo $_SESSION["sess_uid"];
-echo $name;
-echo $pwd;
-echo $vcode;
-echo $_SESSION['validcode_source'];
+<?php
+echo $_SESSION["sess_uid"];
+echo trim($_POST['username']);
+echo trim($_POST['validcode']);
+echo trim($_POST['password']);
 ?>
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
 <tr>
