@@ -10,7 +10,7 @@ $pwd = trim($_POST['password']);
 
 
 if ($vcode != $_SESSION['validcode_source']) {
-echo "<script type=\"text/javascript\">window.alert('验证码不正确，请重新输入!');window.location.href = 'default_frame.php';</script>";
+echo "<script>alert(\"验证码不正确，请重新输入！\"); window.location.href = './';</script>";
 exit;
 }
 
@@ -39,8 +39,6 @@ if(empty($dduser)){
 
   
 if ($name == "" || $pwd == "") {
-    echo $name;
-    echo $pwd;
     echo "<script language=javascript>window.location='www.baidu.com';</script>";
     exit;
     }
