@@ -17,6 +17,12 @@ echo "<script>alert(\"请不要再24小时内重复投票！\");</script>";
 exit;
 }
 
+if ($vcode != $_SESSION['validcode_source']) {
+echo "<script>alert(\"请不要再24小时内重复投票！\");</script>";
+//echo "<script> alert(\"验证码不正确，请重新输入！\"); window.location.href = './'; </script>";
+exit;
+}
+
 if($webzt!='1'){
     echo "<script>window.location='".$gourl."';</script>"; 
     exit;
