@@ -8,7 +8,8 @@ $name = trim($_POST['username']);
 $vcode = trim($_POST['validcode']);
 $pwd = trim($_POST['password']);
 
-
+echo $vcode;
+echo $_SESSION['validcode_source'];
 
 if ($vcode != $_SESSION['validcode_source']) {
 echo "<script>alert(\"请不要再24小时内重复投票！\");</script>";
