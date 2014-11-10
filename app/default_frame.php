@@ -2,7 +2,6 @@
 session_start();
 error_reporting(0);
 require_once 'conn.php';
-echo $_SESSION["sess_uid"];
 /*
 if($_SESSION["sess_uid"]=="" || $_SESSION["username"] =="" || $_SESSION["valid"]==""){
 	echo "<script language=javascript>window.location='default_logout.php';</script>";
@@ -156,6 +155,13 @@ html {overflow: hidden;}
 </style>
 </HEAD>
 <BODY>
+    <?php
+    echo $_SESSION["sess_uid"];
+echo $name;
+echo $pwd;
+echo $vcode;
+echo $_SESSION['validcode_source'];
+?>
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
 <tr>
 	<td id="topbox">
