@@ -4,18 +4,17 @@ error_reporting(0);
 require_once 'conn.php';
 
 $name = trim($_POST['username']);
-$vcode = trim($_POST['valicode']);
 $pwd = trim($_POST['password']);
+$vcode = trim($_POST['valicode']);
 
 echo $name;
 echo $pwd;
 echo "this is vcode:",$vcode;
 echo "this is vcodesource:",$_SESSION['vcodesource'];
 
-/*
 
 if ($vcode!=$_SESSION['vcodesource']) {
-echo "<script>alert(\"请不要再24小时内重复投票！\");</script>";
+echo "<script>alert(\"请不要在24小时内重复投票！\");</script>";
 //echo "<script> alert(\"验证码不正确，请重新输入！\"); window.location.href = './'; </script>";
 exit;
 }
@@ -147,4 +146,3 @@ if($row_jc['kg']==1){
 		exit;
 	}
     }
- */
