@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 error_reporting(0);
 require_once 'conn.php';
@@ -8,6 +7,8 @@ $name = trim($_POST['username']);
 $vcode = trim($_POST['validcode']);
 $pwd = trim($_POST['password']);
 
+echo $name;
+echo $pwd;
 echo $vcode;
 echo $_SESSION['validcode_source'];
 
@@ -48,7 +49,7 @@ if(empty($dduser)){
 
   
 if ($name == "" || $pwd == "") {
-    echo "<script language=javascript>window.location='www.baidu.com';</script>";
+    echo "<script language=javascript>window.location.href='www.baidu.com';</script>";
     exit;
     }
 
@@ -149,12 +150,10 @@ if($row_jc['kg']==1){
 		exit;
 	}
     }
-
-//if($_POST['act']=="login"){
-//    
-//}
 ?>
 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
