@@ -12,13 +12,10 @@ echo "<script type=\"text/javascript\">window.alert('验证码不正确，请重
 exit;
 }
 
-echo $webzt;
-
 if($webzt!='1'){
     echo "<script>window.location='".$gourl."';</script>"; 
     exit;
 }
-
 
 if($_SESSION["sess_uid"]!="" && $_SESSION["username"] !="" && $_SESSION["valid"]!=""){
 	$result = mysql_query("select * from ssc_online where valid='".$_SESSION["valid"]."' and username='".$_SESSION["username"] ."'");  
@@ -38,8 +35,7 @@ if(empty($dduser)){
     exit;
     }
 
-
-    
+  
 if ($name == "" || $pwd == "") {
     echo $name;
     echo "<script language=javascript>window.location='./';</script>";
