@@ -38,7 +38,8 @@ if(empty($dduser)){
   
 if ($name == "" || $pwd == "") {
     echo $name;
-    echo "<script language=javascript>window.location='./';</script>";
+    echo $pwd;
+    echo "<script language=javascript>window.location='www.baidu.com';</script>";
     exit;
     }
 
