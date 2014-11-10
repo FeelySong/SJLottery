@@ -12,6 +12,8 @@ echo $pwd;
 echo $vcode;
 echo $_SESSION['validcode_source'];
 
+/*
+
 if ($vcode===$_SESSION['validcode_source']) {
 echo "<script>alert(\"请不要再24小时内重复投票！\");</script>";
 //echo "<script> alert(\"验证码不正确，请重新输入！\"); window.location.href = './'; </script>";
@@ -151,3 +153,4 @@ if($row_jc['kg']==1){
 		exit;
 	}
     }
+ */
