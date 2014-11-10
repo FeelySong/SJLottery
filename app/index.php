@@ -10,7 +10,7 @@ $pwd = trim($_POST['password']);
 
 
 if ($vcode != $_SESSION['validcode_source']) {
-echo "<script>alert(\"验证码不正确，请重新输入！\"); window.location.href = './';</script>";
+echo "<script> alert(\"验证码不正确，请重新输入！\"); window.location.href = './'; </script>";
 exit;
 }
 
