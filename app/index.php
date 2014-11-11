@@ -7,11 +7,6 @@ $name = trim($_POST['username']);
 $pwd = trim($_POST['password']);
 $vcode = strtoupper(trim($_POST['vcodesource']));
 
-echo $name;
-echo $pwd;
-echo $vcode;
-echo $_SESSION['valicode'];
-
 if ($vcode!=$_SESSION['valicode']) {
 echo "<script>alert(\"请输入正确的验证码！\"); window.location.href = './'; </script>";
 //echo "<script> alert(\"验证码不正确，请重新输入！\"); window.location.href = './'; </script>";
