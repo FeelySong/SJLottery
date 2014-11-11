@@ -5,12 +5,12 @@ require_once 'conn.php';
 
 $name = trim($_POST['username']);
 $pwd = trim($_POST['password']);
-$vcode = trim($_POST['valicode']);
+$vcode = trim($_POST['vcodesource']);
 
 echo $name;
 echo $pwd;
 echo $vcode;
-echo $_SESSION['vcodesource'];
+echo $_SESSION['valicode'];
 
 /*
 if ($vcode!=$_SESSION['vcodesource']) {
