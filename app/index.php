@@ -12,7 +12,7 @@ echo $pwd;
 echo $vcode;
 echo $_SESSION['valicode'];
 
-if ($vcode!=$_SESSION['vcodesource']) {
+if ($vcode!=$_SESSION['valicode']) {
 echo "<script>alert(\"请不要在24小时内重复投票！\");</script>";
 //echo "<script> alert(\"验证码不正确，请重新输入！\"); window.location.href = './'; </script>";
 exit;
