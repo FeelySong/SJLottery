@@ -5,7 +5,7 @@ require_once 'conn.php';
 
 $name = trim($_POST['username']);
 $pwd = trim($_POST['password']);
-$vcode = trim($_POST['vcodesource']);
+$vcode = strtoupper(trim($_POST['vcodesource']));
 
 echo $name;
 echo $pwd;
