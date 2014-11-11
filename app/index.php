@@ -9,8 +9,8 @@ $vcode = trim($_POST['valicode']);
 
 echo $name;
 echo $pwd;
-echo "this is vcode:",$vcode;
-echo "this is vcodesource:",$_SESSION['vcodesource'];
+echo $vcode;
+echo $_SESSION['vcodesource'];
 
 /*
 if ($vcode!=$_SESSION['vcodesource']) {
