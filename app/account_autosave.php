@@ -437,6 +437,7 @@ div .a{color:#070;
             <td height="30"><br/><button name="submit" type="submit" width='69' height='26' class="btn_next" /></button>
             &nbsp;&nbsp;&nbsp;&nbsp;<br/><br/></td>
         </tr>
+        <!--
         <tr>
             <td class="nl"><font color="#FF3300">自动充值提示:</font></td>
             <td STYLE='line-height:23px;padding:5px 0px'>
@@ -445,6 +446,7 @@ div .a{color:#070;
             充值后, <font color='#ff0000'>请手动刷新您的余额</font>及查看相关帐变信息,若超过1分钟未上分,请与客服联系<br/>
             选择充值银行, 填写充值金额, 点击 <font color=#0000FF>[下一步]</font> 后, 将有详细文字说明及<font color=red>充值演示</font>	</td>
         </tr>
+        -->
     </form>
 </table>
 </div>
