@@ -44,14 +44,14 @@ h2{background-position:-167px -250px; display:block; width:83px; height:50px;mar
 .w_right{display:block;width:100px;height:44px;}
 
 /*��¼ҳ���*/
-.login_box{float:left;width:347px;background: url("images/login_box_bg.png") 0 0 no-repeat; height: 428px; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="login_box_bg.png"); _background-image: none;}
+.login_box{float:left;width:347px;background: url("../images/login_box_bg.png") 0 0 no-repeat; height: 428px; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="login_box_bg.png"); _background-image: none;}
 .login_box .ico_left,.login_box .ico_right,.login_input,.login_btn,.login_t,.tip_box .close, .login_yzm .icon_wrong, .login_yzm .icon_right{ background:url(new_login_bg.png) no-repeat;}
 .login_box .ico_left,.login_box .ico_right{ display:block; width:9px; height:15px; }
 .login_box .ico_left{background-position:-16px 0; float:left;}
 .login_box .ico_right{background-position:0 0; float:right;}
 .login_box .lg_box{width:329px; margin:0 auto; float:left;}
 .login_box .top_b{ background:#e5e3e2; height:1px; overflow:hidden; line-height:0; font-size:0;}
-.login_box .bg{background:url(images/login_bg.png) repeat-x; width:327px; height:400px;margin:0 auto;}
+.login_box .bg{background:url(../images/login_bg.png) repeat-x; width:327px; height:400px;margin:0 auto;}
 .login_box .bg .content{ padding:15px;}
 .login_t{ background-position:-233px -150px; padding-left:25px; font-size:14px; display:inline-block; float:left;}
 .other_login{ text-align:right; padding-top:10px;}
@@ -131,7 +131,7 @@ a.forget_a { height:12px; line-height:12px; vertical-align:top; display:inline-b
 .login_m li.login_yzm{ height:40px;}
 
 .login_input:focus,.login_code:focus{ border-color:#62a6ea;}
-.login_btn{ background:url(images/new_login_btn.png) no-repeat 0 0; width:100px; height:35px; line-height:9999px; overflow:hidden;}
+.login_btn{ background:url(../images/new_login_btn.png) no-repeat 0 0; width:100px; height:35px; line-height:9999px; overflow:hidden;}
 
 .login_box .bg .content{ position:relative; *zoom:1;}
 .login_box .bg .content .reg_lnk{ color:#999; position:absolute; top:22px; left:185px; font-size:12px; white-space:nowrap;}
@@ -144,7 +144,7 @@ a.forget_a { height:12px; line-height:12px; vertical-align:top; display:inline-b
 .login_box .login-ptn{ width:277px; margin:auto; border-top:#e1e0e0 solid 1px;}
 
 .tip_box{ margin:30px 10px 5px; height:28px;}
-.tip_box .cnt{background:#fff9d9 url(images/error_2.png) 8px 8px no-repeat; border:1px solid #ffc28c; color:#F00;padding:5px 10px; text-align:left; text-indent:23px;}
+.tip_box .cnt{background:#fff9d9 url(../images/error_2.png) 8px 8px no-repeat; border:1px solid #ffc28c; color:#F00;padding:5px 10px; text-align:left; text-indent:23px;}
 .tip_box .close { background-position:-240px -185px; display:inline-block; font-size:0; float:left; text-indent:-9999em; width:10px; height:13px; line-height:0; margin-right:8px; overflow:hidden; }
 .tip_box p { padding-top:3px\9; }
 .tip_box .close{ height:15px;}
@@ -155,13 +155,13 @@ a.forget_a { height:12px; line-height:12px; vertical-align:top; display:inline-b
 .login_erwm{float:left;width:157px;height:273px;width:137px\9;}
 .login_pic010{width:450px;}
 .login_wrap{margin-top:20px;}
-.login-erwmdl{float:left;width:142px;height:276px;margin:0px 0px;padding:0px 0px 0px 15px;text-align:center;background:url(images/login_left_bg.png) no-repeat;}
+.login-erwmdl{float:left;width:142px;height:276px;margin:0px 0px;padding:0px 0px 0px 15px;text-align:center;background:url(../images/login_left_bg.png) no-repeat;}
 .login-erwmdl p.erwn{width:104px; height:104px;margin:48px auto 5px auto;overflow:hidden;}
 .login-erwmdl p.gray{color:#999; text-align:center;}
 
 
 .login-erwmdl p.ora{line-height:25px;color:#ff6600;font-weight:bold; text-align:center;}
-.login_box li input.regist_btn {width: 100px;cursor: pointer;height: 33px;background: url(/images/w_regisi-2.png);border: 0px;}
+.login_box li input.regist_btn {width: 100px;cursor: pointer;height: 33px;background: url(../images/w_regisi-2.png);border: 0px;}
 
 
 
@@ -171,7 +171,7 @@ a.forget_a { height:12px; line-height:12px; vertical-align:top; display:inline-b
 
 
 /*** footer ***/
-.footer .security a, .bank01, .bank02, .bank03{background:url(images/link.png) no-repeat;display:inline-block;}
+.footer .security a, .bank01, .bank02, .bank03{background:url(../images/link.png) no-repeat;display:inline-block;}
 .footer {width:1000px; margin:0 auto;border-top:2px solid #3C7EC8; font-family:tahoma,"����"; padding-bottom:10px;color:#666; margin-top:20px; padding-top:6px;}
 .footer a { color:#666; text-decoration:none; }
 .footer a:hover { color:#f30; text-decoration:underline;}
