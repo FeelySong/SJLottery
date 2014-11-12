@@ -398,16 +398,7 @@ div .a{color:#070;
 <form action="account_autosave2.php" method="post" name="drawform" id="drawform" onsubmit="return checkForm(this)">
 <input type="hidden" name="flag" value="confirm" />
 <tr>
-	<td class="nl"><font color="#FF3300">自动充值使用需知:</font></td>
-	<td STYLE='line-height:23px;padding:5px 0px'>
-	<!--每天的充值处理时间为：<font style="font-size:16px;color:#F30;font-weight:bold;">9:00-2:00</font><br />//-->
-	每天的充值处理时间为：<font style="font-size:16px;color:#F30;font-weight:bold;">早上 9:00 至 晚上 22:00</font><br/>
-    充值金额低于<font style="font-size:16px;color:#F30;font-weight:bold;">100</font>&nbsp;不享受“充值即返手续费”的优惠<br/>
-	充值后, <font color='#ff0000'>请手动刷新您的余额</font>及查看相关帐变信息,若超过1分钟未上分,请与客服联系<br/>
-	选择充值银行, 填写充值金额, 点击 <font color=#0000FF>[下一步]</font> 后, 将有详细文字说明及<font color=red>充值演示</font>	</td>
-</tr>
-<tr>
-	<td class="nl">充值银行: </td>
+    <td class="nl">充值银行: </td>
     <td style='height:60px;'>
  <?php
 $dd=date("H:i:s");
@@ -440,6 +431,14 @@ while ($rowa = mysql_fetch_array($rsa)){
 <tr>
 	<td class="nl">充值金额(大写): </td>
     <td style='height:60px;'>&nbsp;<span id="chineseMoney"></span><input type="hidden" id="hiddenchinese" /></td>
+</tr>
+<tr>
+    <td class="nl"><font color="#FF3300">自动充值提示:</font></td>
+    <td STYLE='line-height:23px;padding:5px 0px'>
+    <!--每天的充值处理时间为：<font style="font-size:16px;color:#F30;font-weight:bold;">早上 9:00 至 晚上 22:00</font><br/>-->
+    充值金额低于<font style="font-size:16px;color:#F30;font-weight:bold;">100</font>&nbsp;不享受“充值即返手续费”的优惠<br/>
+    充值后, <font color='#ff0000'>请手动刷新您的余额</font>及查看相关帐变信息,若超过1分钟未上分,请与客服联系<br/>
+    选择充值银行, 填写充值金额, 点击 <font color=#0000FF>[下一步]</font> 后, 将有详细文字说明及<font color=red>充值演示</font>	</td>
 </tr>
 <tr>
 	<td class="nl"></td>
