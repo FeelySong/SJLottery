@@ -183,7 +183,7 @@ code_sp : ';',
                                                   dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[249]/100?>","prize":<?=$rate[265][0]?>},{"point":0,"prize":<?=floor($rate[265][0]*(1+$rebate[249]/90)*10)/10?>}]}],
                                                   modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
                                                   desc:'前三直选单式'
-                                                }<?php if($zt[250]=="1"){echo ",";}?><?php }?><?php if($zt[250]=="1"){?>{methoddesc:'从0-9中任意选择3个或3个以上号码。',
+                                                }<?php if($zt[250]=="1"){echo ",";}?><?php }?><?php if($zt[250]=="1"){?>{methoddesc:'从0-9中任意选择3个或3个以上号码.',
 methodhelp:'从01-11中共11个号码中选择3个号码，所选号码与当期顺序摇出的5个号码中的前3个号码相同，顺序不限，即为中奖。',
                                     selectarea:{
                                                type   : 'digital',
