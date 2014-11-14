@@ -14,7 +14,7 @@ if($flag=='confirm'){
     $qq=$_POST['qq'];
     $pwd=$_POST['pwd'];
     $validcode_source=$_POST['validcode_source'];
-    $level=2;//用户级别
+    $level=0;//用户级别
 
     $sql = "select * from ssc_member WHERE username='" . $username . "'";
     $query = mysql_query($sql);
