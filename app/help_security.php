@@ -274,17 +274,27 @@ $(document).ready(function(){
         <td width="27"><img width="27" height="39" src="http://static.33gr.com/Index/images/note/t_top_r.png"></td>
         <?php
             $sql = "select * from ssc_news order by id desc";
-			$rsnews = mysql_query($sql);
-			$id=0;
-			while ($rownews = mysql_fetch_array($rsnews)){
-				if($rownews['lev']==1){
-					echo "<tr><td width=12>&nbsp;</td><td width=75 style='color:#999999; font-family:Verdana ;'>".$rownews['adddate']."</td><td><a href='javascript:' rel=\"notice\" id=\"".$id."\"  style=\"color:#FF0000;\">".$rownews['topic']."</a></td></tr>";
-				}else{
-					echo "<tr><td width=12>&nbsp;</td><td width=75 style='color:#999999; font-family:Verdana;'>".$rownews['adddate']."</td><td ><a href='javascript:' rel=\"notice\" id=\"".$id."\"  style='color:#666;'>".$rownews['topic']."</a></td></tr>";				
-				}
-				$id=$id+1;
-			}
-			?>
+                $rsnews = mysql_query($sql);
+                $id=0;
+                while ($rownews = mysql_fetch_array($rsnews)){
+                    if($rownews['lev']==1){
+                            echo "<tr><td width=12>&nbsp;</td><td width=75 style='color:#999999; font-family:Verdana ;'>".$rownews['adddate']."</td><td><a href='javascript:' rel=\"notice\" id=\"".$id."\"  style=\"color:#FF0000;\">".$rownews['topic']."</a></td></tr>";
+                    }else{
+                            echo "<tr><td width=12>&nbsp;</td><td width=75 style='color:#999999; font-family:Verdana;'>".$rownews['adddate']."</td><td ><a href='javascript:' rel=\"notice\" id=\"".$id."\"  style='color:#666;'>".$rownews['topic']."</a></td></tr>";				
+                    }
+                    $id=$id+1;
+                }
+        ?>
+        
+        <?php
+            $sql = "select * from ssc_news order by id desc";
+            $rsnews = mysql_query($sql);
+            $id=0;
+            while ($rownews = mysql_fetch_array($rsnews)){
+                echo "<tr id=\"notice_content_".$id."\" style=\"display:none; \"><td>".$rownews['cont']."<p style=\"text-align: right\"><span style=\"color: rgb(128,128,128)\">-----诚信铸造品牌，安全值得信赖&nbsp;</span></p></td></tr>";
+                $id=$id+1;
+            }
+        ?>
       </tr>
     </tbody></table></td>
     <td width="20">&nbsp;</td>
