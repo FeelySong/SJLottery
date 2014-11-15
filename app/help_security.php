@@ -269,9 +269,9 @@ $(document).ready(function(){
                 $id=0;
                 while ($rownews = mysql_fetch_array($rsnews)){
                     if($rownews['lev']==1){
-                            echo "<tr><td width=12>&nbsp;</td><td width=75 style='color:#999999; font-family:Verdana ;'>".$rownews['adddate']."</td><td><a href='javascript:' rel=\"notice\" id=\"".$id."\"  style=\"color:#FF0000;\">".$rownews['topic']."</a></td></tr>";
+                            echo "<tr><td width=20>&nbsp;</td><td width=“48%” style='color:#999999; font-family:Verdana ;'>".$rownews['adddate']."</td><td><a href='javascript:' rel=\"notice\" id=\"".$id."\"  style=\"color:#FF0000;\">".$rownews['topic']."</a></td></tr>";
                     }else{
-                            echo "<tr><td width=12>&nbsp;</td><td width=75 style='color:#999999; font-family:Verdana;'>".$rownews['adddate']."</td><td ><a href='javascript:' rel=\"notice\" id=\"".$id."\"  style='color:#666;'>".$rownews['topic']."</a></td></tr>";				
+                            echo "<tr><td width=20>&nbsp;</td><td width=“48%” style='color:#999999; font-family:Verdana;'>".$rownews['adddate']."</td><td ><a href='javascript:' rel=\"notice\" id=\"".$id."\"  style='color:#666;'>".$rownews['topic']."</a></td></tr>";				
                     }
                     $id=$id+1;
                 }
