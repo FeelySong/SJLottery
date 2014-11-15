@@ -259,12 +259,12 @@ $(document).ready(function(){
     <tr>
     <td width="20">&nbsp;</td>
     <td width="48%"><table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
-      <tbody><tr>
+        <tbody><tr>
         <td width="27"><img width="27" height="39" src="http://static.33gr.com/Index/images/note/t_top_l.png"></td>
-        <td><div class="notebg">网站公告</div></td>
+        <td><div>网站公告</div></td>
         <td width="27"><img width="27" height="39" src="http://static.33gr.com/Index/images/note/t_top_r.png"></td>
       </tr>
-    </tbody></table></td>
+        </tbody></table></td>
     <td width="20">&nbsp;</td>
     <td width="48%"><table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
       <tbody><tr>
