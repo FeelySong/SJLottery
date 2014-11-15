@@ -249,23 +249,17 @@ $(document).ready(function(){
 </div>-->
 
 <tbody>
-   <tr>
+    <tr>
     <td>&nbsp;</td>
     <td width="48%">&nbsp;</td>
     <td>&nbsp;</td>
     <td width="48%">&nbsp;</td>
     <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td width="20">&nbsp;</td>
-    <td width="48%"><table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
-      <tbody>
-          <span>
-        <td width="0.5%" align="left" valign="top"><img src="images/v1/jiao1.png" width="9" height="44" /></td>
-        <td width="49%" style="background:url('images/v1/b1.jpg') repeat-x;height:44px;line-height:44px;color:#006837; font-size:16px; font-weight:bold;">网站公告</td>
-        <td width="0.5%" align="right"><img src="images/v1/jiao2.png" width="9" height="44" /></td>
-          </span>
-          <span>  
+    </tr>
+    <tr>
+        <td width="20">&nbsp;</td>
+        <td width="48%"><table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+        <tbody>
         <?php
             $sql = "select * from ssc_news order by id desc";
                 $rsnews = mysql_query($sql);
@@ -279,7 +273,7 @@ $(document).ready(function(){
                     $id=$id+1;
                 }
         ?>
-      </span>
+
         <?php
             $sql = "select * from ssc_news order by id desc";
             $rsnews = mysql_query($sql);
