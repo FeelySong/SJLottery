@@ -258,7 +258,7 @@ $(document).ready(function(){
     </tr>
     <tr>
     <td width="20">&nbsp;</td>
-    <td width="48%"><table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+    <td width="48%"><table width="48%" cellspacing="0" cellpadding="0" border="0" align="center">
         <tbody><tr>
         <td width="27"><img width="27" height="39" src="http://static.33gr.com/Index/images/note/t_top_l.png"></td>
         <td><div>网站公告</div></td>
