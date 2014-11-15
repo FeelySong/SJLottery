@@ -257,20 +257,12 @@ $(document).ready(function(){
     <td>&nbsp;</td>
     </tr>
     <tr>
-        
-        <tbody>
-        <td width="0.5%" align="left" valign="top"><img src="images/v1/jiao1.png" width="9" height="44" /></td>
-        <td width="49%" style="background:url('images/v1/b1.jpg') repeat-x;height:44px;line-height:44px;color:#006837; font-size:16px; font-weight:bold;">网站公告</td>
-        <td width="0.5%" align="right"><img src="images/v1/jiao2.png" width="9" height="44" /></td>
-        <?php
-            $sql = "select * from ssc_news order by id desc";
-            $rsnews = mysql_query($sql);
-            $id=0;
-            while ($rownews = mysql_fetch_array($rsnews)){
-                echo "<tr id=\"notice_content_".$id."\" style=\"display:none; \"><td>".$rownews['cont']."<p style=\"text-align: right\"><span style=\"color: rgb(128,128,128)\">-----诚信铸造品牌，安全值得信赖&nbsp;</span></p></td></tr>";
-                $id=$id+1;
-            }
-        ?>
+    <td width="20">&nbsp;</td>
+    <td width="48%"><table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+      <tbody><tr>
+        <td width="27"><img width="27" height="39" src="http://static.33gr.com/Index/images/note/t_top_l.png"></td>
+        <td><div class="notebg">网站公告</div></td>
+        <td width="27"><img width="27" height="39" src="http://static.33gr.com/Index/images/note/t_top_r.png"></td>
       </tr>
     </tbody></table></td>
     <td width="20">&nbsp;</td>
@@ -280,6 +272,9 @@ $(document).ready(function(){
         <td><div class="notebg">热门活动</div></td>
         <td width="27"><img width="27" height="39" src="http://static.33gr.com/Index/images/note/t_top_r.png"></td>
       </tr>
+    </tbody></table></td>
+    <td width="20">&nbsp;</td>
+    </tr>
     </tbody></table></td>
     <td width="20">&nbsp;</td>
   </tr>
