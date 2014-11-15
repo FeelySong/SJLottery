@@ -98,7 +98,6 @@ $(function(){
 })
 </script>
 
-
 <SCRIPT language="javascript" type="text/javascript">
 var  resizeTimer = null;
 jQuery(document).ready(function(){
@@ -257,7 +256,106 @@ $(document).ready(function(){
     <td width="0.5%" align="right"><img src="images/v1/jiao2.png" width="9" height="44" /></td>
   </tr>
 </table>
-			
+
+<div>
+  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tbody><tr>
+    <td>&nbsp;</td>
+    <td width="48%">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td width="48%">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="20">&nbsp;</td>
+    <td width="48%"><table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+      <tbody><tr>
+        <td width="27"><img width="27" height="39" src="http://static.33gr.com/Index/images/note/t_top_l.png"></td>
+        <td><div class="notebg">网站公告</div></td>
+        <td width="27"><img width="27" height="39" src="http://static.33gr.com/Index/images/note/t_top_r.png"></td>
+      </tr>
+    </tbody></table></td>
+    <td width="20">&nbsp;</td>
+    <td width="48%"><table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+      <tbody><tr>
+        <td width="27"><img width="27" height="39" src="http://static.33gr.com/Index/images/note/t_top_l.png"></td>
+        <td><div class="notebg">热门活动</div></td>
+        <td width="27"><img width="27" height="39" src="http://static.33gr.com/Index/images/note/t_top_r.png"></td>
+      </tr>
+    </tbody></table></td>
+    <td width="20">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="20">&nbsp;</td>
+    <td width="48%" valign="top">
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="margin-top:0;" class="table_s01">
+      <tbody><tr>
+        <td width="9" class="table_s01_top_l_bg"></td>
+        <td valign="top" bgcolor="#eeeded">
+        <div class="R_con">
+          <div style="height:190px;" class="kuang">
+		  <div class="lie">
+              <div class="left"><a href="gonggao-90.shtml">热烈祝贺开业第二十五块和第二十六块金砖得主产生</a></div>
+              <div class="right"></div>
+              </div><div class="lie">
+              <div class="left"><a href="gonggao-89.shtml">热烈祝贺开业第二十四块金砖得主产生</a></div>
+              <div class="right"></div>
+              </div><div class="lie">
+              <div class="left"><a href="gonggao-86.shtml">热烈祝贺开业第二十三块金砖得主产生</a></div>
+              <div class="right"></div>
+              </div><div class="lie">
+              <div class="left"><a href="gonggao-85.shtml">热烈祝贺开业第二十二块金砖得主产生</a></div>
+              <div class="right"></div>
+              </div><div class="lie">
+              <div class="left"><a href="gonggao-84.shtml">充值不到账补单快捷提交办法</a></div>
+              <div class="right"></div>
+              </div>          </div>
+            <div align="right"><a href="/gonggao-0.shtml"><img width="75" hspace="15" height="28" src="http://static.33gr.com/Index/images/note/more.png"></a></div>
+          </div></td>
+        <td width="9" class="table_s01_top_r_bg">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="9"><img width="9" height="8" src="http://static.33gr.com/Index/images/level/tab02_bot_l.png"></td>
+        <td class="table_s01_bot_bg"></td>
+        <td width="9"><img width="9" height="8" src="http://static.33gr.com/Index/images/level/tab02_bot_r.png"></td>
+      </tr>
+  </tbody></table></td>
+    <td width="20">&nbsp;</td>
+    <td width="48%" valign="top"><table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="margin-top:0;" class="table_s01">
+      <tbody><tr>
+        <td width="9" class="table_s01_top_l_bg"></td>
+        <td valign="top" bgcolor="#eeeded"><div class="R_con">
+          <div style="height:190px;" class="kuang">
+		  <div class="lie">
+              <div class="left"><a href="hd-8.shtml">尊享未来，代理服务奖</a></div>
+              <div class="right"></div>
+              </div><div class="lie">
+              <div class="left"><a href="hd-4.shtml">会员尊享，投注回礼</a></div>
+              <div class="right"></div>
+              </div><div class="lie">
+              <div class="left"><a href="hd-3.shtml">砸金砖!加量还降价,全村得益!</a></div>
+              <div class="right"></div>
+              </div><div class="lie">
+              <div class="left"><a href="hd-2.shtml">会员独享，登陆红包天天领!</a></div>
+              <div class="right"></div>
+              </div>
+          </div>
+          <div align="right"><a href="/huodong-0.shtml"><img width="75" hspace="15" height="28" src="http://static.33gr.com/Index/images/note/more.png"></a></div>
+        </div></td>
+        <td width="9" class="table_s01_top_r_bg">&nbsp;</td>
+      </tr>
+      <tr>
+        <td><img width="9" height="8" src="http://static.33gr.com/Index/images/level/tab02_bot_l.png"></td>
+        <td class="table_s01_bot_bg"></td>
+        <td width="9"><img width="9" height="8" src="http://static.33gr.com/Index/images/level/tab02_bot_r.png"></td>
+      </tr>
+    </tbody></table></td>
+    <td width="20">&nbsp;</td>
+  </tr>
+</tbody></table>
+  </div>
+
+<!--
 <div class=d450><table border=0 cellpadding=0 cellspacing=0 >
 <tr class=t><td></td><td>&nbsp;</td><td></td></tr>
 <tr class=mm><td class=ml><img src='images/comm/t.gif'></td>
@@ -299,6 +397,8 @@ $(document).ready(function(){
 </td><td class=mr><img src='images/comm/t.gif'></td></tr>
 <tr class=b><td class=bl></td><td class=bm>&nbsp;</td><td class=br></td></tr></table>
 </div>
+
+-->
 <div id="footer"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><table align="center" width="450">
 <tr><td align="left">浏览器建议：首选IE 8.0浏览器，其次为火狐浏览器。</td></tr>
 </table></td></tr><tr><td></td></tr></table></div>

@@ -177,30 +177,34 @@ html {overflow: hidden;}
 </div></td></tr></table>
 
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
-            <tr>
-                <td valign="top" id="leftbox" rowspan="2" style="width:180px; height:100%; background: #D94733;">
-                    <iframe name="leftframe" id="leftframe" frameborder="0" width="100%" height="100%" scrolling="no"  style="overflow:hidden;" src="default_menu.php"></iframe>
-                </td>
-                <td valign="middle" id="dragbox" class="left_sidbar" rowspan="2">
-                    <div id="dragbutton" class="lsid_cen"></div>
-                </td>
-                <td id="noticebox" valign="top"><div class="gonggaodiv"><div>
-				<span class="nocticetitle">最新大奖名单:</span>
-<ul id="zjtgul">
-<?php
-	while ($row = mysql_fetch_array($rs)){
-		echo "<li>恭喜 【<span class=c1>".$row['nickname']."</span>】 ".$row['lottery']." <span class=c2>".$row['issue']."</span> 期, 喜中 <span class=c3>".$row['prize']."</span> 大奖!</li>";
-	}
-?>
-</ul></div></div>
-</td>
-            </tr>
-            <tr>
-                <td id="mainbox" valign="top">
-                    <iframe name="mainframe" id="mainframe" frameborder="0" width="100%" height="100%" scrolling="no" style="overflow:hidden;" src="help_security.php"></iframe>
-                </td>
-            </tr>
-        </table>
+    <tr>
+        <td valign="top" id="leftbox" rowspan="2" style="width:180px; height:100%; background: #D94733;">
+            <iframe name="leftframe" id="leftframe" frameborder="0" width="100%" height="100%" scrolling="no"  style="overflow:hidden;" src="default_menu.php"></iframe>
+        </td>
+        <td valign="middle" id="dragbox" class="left_sidbar" rowspan="2">
+            <div id="dragbutton" class="lsid_cen"></div>
+        </td>
+        <td id="noticebox" valign="top">
+            <div class="gonggaodiv">
+                <div>
+                    <span class="nocticetitle">最新大奖名单:</span>
+                    <ul id="zjtgul">
+                        <?php
+                        while ($row = mysql_fetch_array($rs)){
+                                echo "<li>恭喜 【<span class=c1>".$row['nickname']."</span>】 ".$row['lottery']." <span class=c2>".$row['issue']."</span> 期, 喜中 <span class=c3>".$row['prize']."</span> 大奖!</li>";
+                        }
+                        ?>
+                        </ul>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td id="mainbox" valign="top">
+            <iframe name="mainframe" id="mainframe" frameborder="0" width="100%" height="100%" scrolling="no" style="overflow:hidden;" src="help_security.php"></iframe>
+        </td>
+    </tr>
+</table>
 
 <!--<table width="100%" border="0" cellpadding="0" cellspacing="0">
 	<tr>
