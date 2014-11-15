@@ -248,39 +248,6 @@ $(document).ready(function(){
 <tr class=b><td class=bl></td><td class=bm>&nbsp;</td><td class=br></td></tr></table>
 </div>-->
 
-<tbody>
-    <tr>
-    <td>&nbsp;</td>
-    <td width="48%">&nbsp;</td>
-    <td>&nbsp;</td>
-    <td width="48%">&nbsp;</td>
-    <td>&nbsp;</td>
-    </tr>
-    <tr>
-    <td width="20">&nbsp;</td>
-    <td width="48%"><table width="48%" cellspacing="0" cellpadding="0" border="0" align="center">
-        <tbody><tr>
-        <td width="27"><img width="27" height="39" src="http://static.33gr.com/Index/images/note/t_top_l.png"></td>
-        <td><div>网站公告</div></td>
-        <td width="27"><img width="27" height="39" src="http://static.33gr.com/Index/images/note/t_top_r.png"></td>
-      </tr>
-        </tbody></table></td>
-    <td width="20">&nbsp;</td>
-    <td width="48%"><table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
-      <tbody><tr>
-        <td width="27"><img width="27" height="39" src="http://static.33gr.com/Index/images/note/t_top_l.png"></td>
-        <td><div class="notebg">热门活动</div></td>
-        <td width="27"><img width="27" height="39" src="http://static.33gr.com/Index/images/note/t_top_r.png"></td>
-      </tr>
-    </tbody></table></td>
-    <td width="20">&nbsp;</td>
-    </tr>
-    </tbody></table></td>
-    <td width="20">&nbsp;</td>
-  </tr>
-</tbody>
-
-<!--
 
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
@@ -332,7 +299,6 @@ $(document).ready(function(){
 <tr class=b><td class=bl></td><td class=bm>&nbsp;</td><td class=br></td></tr></table>
 </div>
 
--->
 <div id="footer"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><table align="center" width="450">
 <tr><td align="left">浏览器建议：首选IE 8.0浏览器，其次为火狐浏览器。</td></tr>
 </table></td></tr><tr><td></td></tr></table></div>
