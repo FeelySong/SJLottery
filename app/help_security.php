@@ -257,9 +257,8 @@ $(document).ready(function(){
   </tr>
 </table>
 
-<div>
-  <table width="100%" cellspacing="0" cellpadding="0" border="0">
-  <tbody><tr>
+<tbody>
+   <tr>
     <td>&nbsp;</td>
     <td width="48%">&nbsp;</td>
     <td>&nbsp;</td>
@@ -352,8 +351,7 @@ $(document).ready(function(){
     </tbody></table></td>
     <td width="20">&nbsp;</td>
   </tr>
-</tbody></table>
-  </div>
+</tbody>
 
 <!--
 <div class=d450><table border=0 cellpadding=0 cellspacing=0 >
