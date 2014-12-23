@@ -138,7 +138,7 @@ function LoginNow() {
 		<div id="reg_content">
 			<div id="content_reg_box_top"></div>
 			 <div id="content_reg_box_center">
-				<div id="maintitle">用户注册</div>	
+					
 				<div id="maincontent">	
         	<div style="width:684px; margin:auto;">
 					<form name='login' method="post" action="?" onSubmit="javascript:LoginNow(); return false;">
