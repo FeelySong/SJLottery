@@ -137,7 +137,69 @@ function LoginNow() {
      <div id="top_line"></div>
 		<div id="reg_content">
 			<div id="content_reg_box_top"></div>
-			
+			 <div id="content_reg_box_center">
+				<div id="maintitle">用户注册</div>	
+				<div id="maincontent">	
+        	<div style="width:684px; margin:auto;">
+					<form name='login' method="post" action="?" onSubmit="javascript:LoginNow(); return false;">
+					<input type="hidden" name="loginpass" id="loginpass">
+					<input type="hidden" name="validcode" id="validcode">
+					<input type="hidden" name="flag" value="confirm" />
+					<input type="hidden" name="id" value="<?=$id?>" />
+            		<div style="width:100%;text-align:center;">
+                    	<font color="#FF0000"></font>
+                    </div>
+                    <div class="content_reg_line"><span style="font-size:14px;"><strong><font color="#FF0000"></font>请认真填写注册信息!</strong></span></div>
+                   <div class="content_reg_line">
+                    	<div class="form_title">登入帐号：</div>
+                        <div class="form_word">
+						<span class="inputBox input180"><cite><input type="text" name="username" id="username" maxlength="32" value="" class="text"/></cite></span>
+						<span class='helpinfo' style="color:#FF0000">( 由0-9,a-z,A-Z组成的6-16个字符 )</span>
+						</div>
+                    </div>
+                   <div class="content_reg_line">
+                    	<div class="form_title">用户呢称：</div>
+                        <div class="form_word">
+						<span class="inputBox input180"><cite><input type="text" name="nickname" id="nickname" maxlength="32" value="" class="text"/></cite></span>
+						<span class='helpinfo' style="color:#FF0000">( 由2至8个字符组成 )</span>
+						</div>
+                    </div>
+<!--                     <div class="content_reg_line">
+                    	<div class="form_title">QQ：</div>
+                        <div class="form_word">
+						<span class="inputBox input180"><cite><input type="text" name="qq" id="qq" maxlength="32" value="" class="text"/></cite></span>
+						<span class='helpinfo'></span>
+						</div>
+                    </div>-->
+                    <div class="content_reg_line">
+                    	<div class="form_title">登入密码：</div>
+                        <div class="form_word">
+						<span class="inputBox input180"><cite><input type="password" name="pwd" id="pwd" maxlength="32" value="" class="text"/></cite></span>
+						<span class='helpinfo' style="color:#FF0000">( 必须由数字和字母组成，不允纯数字或纯字母 )</span>
+						</div>
+                    </div>
+
+                    <div class="content_reg_line">
+                    	<div class="form_title">确认密码：</div>
+                        <div class="form_word"><span class="inputBox input180"><cite><input type="password" name="checkpassword" id="checkpassword" maxlength="20" value="" class="text"/></cite></span></div>
+                    </div>
+
+					<div class="content_reg_line">
+                    	<div class="form_title">验证码：</div>
+                        <div class="form_word"><span class="inputBox input60"><cite><input type="text" name="validcode_source" id="validcode_source" maxlength="5" value="" class="text"/></cite></span></div> 
+						<img id="vcsImg" src="ValiCode_New.php"  name="validate" align="absbottom" style="margin-left:6px;cursor:pointer; border: 1px solid #999" onClick="refreshimg()" alt="点击图片更新验证码">
+                    </div>
+
+                    <div style="border-top:1px dotted #ccc; width:90%; margin:5px auto; height:1px; font-size:0; overflow:hidden;margin-bottom:20px;"></div>
+
+					<div style="height:30px; text-align:center;">
+                    <button name="submit" type="submit" width='69' height='26' class="btn_next" /></button>
+                    </div>
+					</form>
+
+            </div>
+        </div>&nbsp;
+	</div> 
 	<div id="content_reg_box_bottom"></div>
 </div>
 </div>
