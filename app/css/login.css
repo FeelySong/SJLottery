@@ -1,6 +1,6 @@
 /* CSS Document */
-body {margin:0px; background-repeat:no-repeat;background-position:center top;
-font-family:Simsun,sans-serif;font-size:12px;line-height:18px;color:#666; background:url(../images/bj.jpg);}
+body {margin:0px;background-position:center top;
+font-family:Simsun,sans-serif;font-size:12px;line-height:18px;color:#666; background:url(../images/bj.jpg);background-repeat:no-repeat;}
 div,ul,li{margin:0 auto;padding:0;}
 ul{list-style:none;}
 a{text-decoration:none;color:#666666;}
