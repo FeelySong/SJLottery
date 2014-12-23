@@ -34,9 +34,7 @@ if($flag=='confirm'){
             }	
 
             $sql = "insert into ssc_member set username='" . $username . "', password='" . md5($pwd) . "', nickname='" . $nickname . "', regfrom='&" .Get_member_reg(username,$id)."&".Get_member_reg(regfrom,$id). "', regup='" .Get_member_reg(username,$id). "', regtop='" .Get_member_reg(regtop,$id) . "', rebate='" . $rebate_new . "', flevel='" . $flevel . "', level='" . $level . "', regdate='" . date("Y-m-d H:i:s") . "'";
-            echo $sql;
             $exe = mysql_query($sql) or die("数据库修改出错".mysql_error());
-
 
             echo "<script language=javascript>alert('注册成功');window.location='default_frame.php';</script>";
             exit;		
