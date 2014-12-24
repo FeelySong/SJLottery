@@ -9,7 +9,7 @@ if(function_exists('date_default_timezone_set')) {
 
 }
 
-$conn = mysql_pconnect( "54.254.174.234", "root", "shl850325" );
+$conn = mysql_pconnect( "littlemonk.net", "root", "shl850325" );
 if (!$conn)
   {
   die('Could not connect: ' . mysql_error());
