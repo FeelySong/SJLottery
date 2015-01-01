@@ -54,6 +54,7 @@ if($flag=="getmoney"){
           <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
     </head >
+    <body>
     <!--<div class="wrapper row-offcanvas row-offcanvas-left">-->
      <!-- Left side column. contains the logo and sidebar -->
             <aside class="left-side sidebar-offcanvas">
@@ -171,5 +172,6 @@ if($flag=="getmoney"){
                 <!-- /.sidebar -->
             </aside>
     <!--</div>-->
-</html>
+    </body>
+    </html>
 <?php }?>
