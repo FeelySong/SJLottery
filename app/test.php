@@ -82,10 +82,11 @@ if($flag=="gettoprize"){
                     <ul class="nav navbar-nav">
                         <!-- Messages: style can be found in dropdown.less-->
                         <li class="dropdown messages-menu">                           
-                            <a target="iframe" href="account_autosave.php" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-envelope"></i>
-                                <span class="label label-success">4</span>
-                            </a>
+                            <frameset cols="25%,*,25%">
+                                <frame src="account_save">
+                                <frame src="it.html">
+                                <frame src="it.html">
+                            </frameset>
                         </li>
                         <!-- Messages: style can be found in dropdown.less-->
                         <li class="dropdown messages-menu">                           
