@@ -90,6 +90,8 @@ if($flag=="getmoney"){
 			?>
                             <li class='<?=$row['name']?> (<?=$row['cname']?>)' ALT='<?=$row['name']?> (<?=$row['cname']?>)'><i class="fa fa-dashboard" /><a target="rightside" href="../"+"<?=$row['urls']?>"><?=$row['name']?></a></li>
                         <?php }?>
+                            
+                        <!--
                         <li class="active">
                             <a href="index.html">
                                 <i class="fa fa-dashboard"></i> <span>Dashboard</span>
@@ -174,6 +176,7 @@ if($flag=="getmoney"){
                                 <li><a href="pages/examples/blank.html"><i class="fa fa-angle-double-right"></i> Blank Page</a></li>
                             </ul>
                         </li>
+                        -->
                     </ul>
                 </section>
                 <!-- /.sidebar -->
