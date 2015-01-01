@@ -88,10 +88,9 @@ if($flag=="getmoney"){
 			$rsnewslist = mysql_query($sql);
 			while ($row = mysql_fetch_array($rsnewslist)){
 			?>
-                            <li class='<?=$row['name']?> (<?=$row['cname']?>)' ALT='<?=$row['name']?> (<?=$row['cname']?>)'><i class="fa fa-dashboard" /><a target="rightside" href="../"+"<?=$row['urls']?>"><?=$row['name']?></a></li>
+                            <li class='<?=$row['name']?> (<?=$row['cname']?>)' ALT='<?=$row['name']?> (<?=$row['cname']?>)'><a target="rightside" href="../"+"<?=$row['urls']?>"><?=$row['name']?></a></li>
                         <?php }?>
                             
-                        <!--
                         <li class="active">
                             <a href="index.html">
                                 <i class="fa fa-dashboard"></i> <span>Dashboard</span>
@@ -176,7 +175,6 @@ if($flag=="getmoney"){
                                 <li><a href="pages/examples/blank.html"><i class="fa fa-angle-double-right"></i> Blank Page</a></li>
                             </ul>
                         </li>
-                        -->
                     </ul>
                 </section>
                 <!-- /.sidebar -->
