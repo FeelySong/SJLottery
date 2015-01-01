@@ -23,6 +23,7 @@ if($flag=="getmoney"){
 ?>
 
 <!DOCTYPE html>
+<html>
     <head>
         <meta charset="UTF-8">
         <title>AdminLTE | Dashboard</title>
