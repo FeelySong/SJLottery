@@ -1,3 +1,27 @@
+﻿<?php
+session_start();
+error_reporting(0);
+require_once 'conn.php';
+
+	$sqla="select * from ssc_member where username='".$_SESSION["username"]."'";
+	$rsa=mysql_query($sqla) or  die("数据库修改出错!!!!".mysql_error());
+	$rowa = mysql_fetch_array($rsa);
+	if(empty($rowa)){
+		//退出
+//		$lmoney="0.00";
+	}else{
+		$lmoney=$rowa['leftmoney'];
+	}
+	
+$flag=$_REQUEST['flag'];
+if($flag=="getmoney"){
+	echo " {\"money\":\"".number_format($lmoney,4)."\"}";
+}else{
+	$sql="select * from ssc_message where zt='0' and username='" . $_SESSION["username"] . "'";
+	$rs = mysql_query($sql);
+	$total = mysql_num_rows($rs);
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -147,4 +171,5 @@
                 <!-- /.sidebar -->
             </aside>
     <!--</div>-->
-</html>  
+</html>
+<?php }?>
