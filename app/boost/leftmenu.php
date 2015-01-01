@@ -1,7 +1,7 @@
 ﻿<?php
 session_start();
 error_reporting(0);
-require_once 'conn.php';
+require_once '../conn.php';
 
 	$sqla="select * from ssc_member where username='".$_SESSION["username"]."'";
 	$rsa=mysql_query($sqla) or  die("数据库修改出错!!!!".mysql_error());
