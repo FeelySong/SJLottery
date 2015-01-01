@@ -83,7 +83,7 @@ if($flag=="gettoprize"){
                         <!-- Messages: style can be found in dropdown.less-->
                         <li class="dropdown messages-menu">                           
                             <frameset cols="25%,*,25%">
-                                <frame src="account_save">
+                                <frame src="account_save.php">
                                 <frame src="it.html">
                                 <frame src="it.html">
                             </frameset>
