@@ -83,6 +83,13 @@ if($flag=="getmoney"){
                     <!-- /.search form -->
                     <!-- sidebar menu: : style can be found in sidebar.less -->
                     <ul class="sidebar-menu">
+                        <?php 
+			$sql="select * from ssc_set where zt=1 order by lid asc";
+			$rsnewslist = mysql_query($sql);
+			while ($row = mysql_fetch_array($rsnewslist)){
+			?>
+                            <li class='<?=$row['name']?> (<?=$row['cname']?>)' ALT='<?=$row['name']?> (<?=$row['cname']?>)'><a target="rightside" href="../"+"<?=$row['urls']?>"><?=$row['name']?></a></li>
+                        <?php }?>
                         <li class="active">
                             <a href="index.html">
                                 <i class="fa fa-dashboard"></i> <span>Dashboard</span>
