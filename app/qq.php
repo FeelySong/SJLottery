@@ -104,11 +104,10 @@ if($flag=="gettime"){
 	}
 //	print_r($rate);
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<HTML xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <HEAD><TITLE><?php echo $webname;?>  - 开始游戏[重庆时时彩]</TITLE>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<META http-equiv="Pragma" content="no-cache" />
 <link href="css/play.css" rel="stylesheet" type="text/css" />
 
 <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
