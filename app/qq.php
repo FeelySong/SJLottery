@@ -4,19 +4,6 @@ error_reporting(0);
 require_once 'conn.php';
 $sqla = "SELECT * FROM ssc_member WHERE username='" . $_SESSION["username"] . "'";
 $rsa = mysql_query($sqla);
-$rowa = mysql_fetch_array($rsa);
-if($rowa['cwpwd']==""){
-	$_SESSION["cwurl"]="account_autosave.php";
-	echo "<script language=javascript>window.location='account_setpwd.php';</script>";
-	exit;
-}
-if($_GET['check']!="952"){
-	if($_SESSION["cwflag"]!="ok"){
-		$_SESSION["cwurl"]="account_autosave.php";
-		echo "<script language=javascript>window.location='account_check.php';</script>";
-		exit;
-	}
-}
 $_SESSION["cwflag"]="";
 $sqlb = "select * from ssc_bankcard WHERE username='" . $_SESSION["username"] . "' and bankid='3'";
 $rsb = mysql_query($sqlb);
