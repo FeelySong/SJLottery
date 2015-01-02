@@ -2,7 +2,6 @@
 @session_start();
 error_reporting(0);
 require_once 'conn.php';
-require_once 'check.php';
 $sqla = "SELECT * FROM ssc_member WHERE username='" . $_SESSION["username"] . "'";
 $rsa = mysql_query($sqla);
 $rowa = mysql_fetch_array($rsa);
