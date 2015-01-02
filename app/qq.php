@@ -171,7 +171,7 @@ $(function(){
 <SCRIPT LANGUAGE='JavaScript'>function ResumeError() {return true;} window.onerror = ResumeError; </SCRIPT> 
 
 </HEAD>
-<body class="skin-blue">
+<body STYLE='background-color:#d4d4d4;'>
      <header class="header">
             <a href="index.html" class="logo">
                 <!-- Add the class icon to your logo image or logo icon to add the margining -->
@@ -535,7 +535,7 @@ $(function(){
                 </section>
                 <!-- /.sidebar -->
             </aside>
-    </di>
+    </div>
 <script language="javascript" src="js/dialog/jquery.dialogUI.js"></script>
 <script language="javascript" src="js/lottery/lang_zh.js"></script>
 <script language="javascript" src="js/lottery/jquery.lottery.js"></script>
