@@ -104,6 +104,9 @@ if($flag=="gettime"){
 	}
 //	print_r($rate);
 ?>
+
+
+
 <!DOCTYPE html>
 <html>
 <HEAD><TITLE><?php echo $webname;?>  - 开始游戏[重庆时时彩]</TITLE>
@@ -538,8 +541,6 @@ $(function(){
 <script language="javascript" src="js/dialog/jquery.dialogUI.js"></script>
 <script language="javascript" src="js/lottery/lang_zh.js"></script>
 <script language="javascript" src="js/lottery/jquery.lottery.js"></script>
-<SCRIPT language="javascipt" type="text/javascript">
-    
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
         <!-- jQuery UI 1.10.3 -->
         <script src="boost/js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>
@@ -570,11 +571,14 @@ $(function(){
         <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
         <script src="boost/js/AdminLTE/dashboard.js" type="text/javascript"></script>        
 
+<SCRIPT language="javascript" type="text/javascript">
+    
+
 (function($){
 $(document).ready(function(){
 	$.playInit({ 
 		data_label: [
-<?php 
+<?php
 if($zt[385]=="1"){?>
 										{title:'五星',label:[{methoddesc:'从万位、千位、百位、十位、个位中至少各选1个号码。',
 methodhelp:'从万位、千位、百位、十位、个位中选择一个5位数号码组成一注，所选号码与开奖号码后5位相同，且顺序一致，即为中奖。',
