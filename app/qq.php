@@ -109,7 +109,7 @@ if($flag=="gettime"){
 <HEAD><TITLE><?php echo $webname;?>  - 开始游戏[重庆时时彩]</TITLE>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <META http-equiv="Pragma" content="no-cache" />
-<link href="boost/css/play.css" rel="stylesheet" type="text/css" />
+<link href="css/play.css" rel="stylesheet" type="text/css" />
 
 <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
