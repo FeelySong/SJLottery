@@ -1269,7 +1269,7 @@ if($nums==0){
 })(jQuery);
 </SCRIPT>
 
-<CENTER>
+<aside class="right-side">
 <div id="rightcon">
             <div id="msgbox" class="win_bot" style="display:none;">
     <h5 id="msgtitle"></h5> <div class="wb_close" onclick="javascript:msgclose();"></div>
@@ -1490,7 +1490,9 @@ if($nums==0){
                                         <div class="clear"></div>
                                     </form>
             </div>
+
   </div>
+    
 
 
 
@@ -1498,7 +1500,7 @@ if($nums==0){
 <BR/><div id="footer"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><table align="center" width="450">
 <tr><td align="left">浏览器建议：首选IE 8.0浏览器，其次为火狐浏览器。</td></tr>
 </table></td></tr><tr><td></td></tr></table></div>
-</CENTER><br/><br/>
+</aside> <br/><br/>
 <?php echo $count;?>
 </BODY></HTML>
 <?php }?>
