@@ -89,7 +89,11 @@ if($flag=="getmoney"){
 			$rsnewslist = mysql_query($sql);
 			while ($row = mysql_fetch_array($rsnewslist)){
 			?>
-                            <i class="fa fa-dashboard"><i class='<?=$row['name']?> (<?=$row['cname']?>)' ALT='<?=$row['name']?> (<?=$row['cname']?>)'></i><a target="right-side" href="../<?=$row['urls']?>"><?=$row['name']?></a></i><li></li>
+                        <li>
+                            <a target="right-side" href="../<?=$row['urls']?>">
+                                <i class="fa fa-dashboard"></i><span><?=$row['name']?></span>
+                            </a>
+                        </li>
                         <?php }?>
                         
                             
