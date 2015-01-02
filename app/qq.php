@@ -171,7 +171,7 @@ $(function(){
 <SCRIPT LANGUAGE='JavaScript'>function ResumeError() {return true;} window.onerror = ResumeError; </SCRIPT> 
 
 </HEAD>
-<body STYLE='background-color:#d4d4d4;'>
+<body class="skin-blue">
      <header class="header">
             <a href="index.html" class="logo">
                 <!-- Add the class icon to your logo image or logo icon to add the margining -->
