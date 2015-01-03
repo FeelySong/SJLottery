@@ -536,7 +536,7 @@ if($flag=="gettime"){
                 </section>
                 <!-- /.sidebar -->
             </aside>
-    </div>
+
 <script language="javascript" src="js/dialog/jquery.dialogUI.js"></script>
 <script language="javascript" src="js/lottery/lang_zh.js"></script>
 <script language="javascript" src="js/lottery/jquery.lottery.js"></script>
@@ -1270,39 +1270,6 @@ if($flag=="gettime"){
     });
     })(jQuery);
 </SCRIPT>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-<!-- jQuery UI 1.10.3 -->
-<script src="boost/js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>
-<!-- Bootstrap -->
-<script src="boost/js/bootstrap.min.js" type="text/javascript"></script>
-<!-- Morris.js charts -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-<script src="boost/js/plugins/morris/morris.min.js" type="text/javascript"></script>
-<!-- Sparkline -->
-<script src="boost/js/plugins/sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
-<!-- jvectormap -->
-<script src="boost/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" type="text/javascript"></script>
-<script src="boost/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
-<!-- fullCalendar -->
-<script src="boost/js/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
-<!-- jQuery Knob Chart -->
-<script src="boost/js/plugins/jqueryKnob/jquery.knob.js" type="text/javascript"></script>
-<!-- daterangepicker -->
-<script src="boost/js/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
-<!-- Bootstrap WYSIHTML5 -->
-<script src="boost/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>
-<!-- iCheck -->
-<script src="boost/js/plugins/iCheck/icheck.min.js" type="text/javascript"></script>
-
-<!-- AdminLTE App -->
-<script src="boost/js/AdminLTE/app.js" type="text/javascript"></script>
-
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="boost/js/AdminLTE/dashboard.js" type="text/javascript"></script>
-
-
-
 <aside class="right-side">
 <div id="rightcon">
             <div id="msgbox" class="win_bot" style="display:none;">
@@ -1313,9 +1280,9 @@ if($flag=="gettime"){
     </div>
     <div class="clear"></div>
     <a class="wb_p" href="#" onclick="javascript:prenotice();" id="msgpre">上一条</a><a class="wb_n" href="#" onclick="javascript:nextnotice();">下一条</a>
-</div>            <div class=" game_rc"> 
+</div>            <div class=" game_rc">
                 <form>
-		
+
                     <!--奖期基本信息开始-->
                     <div class="gm_con">
                         <div class="gm_con_lt"></div>
@@ -1337,7 +1304,7 @@ if($flag=="gettime"){
                                 </div>
                             </div>
                             <div class="gct_r">
-                                <h3>重庆时时彩  第 <b><span class=nn id="lt_gethistorycode"><?=$rowc['issue']?></span> </b> 期 
+                                <h3>重庆时时彩  第 <b><span class=nn id="lt_gethistorycode"><?=$rowc['issue']?></span> </b> 期
                                         <span id="lt_opentimebox" style="display:none;">&nbsp;&nbsp;<span id="waitopendesc">等待开奖</span>&nbsp;<span style="color:#F9CE46;" id="lt_opentimeleft" ></span></span><span id="lt_opentimebox2" style="display:none; color:#F9CE46;"><strong>&nbsp;&nbsp;正在开奖</strong></span></h3>
 
                                         <div style="display:none;" class="tad" id="showadvbox"><a href="promotion_center.php"><img src='images/v1/ad.jpg' border="0" /></a></div>
@@ -1413,7 +1380,7 @@ if($flag=="gettime"){
                                                 您选择了 <strong><span class=n id="lt_sel_nums">0</span></strong> 注, 共 <strong><span class=n id="lt_sel_money">0</span></strong> 元,
                                                 倍数:
                                                 <!-- <span class="changetime" id="reducetime" title="减少1倍">－</span><INPUT name='lt_sel_times' type='TEXT' size=4 class='bei' id="lt_sel_times"><span class="changetime" id="plustime" title="增加1倍">＋</span>--><INPUT name='lt_sel_times' type='TEXT' size=4 class='bei' id="lt_sel_times">
-                                                                                                
+
                                                     倍
                                                     <select name="lt_sel_modes" id="lt_sel_modes">
                                                         <option>元模式</option>
@@ -1509,7 +1476,7 @@ if($flag=="gettime"){
                                                 </div>
                                                 <div class=zhlist id="lt_trace_issues"></div>
                                                 <input type="hidden" name="lotteryid" id="lotteryid" value="1" />
-                                                <input type="hidden" name="flag" id="flag" value="save" /> 
+                                                <input type="hidden" name="flag" id="flag" value="save" />
                                             </div>
                                         </div>
                                     </div>
@@ -1523,15 +1490,42 @@ if($flag=="gettime"){
             </div>
 
   </div>
-    
-
-
-
 
 <BR/><div id="footer"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><table align="center" width="450">
 <tr><td align="left">浏览器建议：首选IE 8.0浏览器，其次为火狐浏览器。</td></tr>
 </table></td></tr><tr><td></td></tr></table></div>
 </aside> <br/><br/>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<!-- jQuery UI 1.10.3 -->
+<script src="boost/js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>
+<!-- Bootstrap -->
+<script src="boost/js/bootstrap.min.js" type="text/javascript"></script>
+<!-- Morris.js charts -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="boost/js/plugins/morris/morris.min.js" type="text/javascript"></script>
+<!-- Sparkline -->
+<script src="boost/js/plugins/sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
+<!-- jvectormap -->
+<script src="boost/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" type="text/javascript"></script>
+<script src="boost/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
+<!-- fullCalendar -->
+<script src="boost/js/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
+<!-- jQuery Knob Chart -->
+<script src="boost/js/plugins/jqueryKnob/jquery.knob.js" type="text/javascript"></script>
+<!-- daterangepicker -->
+<script src="boost/js/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
+<!-- Bootstrap WYSIHTML5 -->
+<script src="boost/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>
+<!-- iCheck -->
+<script src="boost/js/plugins/iCheck/icheck.min.js" type="text/javascript"></script>
+
+<!-- AdminLTE App -->
+<script src="boost/js/AdminLTE/app.js" type="text/javascript"></script>
+
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="boost/js/AdminLTE/dashboard.js" type="text/javascript"></script>
+
 <?php echo $count;?>
 </BODY></HTML>
 <?php }?>
