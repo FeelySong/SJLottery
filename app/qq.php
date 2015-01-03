@@ -107,7 +107,6 @@ if($flag=="gettime"){
 
 
 
-<!DOCTYPE html>
 <html>
 <HEAD><TITLE><?php echo $webname;?>  - 开始游戏[重庆时时彩]</TITLE>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -137,44 +136,44 @@ if($flag=="gettime"){
 <script language="javascript" type="text/javascript" src="js/jquery.js"></script>
 <script language="javascript" type="text/javascript" src="js/common.js"></script>
 <script language="javascipt" type="text/javascript">
-$(function(){
-    if($(".needchangebg:even").eq(0).html() != null){
-        $(".needchangebg:even").find("td").css("background","#FAFCFE");
-        $(".needchangebg:odd").find("td").css("background","#F9F9F9");
-        $(".forzenuser").find("td").css("background","#FFE8E8");
-		$(".self_tr").find("td").css("background","#FFF4D2");
-        $(".needchangebg").hover(function(){
-            $(this).find("td").css("background","#E8F2FF");
-            $(".forzenuser").find("td").css("background","#FFE8E8");
-        },function(){
+    $(function(){
+        if($(".needchangebg:even").eq(0).html() != null){
             $(".needchangebg:even").find("td").css("background","#FAFCFE");
             $(".needchangebg:odd").find("td").css("background","#F9F9F9");
             $(".forzenuser").find("td").css("background","#FFE8E8");
-        }
-        );
-    }else{
-        $(".needchangebg:odd").find("td").css("background","#FAFCFE");
-        $(".needchangebg:even").find("td").css("background","#F9F9F9");
-		$(".forzenuser").find("td").css("background","#FFE8E8");
-		$(".self_tr").find("td").css("background","#FFF4D2");
-        $(".gametitle").css("background","#F9F9F9");
-        $(".needchangebg").hover(function(){
-            $(this).find("td").css("background","#E8F2FF");
+                    $(".self_tr").find("td").css("background","#FFF4D2");
+            $(".needchangebg").hover(function(){
+                $(this).find("td").css("background","#E8F2FF");
+                $(".forzenuser").find("td").css("background","#FFE8E8");
+            },function(){
+                $(".needchangebg:even").find("td").css("background","#FAFCFE");
+                $(".needchangebg:odd").find("td").css("background","#F9F9F9");
+                $(".forzenuser").find("td").css("background","#FFE8E8");
+            }
+            );
+        }else{
+            $(".needchangebg:odd").find("td").css("background","#FAFCFE");
+            $(".needchangebg:even").find("td").css("background","#F9F9F9");
+                    $(".forzenuser").find("td").css("background","#FFE8E8");
+                    $(".self_tr").find("td").css("background","#FFF4D2");
             $(".gametitle").css("background","#F9F9F9");
-        },function(){
-            $(".lt tr:odd").find("td").css("background","#FAFCFE");
-            $(".lt tr:even").find("td").css("background","#F9F9F9");
-            $(".gametitle").css("background","#F9F9F9");
+            $(".needchangebg").hover(function(){
+                $(this).find("td").css("background","#E8F2FF");
+                $(".gametitle").css("background","#F9F9F9");
+            },function(){
+                $(".lt tr:odd").find("td").css("background","#FAFCFE");
+                $(".lt tr:even").find("td").css("background","#F9F9F9");
+                $(".gametitle").css("background","#F9F9F9");
+            }
+            );
         }
-        );
-    }
-})
+    })
 </script>
 <SCRIPT LANGUAGE='JavaScript'>function ResumeError() {return true;} window.onerror = ResumeError; </SCRIPT> 
 
 </HEAD>
 <body class="skin-blue">
-     <header class="header">
+<header class="header">
             <a href="index.html" class="logo">
                 <!-- Add the class icon to your logo image or logo icon to add the margining -->
                 AdminLTE
@@ -420,7 +419,7 @@ $(function(){
                 </div>
             </nav>
         </header>
-    <div class="wrapper row-offcanvas row-offcanvas-left">
+<div class="wrapper row-offcanvas row-offcanvas-left">
             <!-- Left side column. contains the logo and sidebar -->
             <aside class="left-side sidebar-offcanvas">
                 <!-- sidebar: style can be found in sidebar.less -->
@@ -541,767 +540,768 @@ $(function(){
 <script language="javascript" src="js/dialog/jquery.dialogUI.js"></script>
 <script language="javascript" src="js/lottery/lang_zh.js"></script>
 <script language="javascript" src="js/lottery/jquery.lottery.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <!-- jQuery UI 1.10.3 -->
-        <script src="boost/js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>
-        <!-- Bootstrap -->
-        <script src="boost/js/bootstrap.min.js" type="text/javascript"></script>
-        <!-- Morris.js charts -->
-        <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-        <script src="boost/js/plugins/morris/morris.min.js" type="text/javascript"></script>
-        <!-- Sparkline -->
-        <script src="boost/js/plugins/sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
-        <!-- jvectormap -->
-        <script src="boost/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" type="text/javascript"></script>
-        <script src="boost/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
-        <!-- fullCalendar -->
-        <script src="boost/js/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
-        <!-- jQuery Knob Chart -->
-        <script src="boost/js/plugins/jqueryKnob/jquery.knob.js" type="text/javascript"></script>
-        <!-- daterangepicker -->
-        <script src="boost/js/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
-        <!-- Bootstrap WYSIHTML5 -->
-        <script src="boost/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>
-        <!-- iCheck -->
-        <script src="boost/js/plugins/iCheck/icheck.min.js" type="text/javascript"></script>
-
-        <!-- AdminLTE App -->
-        <script src="boost/js/AdminLTE/app.js" type="text/javascript"></script>
-        
-        <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-        <script src="boost/js/AdminLTE/dashboard.js" type="text/javascript"></script>        
-
 <SCRIPT language="javascript" type="text/javascript">
-    
 
-(function($){
-$(document).ready(function(){
-	$.playInit({ 
-		data_label: [
-<?php
-if($zt[385]=="1"){?>
-										{title:'五星',label:[{methoddesc:'从万位、千位、百位、十位、个位中至少各选1个号码。',
-methodhelp:'从万位、千位、百位、十位、个位中选择一个5位数号码组成一注，所选号码与开奖号码后5位相同，且顺序一致，即为中奖。',
-                                    selectarea:{
-                                               type   : 'digital',
-                                               layout : [
-                                                           {title:'万位', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1},
-                                                           {title:'千位', no:'0|1|2|3|4|5|6|7|8|9', place:1, cols:1},
-                                                           {title:'百位', no:'0|1|2|3|4|5|6|7|8|9', place:2, cols:1},
-                                                           {title:'十位', no:'0|1|2|3|4|5|6|7|8|9', place:3, cols:1},
-                                                           {title:'个位', no:'0|1|2|3|4|5|6|7|8|9', place:4, cols:1}
-                                                          ],
-                                               noBigIndex : 5,
-                                               isButton   : true
-                                              },
-                                    show_str : 'X,X,X,X,X',
-                                    code_sp : '',
-                                                  methodid : 400,
-                                                  name:'复式',
-                                                  prize:{1:'<?=$rate[400][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[385]/100?>","prize":<?=$rate[400][0]?>},{"point":0,"prize":<?=floor($rate[400][0]*(1+$rebate[385]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'五星复式'
-                                                }]},
-									<?php }?>
-									
-<?php if($zt[386]=="1" || $zt[387]=="1"){?>
-										{title:'四星',label:[<?php if($zt[386]=="1"){?>{methoddesc:'从万位、千位、百位、十位中至少各选1个号码。',
-methodhelp:'从万位、千位、百位、十位中选择一个4位数号码组成一注，所选号码与开奖号码后4位相同，且顺序一致，即为中奖。',
-                                    selectarea:{
-                                               type   : 'digital',
-                                               layout : [
-                                                           {title:'万位', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1},
-                                                           {title:'千位', no:'0|1|2|3|4|5|6|7|8|9', place:1, cols:1},
-                                                           {title:'百位', no:'0|1|2|3|4|5|6|7|8|9', place:2, cols:1},
-                                                           {title:'十位', no:'0|1|2|3|4|5|6|7|8|9', place:3, cols:1}
-                                                          ],
-                                               noBigIndex : 5,
-                                               isButton   : true
-                                              },
-                                    show_str : '-,X,X,X,X',
-                                    code_sp : '',
-                                                  methodid : 401,
-                                                  name:'复式',
-                                                  prize:{1:'<?=$rate[401][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[386]/100?>","prize":<?=$rate[401][0]?>},{"point":0,"prize":<?=floor($rate[401][0]*(1+$rebate[386]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'前四复式'
-                                                }<?php if($zt[387]=="1"){echo ",";}?><?php }?><?php if($zt[387]=="1"){?>{methoddesc:'从千位、百位、十位、个位中至少各选1个号码。',
-methodhelp:'从千位、百位、十位、个位中选择一个4位数号码组成一注，所选号码与开奖号码后4位相同，且顺序一致，即为中奖。',
-                                    selectarea:{
-                                               type   : 'digital',
-                                               layout : [
-                                                           {title:'千位', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1},
-                                                           {title:'百位', no:'0|1|2|3|4|5|6|7|8|9', place:1, cols:1},
-                                                           {title:'十位', no:'0|1|2|3|4|5|6|7|8|9', place:2, cols:1},
-                                                           {title:'个位', no:'0|1|2|3|4|5|6|7|8|9', place:3, cols:1}
-                                                          ],
-                                               noBigIndex : 5,
-                                               isButton   : true
-                                              },
-                                    show_str : '-,X,X,X,X',
-                                    code_sp : '',
-                                                  methodid : 402,
-                                                  name:'复式',
-                                                  prize:{1:'<?=$rate[402][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[387]/100?>","prize":<?=$rate[402][0]?>},{"point":0,"prize":<?=floor($rate[402][0]*(1+$rebate[387]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'后四复式'
-                                                }<?php }?>]},
-									<?php }?>		
+    (function($){
+    $(document).ready(function(){
+        $.playInit({
+            data_label: [
+    <?php
+    if($zt[385]=="1"){?>
+                                            {title:'五星',label:[{methoddesc:'从万位、千位、百位、十位、个位中至少各选1个号码。',
+    methodhelp:'从万位、千位、百位、十位、个位中选择一个5位数号码组成一注，所选号码与开奖号码后5位相同，且顺序一致，即为中奖。',
+                                        selectarea:{
+                                                   type   : 'digital',
+                                                   layout : [
+                                                               {title:'万位', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1},
+                                                               {title:'千位', no:'0|1|2|3|4|5|6|7|8|9', place:1, cols:1},
+                                                               {title:'百位', no:'0|1|2|3|4|5|6|7|8|9', place:2, cols:1},
+                                                               {title:'十位', no:'0|1|2|3|4|5|6|7|8|9', place:3, cols:1},
+                                                               {title:'个位', no:'0|1|2|3|4|5|6|7|8|9', place:4, cols:1}
+                                                              ],
+                                                   noBigIndex : 5,
+                                                   isButton   : true
+                                                  },
+                                        show_str : 'X,X,X,X,X',
+                                        code_sp : '',
+                                                      methodid : 400,
+                                                      name:'复式',
+                                                      prize:{1:'<?=$rate[400][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[385]/100?>","prize":<?=$rate[400][0]?>},{"point":0,"prize":<?=floor($rate[400][0]*(1+$rebate[385]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'五星复式'
+                                                    }]},
+                                        <?php }?>
+
+    <?php if($zt[386]=="1" || $zt[387]=="1"){?>
+                                            {title:'四星',label:[<?php if($zt[386]=="1"){?>{methoddesc:'从万位、千位、百位、十位中至少各选1个号码。',
+    methodhelp:'从万位、千位、百位、十位中选择一个4位数号码组成一注，所选号码与开奖号码后4位相同，且顺序一致，即为中奖。',
+                                        selectarea:{
+                                                   type   : 'digital',
+                                                   layout : [
+                                                               {title:'万位', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1},
+                                                               {title:'千位', no:'0|1|2|3|4|5|6|7|8|9', place:1, cols:1},
+                                                               {title:'百位', no:'0|1|2|3|4|5|6|7|8|9', place:2, cols:1},
+                                                               {title:'十位', no:'0|1|2|3|4|5|6|7|8|9', place:3, cols:1}
+                                                              ],
+                                                   noBigIndex : 5,
+                                                   isButton   : true
+                                                  },
+                                        show_str : '-,X,X,X,X',
+                                        code_sp : '',
+                                                      methodid : 401,
+                                                      name:'复式',
+                                                      prize:{1:'<?=$rate[401][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[386]/100?>","prize":<?=$rate[401][0]?>},{"point":0,"prize":<?=floor($rate[401][0]*(1+$rebate[386]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'前四复式'
+                                                    }<?php if($zt[387]=="1"){echo ",";}?><?php }?><?php if($zt[387]=="1"){?>{methoddesc:'从千位、百位、十位、个位中至少各选1个号码。',
+    methodhelp:'从千位、百位、十位、个位中选择一个4位数号码组成一注，所选号码与开奖号码后4位相同，且顺序一致，即为中奖。',
+                                        selectarea:{
+                                                   type   : 'digital',
+                                                   layout : [
+                                                               {title:'千位', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1},
+                                                               {title:'百位', no:'0|1|2|3|4|5|6|7|8|9', place:1, cols:1},
+                                                               {title:'十位', no:'0|1|2|3|4|5|6|7|8|9', place:2, cols:1},
+                                                               {title:'个位', no:'0|1|2|3|4|5|6|7|8|9', place:3, cols:1}
+                                                              ],
+                                                   noBigIndex : 5,
+                                                   isButton   : true
+                                                  },
+                                        show_str : '-,X,X,X,X',
+                                        code_sp : '',
+                                                      methodid : 402,
+                                                      name:'复式',
+                                                      prize:{1:'<?=$rate[402][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[387]/100?>","prize":<?=$rate[402][0]?>},{"point":0,"prize":<?=floor($rate[402][0]*(1+$rebate[387]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'后四复式'
+                                                    }<?php }?>]},
+                                        <?php }?>
 
 
-									<?php if($zt[1]=="1" || $zt[3]=="1"){?>	
-												{title:'前三',label:[{methoddesc:'从万位、千位、百位中至少各选1个号码。',
-methodhelp:'从万位、千位、百位中选择一个3位数号码组成一注，所选号码与开奖号码前3位相同，且顺序一致，即为中奖。',
-selectarea:{type:'digital',layout:[{title:'万位', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1},{title:'千位', no:'0|1|2|3|4|5|6|7|8|9', place:1, cols:1},{title:'百位', no:'0|1|2|3|4|5|6|7|8|9', place:2, cols:1}],noBigIndex:5,isButton:true},
-show_str : 'X,X,X,-,-',
-code_sp  : '',
-                                                  methodid : 14,
-                                                  name:'复式',
-                                                  prize:{1:'<?=$rate[14][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[1]/100?>","prize":<?=$rate[14][0]?>},{"point":0,"prize":<?=floor($rate[14][0]*(1+$rebate[1]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'直选复式'
-                                                },{methoddesc:'手动输入号码，至少输入1个三位数号码组成一注。',
-methodhelp:'手动输入一个3位数号码组成一注，所选号码与开奖号码的万位、千位、百位相同，且顺序一致，即为中奖。',
-selectarea:{type:'input'},
-show_str : 'X',
-code_sp : ' ',
-                                                  methodid : 14,
-                                                  name:'单式',
-                                                  prize:{1:'<?=$rate[14][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[1]/100?>","prize":<?=$rate[14][0]?>},{"point":0,"prize":<?=floor($rate[14][0]*(1+$rebate[1]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'直选单式'
-                                                },{methoddesc:'从0-27中任意选择1个或1个以上号码。',
-methodhelp:'所选数值等于开奖号码万位、千位、百位三个数字相加之和，即为中奖。',
-                                    selectarea:{
-                                               type   : 'digital',
-                                               layout : [
-                                                           {title:'和值', no:'0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27', place:0, cols:1}
-                                                         ],
-                                               isButton   : false
-                                              },
-                                    show_str : 'X',
-                                    code_sp : ',',
-                                                  methodid : 15,
-                                                  name:'和值',
-                                                  prize:{1:'<?=$rate[15][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[1]/100?>","prize":<?=$rate[15][0]?>},{"point":0,"prize":<?=floor($rate[15][0]*(1+$rebate[1]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'直选和值'
-                                                },{methoddesc:'从0-9中任意任选2个或2个以上号码。',
-methodhelp:'从0-9中选择2个数字组成两注，所选号码与开奖号码的万位、千位、百位相同，且顺序不限，即为中奖。',
-                                    selectarea:{
-                                               type   : 'digital',
-                                               layout : [
-                                                           {title:'组三', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1}
-                                                          ],
-                                               noBigIndex : 5,
-                                               isButton   : true
-                                              },
-                                    show_str : 'X',
-                                    code_sp : ',',
+                                        <?php if($zt[1]=="1" || $zt[3]=="1"){?>
+                                                    {title:'前三',label:[{methoddesc:'从万位、千位、百位中至少各选1个号码。',
+    methodhelp:'从万位、千位、百位中选择一个3位数号码组成一注，所选号码与开奖号码前3位相同，且顺序一致，即为中奖。',
+    selectarea:{type:'digital',layout:[{title:'万位', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1},{title:'千位', no:'0|1|2|3|4|5|6|7|8|9', place:1, cols:1},{title:'百位', no:'0|1|2|3|4|5|6|7|8|9', place:2, cols:1}],noBigIndex:5,isButton:true},
+    show_str : 'X,X,X,-,-',
+    code_sp  : '',
+                                                      methodid : 14,
+                                                      name:'复式',
+                                                      prize:{1:'<?=$rate[14][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[1]/100?>","prize":<?=$rate[14][0]?>},{"point":0,"prize":<?=floor($rate[14][0]*(1+$rebate[1]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'直选复式'
+                                                    },{methoddesc:'手动输入号码，至少输入1个三位数号码组成一注。',
+    methodhelp:'手动输入一个3位数号码组成一注，所选号码与开奖号码的万位、千位、百位相同，且顺序一致，即为中奖。',
+    selectarea:{type:'input'},
+    show_str : 'X',
+    code_sp : ' ',
+                                                      methodid : 14,
+                                                      name:'单式',
+                                                      prize:{1:'<?=$rate[14][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[1]/100?>","prize":<?=$rate[14][0]?>},{"point":0,"prize":<?=floor($rate[14][0]*(1+$rebate[1]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'直选单式'
+                                                    },{methoddesc:'从0-27中任意选择1个或1个以上号码。',
+    methodhelp:'所选数值等于开奖号码万位、千位、百位三个数字相加之和，即为中奖。',
+                                        selectarea:{
+                                                   type   : 'digital',
+                                                   layout : [
+                                                               {title:'和值', no:'0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27', place:0, cols:1}
+                                                             ],
+                                                   isButton   : false
+                                                  },
+                                        show_str : 'X',
+                                        code_sp : ',',
+                                                      methodid : 15,
+                                                      name:'和值',
+                                                      prize:{1:'<?=$rate[15][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[1]/100?>","prize":<?=$rate[15][0]?>},{"point":0,"prize":<?=floor($rate[15][0]*(1+$rebate[1]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'直选和值'
+                                                    },{methoddesc:'从0-9中任意任选2个或2个以上号码。',
+    methodhelp:'从0-9中选择2个数字组成两注，所选号码与开奖号码的万位、千位、百位相同，且顺序不限，即为中奖。',
+                                        selectarea:{
+                                                   type   : 'digital',
+                                                   layout : [
+                                                               {title:'组三', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1}
+                                                              ],
+                                                   noBigIndex : 5,
+                                                   isButton   : true
+                                                  },
+                                        show_str : 'X',
+                                        code_sp : ',',
 
-                                                  methodid : 18,
-                                                  name:'组三',
-                                                  prize:{1:'<?=$rate[18][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[3]/100?>","prize":<?=$rate[18][0]?>},{"point":0,"prize":<?=floor($rate[18][0]*(1+$rebate[3]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'组三'
-                                                },{methoddesc:'从0-9中任意任选3个或3个以上号码。',
-methodhelp:'从0-9中任意选择3个号码组成一注，所选号码与开奖号码的万位、千位、百位相同，顺序不限，即为中奖。',
-                                    selectarea:{
-                                               type   : 'digital',
-                                               layout : [
-                                                           {title:'组六', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1}
-                                                          ],
-                                               noBigIndex : 5,
-                                               isButton   : true
-                                              },
-                                    show_str : 'X',
-                                    code_sp : ',',
-                                                  methodid : 19,
-                                                  name:'组六',
-                                                  prize:{2:'<?=$rate[19][0]?>'},
-                                                  dyprize:[{"level":2,"prize":[{"point":"<?=$rebate[3]/100?>","prize":<?=$rate[19][0]?>},{"point":0,"prize":<?=floor($rate[19][0]*(1+$rebate[3]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'组六'
-                                                },{methoddesc:'手动输入号码，至少输入1个三位数号码组成一注。',
-methodhelp:'键盘手动输入购买号码，3个数字为一注，开奖号码的万位、千位、百位符合前三的组三或组六均为中奖。',
-                                    selectarea:{type:'input'},
-                                    show_str : 'X',
-                                    code_sp : ' ',
-                                                  methodid : 20,
-                                                  name:'混合',
-                                                  prize:{1:'<?=$rate[20][0]?>',2:'<?=$rate[20][1]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[3]/100?>","prize":<?=$rate[20][0]?>},{"point":0,"prize":<?=floor($rate[20][0]*(1+$rebate[3]/90)*10)/10?>}]},{"level":2,"prize":[{"point":"<?=$rebate[3]/100?>","prize":<?=$rate[20][0]?>},{"point":0,"prize":<?=floor($rate[20][0]*(1+$rebate[3]/90)*10)/10?>},{"point":"<?=$rebate[3]/100?>","prize":<?=$rate[20][1]?>},{"point":0,"prize":<?=floor($rate[20][1]*(1+$rebate[3]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'混合组选'
-                                                },{methoddesc:'从1-26中任意选择1个或1个以上号码。',
-methodhelp:'所选数值等于开奖号码万位、千位、百位三个数字相加之和，即为中奖。',
-                                    selectarea:{
-                                               type   : 'digital',
-                                               layout : [
-                                                           {title:'和值', no:'1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26', place:0, cols:1}
-                                                         ],
-                                               isButton   : false
-                                              },
-                                    show_str : 'X',
-                                    code_sp : ',',
-                                                  methodid : 21,
-                                                  name:'和值',
-                                                  prize:{1:'<?=$rate[21][0]?>',2:'<?=$rate[21][1]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[3]/100?>","prize":<?=$rate[21][0]?>},{"point":0,"prize":<?=floor($rate[21][0]*(1+$rebate[3]/90)*10)/10?>}]},{"level":2,"prize":[{"point":"<?=$rebate[3]/100?>","prize":<?=$rate[21][0]?>},{"point":0,"prize":<?=floor($rate[21][0]*(1+$rebate[3]/90)*10)/10?>},{"point":"<?=$rebate[3]/100?>","prize":<?=$rate[21][1]?>},{"point":0,"prize":<?=floor($rate[21][1]*(1+$rebate[3]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'组选和值'
-                                                }]}<?php if($zt[3]=="1" || $zt[7]=="1" || $zt[8]=="1" || $zt[9]=="1" || $zt[10]=="1" || $zt[11]=="1" || $zt[12]=="1" || $zt[13]=="1"){echo ",";}?>
-									<?php }?>
-											
-											
-									<?php if($zt[388]=="1" || $zt[389]=="1"){?>	
-												{title:'中三',label:[<?php if($zt[388]=="1"){?>{methoddesc:'从千位、百位、十位中至少各选1个号码。',
-methodhelp:'从千位、百位、十位中选择一个3位数号码组成一注，所选号码与开奖号码前3位相同，且顺序一致，即为中奖。',
-selectarea:{type:'digital',layout:[{title:'千位', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1},{title:'百位', no:'0|1|2|3|4|5|6|7|8|9', place:1, cols:1},{title:'十位', no:'0|1|2|3|4|5|6|7|8|9', place:2, cols:1}],noBigIndex:5,isButton:true},
-show_str : 'X,X,X,-,-',
-code_sp  : '',
-                                                  methodid : 403,
-                                                  name:'复式',
-                                                  prize:{1:'<?=$rate[403][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[388]/100?>","prize":<?=$rate[403][0]?>},{"point":0,"prize":<?=floor($rate[403][0]*(1+$rebate[388]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'直选复式'
-                                                },{methoddesc:'手动输入号码，至少输入1个三位数号码组成一注。',
-methodhelp:'手动输入一个3位数号码组成一注，所选号码与开奖号码的千位、百位、十位相同，且顺序一致，即为中奖。',
-selectarea:{type:'input'},
-show_str : 'X',
-code_sp : ' ',
-												  methodid : 403,
-                                                  name:'单式',
-                                                  prize:{1:'<?=$rate[403][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[388]/100?>","prize":<?=$rate[403][0]?>},{"point":0,"prize":<?=floor($rate[403][0]*(1+$rebate[388]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'直选单式'
-                                                },{methoddesc:'从0-27中任意选择1个或1个以上号码。',
-methodhelp:'所选数值等于开奖号码千位、百位、十位三个数字相加之和，即为中奖。',
-                                    selectarea:{
-                                               type   : 'digital',
-                                               layout : [
-                                                           {title:'和值', no:'0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27', place:0, cols:1}
-                                                         ],
-                                               isButton   : false
-                                              },
-                                    show_str : 'X',
-                                    code_sp : ',',
-                                                  methodid : 404,
-                                                  name:'和值',
-                                                  prize:{1:'<?=$rate[404][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[388]/100?>","prize":<?=$rate[404][0]?>},{"point":0,"prize":<?=floor($rate[404][0]*(1+$rebate[388]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'直选和值'
-                                                }<?php if($zt[389]=="1"){echo ",";}?><?php }?><?php if($zt[389]=="1"){?>{methoddesc:'从0-9中任意任选2个或2个以上号码。',
-methodhelp:'从0-9中选择2个数字组成两注，所选号码与开奖号码的千位、百位、十位相同，且顺序不限，即为中奖。',
-                                    selectarea:{
-                                               type   : 'digital',
-                                               layout : [
-                                                           {title:'组三', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1}
-                                                          ],
-                                               noBigIndex : 5,
-                                               isButton   : true
-                                              },
-                                    show_str : 'X',
-                                    code_sp : ',',
-                                                  methodid : 405,
-                                                  name:'组三',
-                                                  prize:{1:'<?=$rate[405][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[389]/100?>","prize":<?=$rate[405][0]?>},{"point":0,"prize":<?=floor($rate[405][0]*(1+$rebate[389]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'中三组三'
-                                                },{methoddesc:'从0-9中任意任选3个或3个以上号码。',
-methodhelp:'从0-9中任意选择3个号码组成一注，所选号码与开奖号码的千位、百位、十位相同，顺序不限，即为中奖。',
-                                    selectarea:{
-                                               type   : 'digital',
-                                               layout : [
-                                                           {title:'组六', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1}
-                                                          ],
-                                               noBigIndex : 5,
-                                               isButton   : true
-                                              },
-                                    show_str : 'X',
-                                    code_sp : ',',
-                                                  methodid : 406,
-                                                  name:'组六',
-                                                  prize:{2:'<?=$rate[406][0]?>'},
-                                                  dyprize:[{"level":2,"prize":[{"point":"<?=$rebate[389]/100?>","prize":<?=$rate[406][0]?>},{"point":0,"prize":<?=floor($rate[406][0]*(1+$rebate[389]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'中三组六'
-                                                },{methoddesc:'手动输入号码，至少输入1个三位数号码组成一注。',
-methodhelp:'键盘手动输入购买号码，3个数字为一注，开奖号码的千位、百位、十位符合中三的组三或组六均为中奖。',
-                                    selectarea:{type:'input'},
-                                    show_str : 'X',
-                                    code_sp : ' ',
-                                                  methodid : 407,
-                                                  name:'混合',
-                                                  prize:{1:'<?=$rate[407][0]?>',2:'<?=$rate[407][1]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[389]/100?>","prize":<?=$rate[407][0]?>},{"point":0,"prize":<?=floor($rate[407][0]*(1+$rebate[389]/90)*10)/10?>}]},{"level":2,"prize":[{"point":"<?=$rebate[389]/100?>","prize":<?=$rate[407][0]?>},{"point":0,"prize":<?=floor($rate[407][0]*(1+$rebate[389]/90)*10)/10?>},{"point":"<?=$rebate[389]/100?>","prize":<?=$rate[407][1]?>},{"point":0,"prize":<?=floor($rate[407][1]*(1+$rebate[389]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'混合组选'
-                                                },{methoddesc:'从1-26中任意选择1个或1个以上号码。',
-methodhelp:'所选数值等于开奖号码千位、百位、十位三个数字相加之和，即为中奖。',
-                                    selectarea:{
-                                               type   : 'digital',
-                                               layout : [
-                                                           {title:'和值', no:'1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26', place:0, cols:1}
-                                                         ],
-                                               isButton   : false
-                                              },
-                                    show_str : 'X',
-                                    code_sp : ',',
-                                                  methodid : 408,
-                                                  name:'和值',
-                                                  prize:{1:'<?=$rate[408][0]?>',2:'<?=$rate[408][1]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[389]/100?>","prize":<?=$rate[408][0]?>},{"point":0,"prize":<?=floor($rate[408][0]*(1+$rebate[389]/90)*10)/10?>}]},{"level":2,"prize":[{"point":"<?=$rebate[389]/100?>","prize":<?=$rate[408][0]?>},{"point":0,"prize":<?=floor($rate[408][0]*(1+$rebate[389]/90)*10)/10?>},{"point":"<?=$rebate[389]/100?>","prize":<?=$rate[408][1]?>},{"point":0,"prize":<?=floor($rate[408][1]*(1+$rebate[389]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'组选和值'
-                                                }<?php }?>]},
-									<?php }?>
-																				
-		
-									<?php if($zt[2]=="1" || $zt[4]=="1"){?>
-										{title:'后三',label:[{methoddesc:'从百位、十位、个位中至少各选1个号码。',
-methodhelp:'从百位、十位、个位中选择一个3位数号码组成一注，所选号码与开奖号码后3位相同，且顺序一致，即为中奖。',
-                                    selectarea:{
-                                               type   : 'digital',
-                                               layout : [
-                                                           {title:'百位', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1},
-                                                           {title:'十位', no:'0|1|2|3|4|5|6|7|8|9', place:1, cols:1},
-                                                           {title:'个位', no:'0|1|2|3|4|5|6|7|8|9', place:2, cols:1}
-                                                          ],
-                                               noBigIndex : 5,
-                                               isButton   : true
-                                              },
-                                    show_str : '-,-,X,X,X',
-                                    code_sp : '',
-                                                  methodid : 16,
-                                                  name:'复式',
-                                                  prize:{1:'<?=$rate[16][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[2]/100?>","prize":<?=$rate[16][0]?>},{"point":0,"prize":<?=floor($rate[16][0]*(1+$rebate[2]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'直选复式'
-                                                },{methoddesc:'手动输入号码，至少输入1个三位数号码组成一注。',
-methodhelp:'手动输入一个3位数号码组成一注，所选号码与开奖号码的百位、十位、个位相同，且顺序一致，即为中奖。',
-                                    selectarea:{type:'input'},
-                                    show_str : 'X',
-                                    code_sp : ' ',
-                                                  methodid : 16,
-                                                  name:'单式',
-                                                  prize:{1:'<?=$rate[16][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[2]/100?>","prize":<?=$rate[16][0]?>},{"point":0,"prize":<?=floor($rate[16][0]*(1+$rebate[2]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'直选单式'
-                                                },{methoddesc:'从0-27中任意选择1个或1个以上号码',
-methodhelp:'所选数值等于开奖号码的百位、十位、个位三个数字相加之和，即为中奖。',
-                                    selectarea:{
-                                               type   : 'digital',
-                                               layout : [
-                                                           {title:'和值', no:'0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27', place:0, cols:1}
-                                                         ],
-                                               isButton   : false
-                                              },
-                                    show_str : 'X',
-                                    code_sp : ',',
-                                                  methodid : 17,
-                                                  name:'和值',
-                                                  prize:{1:'<?=$rate[17][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[2]/100?>","prize":<?=$rate[17][0]?>},{"point":0,"prize":<?=floor($rate[17][0]*(1+$rebate[2]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'直选和值'
-                                                },{methoddesc:'从0-9中任意选择2个或2个以上号码。',
-methodhelp:'从0-9中选择2个数字组成两注，所选号码与开奖号码的百位、十位、个位相同，且顺序不限，即为中奖。',
-                                    selectarea:{
-                                               type   : 'digital',
-                                               layout : [
-                                                           {title:'组三', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1}
-                                                          ],
-                                               noBigIndex : 5,
-                                               isButton   : true
-                                              },
-                                    show_str : 'X',
-                                    code_sp : ',',
-                                                  methodid : 22,
-                                                  name:'组三',
-                                                  prize:{1:'<?=$rate[22][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[4]/100?>","prize":<?=$rate[22][0]?>},{"point":0,"prize":<?=floor($rate[22][0]*(1+$rebate[4]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'组三'
-                                                },{methoddesc:'从0-9中任意选择3个或3个以上号码。',
-methodhelp:'从0-9中任意选择3个号码组成一注，所选号码与开奖号码的百位、十位、个位相同，顺序不限，即为中奖。',
-                                    selectarea:{
-                                               type   : 'digital',
-                                               layout : [
-                                                           {title:'组六', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1}
-                                                          ],
-                                               noBigIndex : 5,
-                                               isButton   : true
-                                              },
-                                    show_str : 'X',
-                                    code_sp : ',',
-                                                  methodid : 23,
-                                                  name:'组六',
-                                                  prize:{2:'<?=$rate[23][0]?>'},
-                                                  dyprize:[{"level":2,"prize":[{"point":"<?=$rebate[4]/100?>","prize":<?=$rate[23][0]?>},{"point":0,"prize":<?=floor($rate[23][0]*(1+$rebate[4]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'组六'
-                                                },{methoddesc:'手动输入号码，至少输入1个三位数号码。',
-methodhelp:'键盘手动输入购买号码，3个数字为一注，开奖号码的百位、十位、个位符合后三组三或组六均为中奖。',
-                                    selectarea:{type:'input'},
-                                    show_str : 'X',
-                                    code_sp : ' ',
-                                                  methodid : 24,
-                                                  name:'混合',
-                                                  prize:{1:'<?=$rate[24][0]?>',2:'<?=$rate[24][1]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[4]/100?>","prize":<?=$rate[24][0]?>},{"point":0,"prize":<?=floor($rate[24][0]*(1+$rebate[4]/90)*10)/10?>}]},{"level":2,"prize":[{"point":"<?=$rebate[4]/100?>","prize":<?=$rate[24][0]?>},{"point":0,"prize":<?=floor($rate[24][0]*(1+$rebate[4]/90)*10)/10?>},{"point":"<?=$rebate[4]/100?>","prize":<?=$rate[24][1]?>},{"point":0,"prize":<?=floor($rate[24][1]*(1+$rebate[4]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'混合组选'
-                                                },{methoddesc:'从1-26中任意选择1个或1个以上号码。',
-methodhelp:'所选数值等于开奖号码百位、十位、个位三个数字相加之和，即为中奖。',
-                                    selectarea:{
-                                               type   : 'digital',
-                                               layout : [
-                                                           {title:'和值', no:'1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26', place:0, cols:1}
-                                                         ],
-                                               isButton   : false
-                                              },
-                                    show_str : 'X',
-                                    code_sp : ',',
-                                                  methodid : 25,
-                                                  name:'和值',
-                                                  prize:{1:'<?=$rate[25][0]?>',2:'<?=$rate[25][1]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[4]/100?>","prize":<?=$rate[25][0]?>},{"point":0,"prize":<?=floor($rate[25][0]*(1+$rebate[4]/90)*10)/10?>}]},{"level":2,"prize":[{"point":"<?=$rebate[4]/100?>","prize":<?=$rate[25][0]?>},{"point":0,"prize":<?=floor($rate[25][0]*(1+$rebate[4]/90)*10)/10?>},{"point":"<?=$rebate[4]/100?>","prize":<?=$rate[25][1]?>},{"point":0,"prize":<?=floor($rate[25][1]*(1+$rebate[4]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'组选和值'
-                                                }]}<?php if($zt[1]=="1" || $zt[3]=="1" || $zt[4]=="1" || $zt[5]=="1" || $zt[6]=="1" || $zt[7]=="1" || $zt[8]=="1" || $zt[9]=="1" || $zt[10]=="1" || $zt[11]=="1" || $zt[12]=="1" || $zt[13]=="1"){echo ",";}?>
-									<?php }?>
-									<?php if($zt[5]=="1" || $zt[6]=="1"){?>												
-												{title:'后三不定位',label:[<?php if($zt[5]=="1"){?>{methoddesc:'从0-9中任意选择1个或1个以上号码。',
-methodhelp:'从0-9中选择1个号码，每注由1个号码组成，只要开奖号码的百位、十位、个位中包含所选号码，即为中奖。',
-                                    selectarea:{
-                                               type   : 'digital',
-                                               layout : [
-                                                           {title:'一码', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1}
-                                                          ],
-                                               noBigIndex : 5,
-                                               isButton   : true
-                                              },
-                                    show_str : 'X',
-                                    code_sp : ',',
-                                                  methodid : 26,
-                                                  name:'一码',
-                                                  prize:{1:'<?=$rate[26][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[5]/100?>","prize":<?=$rate[26][0]?>},{"point":0,"prize":<?=floor($rate[26][0]*(1+$rebate[5]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'一码不定位'
-                                                }<?php if($zt[6]=="1"){echo ",";}?><?php }?><?php if($zt[6]=="1"){?>{methoddesc:'从0-9中任意选择2个或2个以上号码。',
-methodhelp:'从0-9中选择2个号码，每注由2个不同的号码组成，开奖号码的百位、十位、个位中同时包含所选的2个号码，即为中奖。',
-                                    selectarea:{
-                                               type   : 'digital',
-                                               layout : [
-                                                           {title:'二码', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1}
-                                                          ],
-                                               noBigIndex : 5,
-                                               isButton   : true
-                                              },
-                                    show_str : 'X',
-                                    code_sp : ',',
-                                                  methodid : 27,
-                                                  name:'二码',
-                                                  prize:{1:'<?=$rate[27][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[6]/100?>","prize":<?=$rate[27][0]?>},{"point":0,"prize":<?=floor($rate[27][0]*(1+$rebate[6]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'二码不定位'
-                                                }<?php }?>]}<?php if($zt[1]=="1" || $zt[3]=="1" || $zt[7]=="1" || $zt[8]=="1" || $zt[9]=="1" || $zt[10]=="1" || $zt[11]=="1" || $zt[12]=="1" || $zt[13]=="1"){echo ",";}?>
-									<?php }?>
-									
-									
-									<?php if($zt[7]=="1" || $zt[8]=="1" || $zt[9]=="1" || $zt[10]=="1"){?>
-												{title:'二星',label:[<?php if($zt[8]=="1"){?>{methoddesc:'从十位和个位上至少各选1个号码。',
-methodhelp:'从十位和个位上至少各选1个号码，所选号码与开奖号码的十位、个位相同，且顺序一致，即为中奖。',
-                                    selectarea:{
-                                               type   : 'digital',
-                                               layout : [
-                                                           {title:'十位', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1},
-                                                           {title:'个位', no:'0|1|2|3|4|5|6|7|8|9', place:1, cols:1}
-                                                          ],
-                                               noBigIndex : 5,
-                                               isButton   : true
-                                              },
-                                    show_str : '-,-,-,X,X',
-                                    code_sp : '',
-                                                  methodid : 29,
-                                                  name:'后二直选复式',
-                                                  prize:{1:'<?=$rate[29][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[8]/100?>","prize":<?=$rate[29][0]?>},{"point":0,"prize":<?=floor($rate[29][0]*(1+$rebate[8]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'后二直选复式'
-                                                },{methoddesc:'手动输入号码，至少输入1个两位数号码。',
-methodhelp:'手动输入一个2位数号码组成一注，所选号码与开奖号码的十位、个位相同，且顺序一致，即为中奖。',
-selectarea:{type:'input'},
-show_str : 'X',
-code_sp : ' ',
-                                                  methodid : 29,
-                                                  name:'后二直选单式',
-                                                  prize:{1:'<?=$rate[29][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[8]/100?>","prize":<?=$rate[29][0]?>},{"point":0,"prize":<?=floor($rate[29][0]*(1+$rebate[8]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'后二直选单式'
-                                                }<?php if($zt[7]=="1" || $zt[9]=="1" || $zt[10]=="1"){echo ",";}?><?php }?><?php if($zt[10]=="1"){?>{methoddesc:'从0-9中任意选择2个或2个以上号码。',
-methodhelp:'从0-9中选2个号码组成一注，所选号码与开奖号码的十位、个位相同，顺序不限，即中奖。',
-                                    selectarea:{
-                                               type   : 'digital',
-                                               layout : [
-                                                           {title:'组选', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1}
-                                                          ],
-                                               noBigIndex : 5,
-                                               isButton   : true
-                                              },
-                                    show_str : 'X',
-                                    code_sp : ',',
-                                                  methodid : 31,
-                                                  name:'后二组选复式',
-                                                  prize:{1:'<?=$rate[31][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[10]/100?>","prize":<?=$rate[31][0]?>},{"point":0,"prize":<?=floor($rate[31][0]*(1+$rebate[10]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'后二组选复式'
-                                                /*},{methoddesc:'手动输入号码，至少输入1个两位数号码。',
-methodhelp:'手动输入购买号码，2个数字为一注，所选号码与开奖号码的十位、个位相同，顺序不限，即为中奖。',
-selectarea:{type:'input'},
-show_str : 'X',
-code_sp : ' ',
-                                                  methodid : 31,
-                                                  name:'后二组选单式',
-                                                  prize:{1:'<?=$rate[31][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[10]/100?>","prize":<?=$rate[31][0]?>},{"point":0,"prize":<?=floor($rate[31][0]*(1+$rebate[10]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'后二组选单式'*/
-                                                }<?php if($zt[7]=="1" || $zt[9]=="1"){echo ",";}?><?php }?><?php if($zt[7]=="1"){?>{methoddesc:'从万位和千位上至少各选1个号码。',
-methodhelp:'从万位和千位上至少各选1个号码，所选号码与开奖号码的万位、千位相同，且顺序一致，即为中奖。',
-                                    selectarea:{
-                                               type   : 'digital',
-                                               layout : [
-                                                           {title:'万位', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1},
-                                                           {title:'千位', no:'0|1|2|3|4|5|6|7|8|9', place:1, cols:1}
-                                                          ],
-                                               noBigIndex : 5,
-                                               isButton   : true
-                                              },
-                                    show_str : 'X,X,-,-,-',
-                                    code_sp : '',
-                                                  methodid : 28,
-                                                  name:'前二直选复式',
-                                                  prize:{1:'<?=$rate[28][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[7]/100?>","prize":<?=$rate[28][0]?>},{"point":0,"prize":<?=floor($rate[28][0]*(1+$rebate[7]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'前二直选复式'
-                                                },{methoddesc:'手动输入号码，至少输入1个两位数号码。',
-methodhelp:'手动输入一个2位数号码组成一注，所选号码与开奖号码的万位、千位相同，且顺序一致，即为中奖。',
-selectarea:{type:'input'},
-show_str : 'X',
-code_sp : ' ',
-                                                  methodid : 28,
-                                                  name:'前二直选单式',
-                                                  prize:{1:'<?=$rate[28][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[7]/100?>","prize":<?=$rate[28][0]?>},{"point":0,"prize":<?=floor($rate[28][0]*(1+$rebate[7]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'前二直选单式'
-                                                }<?php if($zt[9]=="1"){echo ",";}?><?php }?><?php if($zt[9]=="1"){?>{methoddesc:'从0-9中任意选择2个或2个以上号码。',
-methodhelp:'从0-9中选2个号码组成一注，所选号码与开奖号码的万位、千位相同，顺序不限，即为中奖。',
-                                    selectarea:{
-                                               type   : 'digital',
-                                               layout : [
-                                                           {title:'组选', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1}
-                                                          ],
-                                               noBigIndex : 5,
-                                               isButton   : true
-                                              },
-                                    show_str : 'X',
-                                    code_sp : ',',
-                                                  methodid : 30,
-                                                  name:'前二组选复式',
-                                                  prize:{1:'<?=$rate[30][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[9]/100?>","prize":<?=$rate[30][0]?>},{"point":0,"prize":<?=floor($rate[30][0]*(1+$rebate[9]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'前二组选复式'
-/*                                                },{methoddesc:'手动输入号码，至少输入1个两位数号码。',
-methodhelp:'手动输入购买号码，2个数字为一注，所选号码与开奖号码的万位、千位相同，顺序不限，即为中奖。',
-selectarea:{type:'input'},
-show_str : 'X',
-code_sp : ' ',
-                                                  methodid : 30,
-                                                  name:'前二组选单式',
-                                                  prize:{1:'<?=$rate[30][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[9]/100?>","prize":<?=$rate[30][0]?>},{"point":0,"prize":<?=floor($rate[30][0]*(1+$rebate[9]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'前二组选单式'*/
-                                                }<?php }?>]}<?php if($zt[11]=="1" || $zt[12]=="1" || $zt[13]=="1"){echo ",";}?>
-									<?php }?>
-									<?php if($zt[11]=="1"){?>
-												{title:'定位胆',label:[{methoddesc:'在万位，千位，百位，十位，个位任意位置上任意选择1个或1个以上号码。',
-methodhelp:'从万位、千位、百位、十位、个位任意1个位置或多个位置上选择1个号码，所选号码与相同位置上的开奖号码一致，即为中奖。',
-                                    selectarea:{
-                                               type   : 'digital',
-                                               layout : [
-                                                           {title:'万位', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1},
-                                                           {title:'千位', no:'0|1|2|3|4|5|6|7|8|9', place:1, cols:1},
-                                                           {title:'百位', no:'0|1|2|3|4|5|6|7|8|9', place:2, cols:1},
-                                                           {title:'十位', no:'0|1|2|3|4|5|6|7|8|9', place:3, cols:1},
-                                                           {title:'个位', no:'0|1|2|3|4|5|6|7|8|9', place:4, cols:1}
-                                                          ],
-                                               noBigIndex : 5,
-                                               isButton   : true
-                                              },
-                                    show_str : 'X,X,X,X,X',
-                                    code_sp : '',
-                                                  methodid : 32,
-                                                  name:'定位胆',
-                                                  prize:{1:'<?=$rate[32][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[11]/100?>","prize":<?=$rate[32][0]?>},{"point":0,"prize":<?=floor($rate[32][0]*(1+$rebate[11]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'定位胆'
-                                                }]}<?php if($zt[12]=="1" || $zt[13]=="1"){echo ",";}?>
-									<?php }?>
+                                                      methodid : 18,
+                                                      name:'组三',
+                                                      prize:{1:'<?=$rate[18][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[3]/100?>","prize":<?=$rate[18][0]?>},{"point":0,"prize":<?=floor($rate[18][0]*(1+$rebate[3]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'组三'
+                                                    },{methoddesc:'从0-9中任意任选3个或3个以上号码。',
+    methodhelp:'从0-9中任意选择3个号码组成一注，所选号码与开奖号码的万位、千位、百位相同，顺序不限，即为中奖。',
+                                        selectarea:{
+                                                   type   : 'digital',
+                                                   layout : [
+                                                               {title:'组六', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1}
+                                                              ],
+                                                   noBigIndex : 5,
+                                                   isButton   : true
+                                                  },
+                                        show_str : 'X',
+                                        code_sp : ',',
+                                                      methodid : 19,
+                                                      name:'组六',
+                                                      prize:{2:'<?=$rate[19][0]?>'},
+                                                      dyprize:[{"level":2,"prize":[{"point":"<?=$rebate[3]/100?>","prize":<?=$rate[19][0]?>},{"point":0,"prize":<?=floor($rate[19][0]*(1+$rebate[3]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'组六'
+                                                    },{methoddesc:'手动输入号码，至少输入1个三位数号码组成一注。',
+    methodhelp:'键盘手动输入购买号码，3个数字为一注，开奖号码的万位、千位、百位符合前三的组三或组六均为中奖。',
+                                        selectarea:{type:'input'},
+                                        show_str : 'X',
+                                        code_sp : ' ',
+                                                      methodid : 20,
+                                                      name:'混合',
+                                                      prize:{1:'<?=$rate[20][0]?>',2:'<?=$rate[20][1]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[3]/100?>","prize":<?=$rate[20][0]?>},{"point":0,"prize":<?=floor($rate[20][0]*(1+$rebate[3]/90)*10)/10?>}]},{"level":2,"prize":[{"point":"<?=$rebate[3]/100?>","prize":<?=$rate[20][0]?>},{"point":0,"prize":<?=floor($rate[20][0]*(1+$rebate[3]/90)*10)/10?>},{"point":"<?=$rebate[3]/100?>","prize":<?=$rate[20][1]?>},{"point":0,"prize":<?=floor($rate[20][1]*(1+$rebate[3]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'混合组选'
+                                                    },{methoddesc:'从1-26中任意选择1个或1个以上号码。',
+    methodhelp:'所选数值等于开奖号码万位、千位、百位三个数字相加之和，即为中奖。',
+                                        selectarea:{
+                                                   type   : 'digital',
+                                                   layout : [
+                                                               {title:'和值', no:'1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26', place:0, cols:1}
+                                                             ],
+                                                   isButton   : false
+                                                  },
+                                        show_str : 'X',
+                                        code_sp : ',',
+                                                      methodid : 21,
+                                                      name:'和值',
+                                                      prize:{1:'<?=$rate[21][0]?>',2:'<?=$rate[21][1]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[3]/100?>","prize":<?=$rate[21][0]?>},{"point":0,"prize":<?=floor($rate[21][0]*(1+$rebate[3]/90)*10)/10?>}]},{"level":2,"prize":[{"point":"<?=$rebate[3]/100?>","prize":<?=$rate[21][0]?>},{"point":0,"prize":<?=floor($rate[21][0]*(1+$rebate[3]/90)*10)/10?>},{"point":"<?=$rebate[3]/100?>","prize":<?=$rate[21][1]?>},{"point":0,"prize":<?=floor($rate[21][1]*(1+$rebate[3]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'组选和值'
+                                                    }]}<?php if($zt[3]=="1" || $zt[7]=="1" || $zt[8]=="1" || $zt[9]=="1" || $zt[10]=="1" || $zt[11]=="1" || $zt[12]=="1" || $zt[13]=="1"){echo ",";}?>
+                                        <?php }?>
 
-									<?php if($zt[12]=="1" || $zt[13]=="1"){?>
-												{title:'大小单双',label:[<?php if($zt[12]=="1"){?>{methoddesc:'从万位、千位中的“大、小、单、双”中至少各选一个组成一注。',
-methodhelp:'对万位和千位的“大（56789）小（01234）、单（13579）双（02468）”形态进行购买，所选号码的位置、形态与开奖号码的位置、形态相同，即为中奖。',
-                                    selectarea:{
-                                                type:'dxds',
-                                                layout: [{title:'万位', no:'大|小|单|双', place:0, cols:1},
-                                                         {title:'千位', no:'大|小|单|双', place:1, cols:1}]
-                                              },
-                                    show_str : 'X,X',
-                                    code_sp : '',
-                                                  methodid : 37,
-                                                  name:'前二',
-                                                  prize:{1:'<?=$rate[37][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[12]/100?>","prize":<?=$rate[37][0]?>},{"point":0,"prize":<?=floor($rate[37][0]*(1+$rebate[12]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'前二大小单双'
-                                                }<?php if($zt[13]=="1"){echo ",";}?><?php }?><?php if($zt[13]=="1"){?>{methoddesc:'从十位、个位中的“大、小、单、双”中至少各选一个组成一注。',
-methodhelp:'对十位和个位的“大（56789）小（01234）、单（13579）双（02468）”形态进行购买，所选号码的位置、形态与开奖号码的位置、形态相同，即为中奖。',
-                                    selectarea:{
-                                                type:'dxds',
-                                                layout: [{title:'十位', no:'大|小|单|双', place:0, cols:1},
-                                                         {title:'个位', no:'大|小|单|双', place:1, cols:1}]
-                                              },
-                                    show_str : 'X,X',
-                                    code_sp : '',
-                                                  methodid : 38,
-                                                  name:'后二',
-                                                  prize:{1:'<?=$rate[38][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[13]/100?>","prize":<?=$rate[38][0]?>},{"point":0,"prize":<?=floor($rate[38][0]*(1+$rebate[13]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'后二大小单双'
-                                                }<?php }?>]}<?php if($zt[391]=="1" || $zt[13]=="392" || $zt[390]=="1"){echo ",";}?>
-									<?php }?>
-									
-									<?php if($zt[391]=="1" || $zt[392]=="1"){?>	
-												{title:'任选',label:[<?php if($zt[391]=="1"){?>{methoddesc:'在万位，千位，百位，十位，个位任意3个位置上任意选择1个或1个以上号码。',
-methodhelp:'从万位、千位、百位、十位、个位任意3个位置上选择3个号码，所选号码与相同位置上的开奖号码一致，即为中奖。',
-                                    selectarea:{
-                                               type   : 'digital',
-                                               layout : [
-                                                           {title:'万位', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1},
-                                                           {title:'千位', no:'0|1|2|3|4|5|6|7|8|9', place:1, cols:1},
-                                                           {title:'百位', no:'0|1|2|3|4|5|6|7|8|9', place:2, cols:1},
-                                                           {title:'十位', no:'0|1|2|3|4|5|6|7|8|9', place:3, cols:1},
-                                                           {title:'个位', no:'0|1|2|3|4|5|6|7|8|9', place:4, cols:1}
-                                                          ],
-                                               noBigIndex : 5,
-                                               isButton   : true
-                                              },
-                                    show_str : 'X,X,X,X,X',
-                                    code_sp : '',
-                                                  methodid : 410,												  
-                                                  name:'任选三',
-                                                  prize:{1:'<?=$rate[410][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[391]/100?>","prize":<?=$rate[410][0]?>},{"point":0,"prize":<?=floor($rate[410][0]*(1+$rebate[391]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'任选三'
-                                                }<?php if($zt[392]=="1"){echo ",";}?><?php }?><?php if($zt[392]=="1"){?>{methoddesc:'在万位，千位，百位，十位，个位任意2个位置上任意选择1个或1个以上号码。',
-methodhelp:'从万位、千位、百位、十位、个位任意2个位置上选择3个号码，所选号码与相同位置上的开奖号码一致，即为中奖。',
-                                    selectarea:{
-                                               type   : 'digital',
-                                               layout : [
-                                                           {title:'万位', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1},
-                                                           {title:'千位', no:'0|1|2|3|4|5|6|7|8|9', place:1, cols:1},
-                                                           {title:'百位', no:'0|1|2|3|4|5|6|7|8|9', place:2, cols:1},
-                                                           {title:'十位', no:'0|1|2|3|4|5|6|7|8|9', place:3, cols:1},
-                                                           {title:'个位', no:'0|1|2|3|4|5|6|7|8|9', place:4, cols:1}
-                                                          ],
-                                               noBigIndex : 5,
-                                               isButton   : true
-                                              },
-                                    show_str : 'X,X,X,X,X',
-                                    code_sp : '',
-                                                  methodid : 411,
-                                                  name:'任选二',
-                                                  prize:{1:'<?=$rate[411][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[392]/100?>","prize":<?=$rate[411][0]?>},{"point":0,"prize":<?=floor($rate[411][0]*(1+$rebate[392]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'任选二'
-                                                }<?php }?>]},
-									<?php }?>									
-									<?php if($zt[390]=="1"){?>
-												{title:'百家乐',label:[{methoddesc:'从庄、闲中的“庄闲、对子、豹子、天王”中选一个组成一注。',
-methodhelp:'对庄位(万位、千位)和闲位(十位、个位)的“庄闲（庄位和值与闲位和值比大小，或庄大则庄赢，反之闲赢）、对子（万位=千位或十位=个位）、豹子（万位=千位=百位或百位=十位=个位）、天王（庄位或闲位的和值等于8、9）”形态进行购买，所选号码的位置、形态与开奖号码的位置、形态相同，即为中奖。',
-                                    selectarea:{
-                                                type:'dxds',
-                                                layout: [{title:'庄', no:'庄闲|对子|豹子|天王', place:0, cols:1},
-                                                         {title:'闲', no:'庄闲|对子|豹子|天王', place:1, cols:1}]
-                                              },
-                                    show_str : 'X,X',
-                                    code_sp : '',
-                                                  methodid : 409,
-                                                  name:'百家乐',
-                                                  prize:{1:'<?=$rate[409][0]?>'},
-                                                  dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[390]/100?>","prize":<?=$rate[409][0]?>},{"point":0,"prize":<?=floor($rate[409][0]*(1+$rebate[390]/90)*10)/10?>}]}],
-                                                  modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
-                                                  desc:'百家乐'
-                                                }]}
-									<?php }?>
-									
-												],
-		cur_issue : {issue:'<?=$issue?>',endtime:'<?=$endtime?>',opentime:'<?=$opentime?>'},
-		issues    : {//所有的可追号期数集合
-                         today:[
-<?php
-if($nums==0){
-	$sqlb="select * from ssc_nums where cid='1' order by id asc";
-}else{
-	$sqlb="select * from ssc_nums where cid='1' and endtime>='".date("H:i:s")."' order by id asc";
-}
-	$rsb=mysql_query($sqlb) or  die("数据库修改出错!".mysql_error());
-	while ($rowb = mysql_fetch_array($rsb)){
-		echo "{issue:'".$dymd.$rowb['nums']."',endtime:'".$dymd2." ".$rowb['endtime']."'}";
-		if($rowb['nums']!="120"){echo ",";}
-	}
 
-?>
-                           ],
-                         tomorrow: [
-                                                               ]
-                     },
-		servertime: '<?=date("Y-m-d H:i:s")?>',
-		lotteryid : parseInt(1,10),
-		isdynamic : 1,
-		//onfinishbuy: function(){window.parent.abcd();},
-		ajaxurl   : 'play_cqssc.php'
-	});
-});
-})(jQuery);
+                                        <?php if($zt[388]=="1" || $zt[389]=="1"){?>
+                                                    {title:'中三',label:[<?php if($zt[388]=="1"){?>{methoddesc:'从千位、百位、十位中至少各选1个号码。',
+    methodhelp:'从千位、百位、十位中选择一个3位数号码组成一注，所选号码与开奖号码前3位相同，且顺序一致，即为中奖。',
+    selectarea:{type:'digital',layout:[{title:'千位', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1},{title:'百位', no:'0|1|2|3|4|5|6|7|8|9', place:1, cols:1},{title:'十位', no:'0|1|2|3|4|5|6|7|8|9', place:2, cols:1}],noBigIndex:5,isButton:true},
+    show_str : 'X,X,X,-,-',
+    code_sp  : '',
+                                                      methodid : 403,
+                                                      name:'复式',
+                                                      prize:{1:'<?=$rate[403][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[388]/100?>","prize":<?=$rate[403][0]?>},{"point":0,"prize":<?=floor($rate[403][0]*(1+$rebate[388]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'直选复式'
+                                                    },{methoddesc:'手动输入号码，至少输入1个三位数号码组成一注。',
+    methodhelp:'手动输入一个3位数号码组成一注，所选号码与开奖号码的千位、百位、十位相同，且顺序一致，即为中奖。',
+    selectarea:{type:'input'},
+    show_str : 'X',
+    code_sp : ' ',
+                                                      methodid : 403,
+                                                      name:'单式',
+                                                      prize:{1:'<?=$rate[403][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[388]/100?>","prize":<?=$rate[403][0]?>},{"point":0,"prize":<?=floor($rate[403][0]*(1+$rebate[388]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'直选单式'
+                                                    },{methoddesc:'从0-27中任意选择1个或1个以上号码。',
+    methodhelp:'所选数值等于开奖号码千位、百位、十位三个数字相加之和，即为中奖。',
+                                        selectarea:{
+                                                   type   : 'digital',
+                                                   layout : [
+                                                               {title:'和值', no:'0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27', place:0, cols:1}
+                                                             ],
+                                                   isButton   : false
+                                                  },
+                                        show_str : 'X',
+                                        code_sp : ',',
+                                                      methodid : 404,
+                                                      name:'和值',
+                                                      prize:{1:'<?=$rate[404][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[388]/100?>","prize":<?=$rate[404][0]?>},{"point":0,"prize":<?=floor($rate[404][0]*(1+$rebate[388]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'直选和值'
+                                                    }<?php if($zt[389]=="1"){echo ",";}?><?php }?><?php if($zt[389]=="1"){?>{methoddesc:'从0-9中任意任选2个或2个以上号码。',
+    methodhelp:'从0-9中选择2个数字组成两注，所选号码与开奖号码的千位、百位、十位相同，且顺序不限，即为中奖。',
+                                        selectarea:{
+                                                   type   : 'digital',
+                                                   layout : [
+                                                               {title:'组三', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1}
+                                                              ],
+                                                   noBigIndex : 5,
+                                                   isButton   : true
+                                                  },
+                                        show_str : 'X',
+                                        code_sp : ',',
+                                                      methodid : 405,
+                                                      name:'组三',
+                                                      prize:{1:'<?=$rate[405][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[389]/100?>","prize":<?=$rate[405][0]?>},{"point":0,"prize":<?=floor($rate[405][0]*(1+$rebate[389]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'中三组三'
+                                                    },{methoddesc:'从0-9中任意任选3个或3个以上号码。',
+    methodhelp:'从0-9中任意选择3个号码组成一注，所选号码与开奖号码的千位、百位、十位相同，顺序不限，即为中奖。',
+                                        selectarea:{
+                                                   type   : 'digital',
+                                                   layout : [
+                                                               {title:'组六', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1}
+                                                              ],
+                                                   noBigIndex : 5,
+                                                   isButton   : true
+                                                  },
+                                        show_str : 'X',
+                                        code_sp : ',',
+                                                      methodid : 406,
+                                                      name:'组六',
+                                                      prize:{2:'<?=$rate[406][0]?>'},
+                                                      dyprize:[{"level":2,"prize":[{"point":"<?=$rebate[389]/100?>","prize":<?=$rate[406][0]?>},{"point":0,"prize":<?=floor($rate[406][0]*(1+$rebate[389]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'中三组六'
+                                                    },{methoddesc:'手动输入号码，至少输入1个三位数号码组成一注。',
+    methodhelp:'键盘手动输入购买号码，3个数字为一注，开奖号码的千位、百位、十位符合中三的组三或组六均为中奖。',
+                                        selectarea:{type:'input'},
+                                        show_str : 'X',
+                                        code_sp : ' ',
+                                                      methodid : 407,
+                                                      name:'混合',
+                                                      prize:{1:'<?=$rate[407][0]?>',2:'<?=$rate[407][1]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[389]/100?>","prize":<?=$rate[407][0]?>},{"point":0,"prize":<?=floor($rate[407][0]*(1+$rebate[389]/90)*10)/10?>}]},{"level":2,"prize":[{"point":"<?=$rebate[389]/100?>","prize":<?=$rate[407][0]?>},{"point":0,"prize":<?=floor($rate[407][0]*(1+$rebate[389]/90)*10)/10?>},{"point":"<?=$rebate[389]/100?>","prize":<?=$rate[407][1]?>},{"point":0,"prize":<?=floor($rate[407][1]*(1+$rebate[389]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'混合组选'
+                                                    },{methoddesc:'从1-26中任意选择1个或1个以上号码。',
+    methodhelp:'所选数值等于开奖号码千位、百位、十位三个数字相加之和，即为中奖。',
+                                        selectarea:{
+                                                   type   : 'digital',
+                                                   layout : [
+                                                               {title:'和值', no:'1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26', place:0, cols:1}
+                                                             ],
+                                                   isButton   : false
+                                                  },
+                                        show_str : 'X',
+                                        code_sp : ',',
+                                                      methodid : 408,
+                                                      name:'和值',
+                                                      prize:{1:'<?=$rate[408][0]?>',2:'<?=$rate[408][1]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[389]/100?>","prize":<?=$rate[408][0]?>},{"point":0,"prize":<?=floor($rate[408][0]*(1+$rebate[389]/90)*10)/10?>}]},{"level":2,"prize":[{"point":"<?=$rebate[389]/100?>","prize":<?=$rate[408][0]?>},{"point":0,"prize":<?=floor($rate[408][0]*(1+$rebate[389]/90)*10)/10?>},{"point":"<?=$rebate[389]/100?>","prize":<?=$rate[408][1]?>},{"point":0,"prize":<?=floor($rate[408][1]*(1+$rebate[389]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'组选和值'
+                                                    }<?php }?>]},
+                                        <?php }?>
+
+
+                                        <?php if($zt[2]=="1" || $zt[4]=="1"){?>
+                                            {title:'后三',label:[{methoddesc:'从百位、十位、个位中至少各选1个号码。',
+    methodhelp:'从百位、十位、个位中选择一个3位数号码组成一注，所选号码与开奖号码后3位相同，且顺序一致，即为中奖。',
+                                        selectarea:{
+                                                   type   : 'digital',
+                                                   layout : [
+                                                               {title:'百位', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1},
+                                                               {title:'十位', no:'0|1|2|3|4|5|6|7|8|9', place:1, cols:1},
+                                                               {title:'个位', no:'0|1|2|3|4|5|6|7|8|9', place:2, cols:1}
+                                                              ],
+                                                   noBigIndex : 5,
+                                                   isButton   : true
+                                                  },
+                                        show_str : '-,-,X,X,X',
+                                        code_sp : '',
+                                                      methodid : 16,
+                                                      name:'复式',
+                                                      prize:{1:'<?=$rate[16][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[2]/100?>","prize":<?=$rate[16][0]?>},{"point":0,"prize":<?=floor($rate[16][0]*(1+$rebate[2]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'直选复式'
+                                                    },{methoddesc:'手动输入号码，至少输入1个三位数号码组成一注。',
+    methodhelp:'手动输入一个3位数号码组成一注，所选号码与开奖号码的百位、十位、个位相同，且顺序一致，即为中奖。',
+                                        selectarea:{type:'input'},
+                                        show_str : 'X',
+                                        code_sp : ' ',
+                                                      methodid : 16,
+                                                      name:'单式',
+                                                      prize:{1:'<?=$rate[16][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[2]/100?>","prize":<?=$rate[16][0]?>},{"point":0,"prize":<?=floor($rate[16][0]*(1+$rebate[2]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'直选单式'
+                                                    },{methoddesc:'从0-27中任意选择1个或1个以上号码',
+    methodhelp:'所选数值等于开奖号码的百位、十位、个位三个数字相加之和，即为中奖。',
+                                        selectarea:{
+                                                   type   : 'digital',
+                                                   layout : [
+                                                               {title:'和值', no:'0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27', place:0, cols:1}
+                                                             ],
+                                                   isButton   : false
+                                                  },
+                                        show_str : 'X',
+                                        code_sp : ',',
+                                                      methodid : 17,
+                                                      name:'和值',
+                                                      prize:{1:'<?=$rate[17][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[2]/100?>","prize":<?=$rate[17][0]?>},{"point":0,"prize":<?=floor($rate[17][0]*(1+$rebate[2]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'直选和值'
+                                                    },{methoddesc:'从0-9中任意选择2个或2个以上号码。',
+    methodhelp:'从0-9中选择2个数字组成两注，所选号码与开奖号码的百位、十位、个位相同，且顺序不限，即为中奖。',
+                                        selectarea:{
+                                                   type   : 'digital',
+                                                   layout : [
+                                                               {title:'组三', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1}
+                                                              ],
+                                                   noBigIndex : 5,
+                                                   isButton   : true
+                                                  },
+                                        show_str : 'X',
+                                        code_sp : ',',
+                                                      methodid : 22,
+                                                      name:'组三',
+                                                      prize:{1:'<?=$rate[22][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[4]/100?>","prize":<?=$rate[22][0]?>},{"point":0,"prize":<?=floor($rate[22][0]*(1+$rebate[4]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'组三'
+                                                    },{methoddesc:'从0-9中任意选择3个或3个以上号码。',
+    methodhelp:'从0-9中任意选择3个号码组成一注，所选号码与开奖号码的百位、十位、个位相同，顺序不限，即为中奖。',
+                                        selectarea:{
+                                                   type   : 'digital',
+                                                   layout : [
+                                                               {title:'组六', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1}
+                                                              ],
+                                                   noBigIndex : 5,
+                                                   isButton   : true
+                                                  },
+                                        show_str : 'X',
+                                        code_sp : ',',
+                                                      methodid : 23,
+                                                      name:'组六',
+                                                      prize:{2:'<?=$rate[23][0]?>'},
+                                                      dyprize:[{"level":2,"prize":[{"point":"<?=$rebate[4]/100?>","prize":<?=$rate[23][0]?>},{"point":0,"prize":<?=floor($rate[23][0]*(1+$rebate[4]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'组六'
+                                                    },{methoddesc:'手动输入号码，至少输入1个三位数号码。',
+    methodhelp:'键盘手动输入购买号码，3个数字为一注，开奖号码的百位、十位、个位符合后三组三或组六均为中奖。',
+                                        selectarea:{type:'input'},
+                                        show_str : 'X',
+                                        code_sp : ' ',
+                                                      methodid : 24,
+                                                      name:'混合',
+                                                      prize:{1:'<?=$rate[24][0]?>',2:'<?=$rate[24][1]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[4]/100?>","prize":<?=$rate[24][0]?>},{"point":0,"prize":<?=floor($rate[24][0]*(1+$rebate[4]/90)*10)/10?>}]},{"level":2,"prize":[{"point":"<?=$rebate[4]/100?>","prize":<?=$rate[24][0]?>},{"point":0,"prize":<?=floor($rate[24][0]*(1+$rebate[4]/90)*10)/10?>},{"point":"<?=$rebate[4]/100?>","prize":<?=$rate[24][1]?>},{"point":0,"prize":<?=floor($rate[24][1]*(1+$rebate[4]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'混合组选'
+                                                    },{methoddesc:'从1-26中任意选择1个或1个以上号码。',
+    methodhelp:'所选数值等于开奖号码百位、十位、个位三个数字相加之和，即为中奖。',
+                                        selectarea:{
+                                                   type   : 'digital',
+                                                   layout : [
+                                                               {title:'和值', no:'1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26', place:0, cols:1}
+                                                             ],
+                                                   isButton   : false
+                                                  },
+                                        show_str : 'X',
+                                        code_sp : ',',
+                                                      methodid : 25,
+                                                      name:'和值',
+                                                      prize:{1:'<?=$rate[25][0]?>',2:'<?=$rate[25][1]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[4]/100?>","prize":<?=$rate[25][0]?>},{"point":0,"prize":<?=floor($rate[25][0]*(1+$rebate[4]/90)*10)/10?>}]},{"level":2,"prize":[{"point":"<?=$rebate[4]/100?>","prize":<?=$rate[25][0]?>},{"point":0,"prize":<?=floor($rate[25][0]*(1+$rebate[4]/90)*10)/10?>},{"point":"<?=$rebate[4]/100?>","prize":<?=$rate[25][1]?>},{"point":0,"prize":<?=floor($rate[25][1]*(1+$rebate[4]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'组选和值'
+                                                    }]}<?php if($zt[1]=="1" || $zt[3]=="1" || $zt[4]=="1" || $zt[5]=="1" || $zt[6]=="1" || $zt[7]=="1" || $zt[8]=="1" || $zt[9]=="1" || $zt[10]=="1" || $zt[11]=="1" || $zt[12]=="1" || $zt[13]=="1"){echo ",";}?>
+                                        <?php }?>
+                                        <?php if($zt[5]=="1" || $zt[6]=="1"){?>
+                                                    {title:'后三不定位',label:[<?php if($zt[5]=="1"){?>{methoddesc:'从0-9中任意选择1个或1个以上号码。',
+    methodhelp:'从0-9中选择1个号码，每注由1个号码组成，只要开奖号码的百位、十位、个位中包含所选号码，即为中奖。',
+                                        selectarea:{
+                                                   type   : 'digital',
+                                                   layout : [
+                                                               {title:'一码', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1}
+                                                              ],
+                                                   noBigIndex : 5,
+                                                   isButton   : true
+                                                  },
+                                        show_str : 'X',
+                                        code_sp : ',',
+                                                      methodid : 26,
+                                                      name:'一码',
+                                                      prize:{1:'<?=$rate[26][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[5]/100?>","prize":<?=$rate[26][0]?>},{"point":0,"prize":<?=floor($rate[26][0]*(1+$rebate[5]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'一码不定位'
+                                                    }<?php if($zt[6]=="1"){echo ",";}?><?php }?><?php if($zt[6]=="1"){?>{methoddesc:'从0-9中任意选择2个或2个以上号码。',
+    methodhelp:'从0-9中选择2个号码，每注由2个不同的号码组成，开奖号码的百位、十位、个位中同时包含所选的2个号码，即为中奖。',
+                                        selectarea:{
+                                                   type   : 'digital',
+                                                   layout : [
+                                                               {title:'二码', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1}
+                                                              ],
+                                                   noBigIndex : 5,
+                                                   isButton   : true
+                                                  },
+                                        show_str : 'X',
+                                        code_sp : ',',
+                                                      methodid : 27,
+                                                      name:'二码',
+                                                      prize:{1:'<?=$rate[27][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[6]/100?>","prize":<?=$rate[27][0]?>},{"point":0,"prize":<?=floor($rate[27][0]*(1+$rebate[6]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'二码不定位'
+                                                    }<?php }?>]}<?php if($zt[1]=="1" || $zt[3]=="1" || $zt[7]=="1" || $zt[8]=="1" || $zt[9]=="1" || $zt[10]=="1" || $zt[11]=="1" || $zt[12]=="1" || $zt[13]=="1"){echo ",";}?>
+                                        <?php }?>
+
+
+                                        <?php if($zt[7]=="1" || $zt[8]=="1" || $zt[9]=="1" || $zt[10]=="1"){?>
+                                                    {title:'二星',label:[<?php if($zt[8]=="1"){?>{methoddesc:'从十位和个位上至少各选1个号码。',
+    methodhelp:'从十位和个位上至少各选1个号码，所选号码与开奖号码的十位、个位相同，且顺序一致，即为中奖。',
+                                        selectarea:{
+                                                   type   : 'digital',
+                                                   layout : [
+                                                               {title:'十位', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1},
+                                                               {title:'个位', no:'0|1|2|3|4|5|6|7|8|9', place:1, cols:1}
+                                                              ],
+                                                   noBigIndex : 5,
+                                                   isButton   : true
+                                                  },
+                                        show_str : '-,-,-,X,X',
+                                        code_sp : '',
+                                                      methodid : 29,
+                                                      name:'后二直选复式',
+                                                      prize:{1:'<?=$rate[29][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[8]/100?>","prize":<?=$rate[29][0]?>},{"point":0,"prize":<?=floor($rate[29][0]*(1+$rebate[8]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'后二直选复式'
+                                                    },{methoddesc:'手动输入号码，至少输入1个两位数号码。',
+    methodhelp:'手动输入一个2位数号码组成一注，所选号码与开奖号码的十位、个位相同，且顺序一致，即为中奖。',
+    selectarea:{type:'input'},
+    show_str : 'X',
+    code_sp : ' ',
+                                                      methodid : 29,
+                                                      name:'后二直选单式',
+                                                      prize:{1:'<?=$rate[29][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[8]/100?>","prize":<?=$rate[29][0]?>},{"point":0,"prize":<?=floor($rate[29][0]*(1+$rebate[8]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'后二直选单式'
+                                                    }<?php if($zt[7]=="1" || $zt[9]=="1" || $zt[10]=="1"){echo ",";}?><?php }?><?php if($zt[10]=="1"){?>{methoddesc:'从0-9中任意选择2个或2个以上号码。',
+    methodhelp:'从0-9中选2个号码组成一注，所选号码与开奖号码的十位、个位相同，顺序不限，即中奖。',
+                                        selectarea:{
+                                                   type   : 'digital',
+                                                   layout : [
+                                                               {title:'组选', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1}
+                                                              ],
+                                                   noBigIndex : 5,
+                                                   isButton   : true
+                                                  },
+                                        show_str : 'X',
+                                        code_sp : ',',
+                                                      methodid : 31,
+                                                      name:'后二组选复式',
+                                                      prize:{1:'<?=$rate[31][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[10]/100?>","prize":<?=$rate[31][0]?>},{"point":0,"prize":<?=floor($rate[31][0]*(1+$rebate[10]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'后二组选复式'
+                                                    /*},{methoddesc:'手动输入号码，至少输入1个两位数号码。',
+    methodhelp:'手动输入购买号码，2个数字为一注，所选号码与开奖号码的十位、个位相同，顺序不限，即为中奖。',
+    selectarea:{type:'input'},
+    show_str : 'X',
+    code_sp : ' ',
+                                                      methodid : 31,
+                                                      name:'后二组选单式',
+                                                      prize:{1:'<?=$rate[31][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[10]/100?>","prize":<?=$rate[31][0]?>},{"point":0,"prize":<?=floor($rate[31][0]*(1+$rebate[10]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'后二组选单式'*/
+                                                    }<?php if($zt[7]=="1" || $zt[9]=="1"){echo ",";}?><?php }?><?php if($zt[7]=="1"){?>{methoddesc:'从万位和千位上至少各选1个号码。',
+    methodhelp:'从万位和千位上至少各选1个号码，所选号码与开奖号码的万位、千位相同，且顺序一致，即为中奖。',
+                                        selectarea:{
+                                                   type   : 'digital',
+                                                   layout : [
+                                                               {title:'万位', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1},
+                                                               {title:'千位', no:'0|1|2|3|4|5|6|7|8|9', place:1, cols:1}
+                                                              ],
+                                                   noBigIndex : 5,
+                                                   isButton   : true
+                                                  },
+                                        show_str : 'X,X,-,-,-',
+                                        code_sp : '',
+                                                      methodid : 28,
+                                                      name:'前二直选复式',
+                                                      prize:{1:'<?=$rate[28][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[7]/100?>","prize":<?=$rate[28][0]?>},{"point":0,"prize":<?=floor($rate[28][0]*(1+$rebate[7]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'前二直选复式'
+                                                    },{methoddesc:'手动输入号码，至少输入1个两位数号码。',
+    methodhelp:'手动输入一个2位数号码组成一注，所选号码与开奖号码的万位、千位相同，且顺序一致，即为中奖。',
+    selectarea:{type:'input'},
+    show_str : 'X',
+    code_sp : ' ',
+                                                      methodid : 28,
+                                                      name:'前二直选单式',
+                                                      prize:{1:'<?=$rate[28][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[7]/100?>","prize":<?=$rate[28][0]?>},{"point":0,"prize":<?=floor($rate[28][0]*(1+$rebate[7]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'前二直选单式'
+                                                    }<?php if($zt[9]=="1"){echo ",";}?><?php }?><?php if($zt[9]=="1"){?>{methoddesc:'从0-9中任意选择2个或2个以上号码。',
+    methodhelp:'从0-9中选2个号码组成一注，所选号码与开奖号码的万位、千位相同，顺序不限，即为中奖。',
+                                        selectarea:{
+                                                   type   : 'digital',
+                                                   layout : [
+                                                               {title:'组选', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1}
+                                                              ],
+                                                   noBigIndex : 5,
+                                                   isButton   : true
+                                                  },
+                                        show_str : 'X',
+                                        code_sp : ',',
+                                                      methodid : 30,
+                                                      name:'前二组选复式',
+                                                      prize:{1:'<?=$rate[30][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[9]/100?>","prize":<?=$rate[30][0]?>},{"point":0,"prize":<?=floor($rate[30][0]*(1+$rebate[9]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'前二组选复式'
+    /*                                                },{methoddesc:'手动输入号码，至少输入1个两位数号码。',
+    methodhelp:'手动输入购买号码，2个数字为一注，所选号码与开奖号码的万位、千位相同，顺序不限，即为中奖。',
+    selectarea:{type:'input'},
+    show_str : 'X',
+    code_sp : ' ',
+                                                      methodid : 30,
+                                                      name:'前二组选单式',
+                                                      prize:{1:'<?=$rate[30][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[9]/100?>","prize":<?=$rate[30][0]?>},{"point":0,"prize":<?=floor($rate[30][0]*(1+$rebate[9]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'前二组选单式'*/
+                                                    }<?php }?>]}<?php if($zt[11]=="1" || $zt[12]=="1" || $zt[13]=="1"){echo ",";}?>
+                                        <?php }?>
+                                        <?php if($zt[11]=="1"){?>
+                                                    {title:'定位胆',label:[{methoddesc:'在万位，千位，百位，十位，个位任意位置上任意选择1个或1个以上号码。',
+    methodhelp:'从万位、千位、百位、十位、个位任意1个位置或多个位置上选择1个号码，所选号码与相同位置上的开奖号码一致，即为中奖。',
+                                        selectarea:{
+                                                   type   : 'digital',
+                                                   layout : [
+                                                               {title:'万位', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1},
+                                                               {title:'千位', no:'0|1|2|3|4|5|6|7|8|9', place:1, cols:1},
+                                                               {title:'百位', no:'0|1|2|3|4|5|6|7|8|9', place:2, cols:1},
+                                                               {title:'十位', no:'0|1|2|3|4|5|6|7|8|9', place:3, cols:1},
+                                                               {title:'个位', no:'0|1|2|3|4|5|6|7|8|9', place:4, cols:1}
+                                                              ],
+                                                   noBigIndex : 5,
+                                                   isButton   : true
+                                                  },
+                                        show_str : 'X,X,X,X,X',
+                                        code_sp : '',
+                                                      methodid : 32,
+                                                      name:'定位胆',
+                                                      prize:{1:'<?=$rate[32][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[11]/100?>","prize":<?=$rate[32][0]?>},{"point":0,"prize":<?=floor($rate[32][0]*(1+$rebate[11]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'定位胆'
+                                                    }]}<?php if($zt[12]=="1" || $zt[13]=="1"){echo ",";}?>
+                                        <?php }?>
+
+                                        <?php if($zt[12]=="1" || $zt[13]=="1"){?>
+                                                    {title:'大小单双',label:[<?php if($zt[12]=="1"){?>{methoddesc:'从万位、千位中的“大、小、单、双”中至少各选一个组成一注。',
+    methodhelp:'对万位和千位的“大（56789）小（01234）、单（13579）双（02468）”形态进行购买，所选号码的位置、形态与开奖号码的位置、形态相同，即为中奖。',
+                                        selectarea:{
+                                                    type:'dxds',
+                                                    layout: [{title:'万位', no:'大|小|单|双', place:0, cols:1},
+                                                             {title:'千位', no:'大|小|单|双', place:1, cols:1}]
+                                                  },
+                                        show_str : 'X,X',
+                                        code_sp : '',
+                                                      methodid : 37,
+                                                      name:'前二',
+                                                      prize:{1:'<?=$rate[37][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[12]/100?>","prize":<?=$rate[37][0]?>},{"point":0,"prize":<?=floor($rate[37][0]*(1+$rebate[12]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'前二大小单双'
+                                                    }<?php if($zt[13]=="1"){echo ",";}?><?php }?><?php if($zt[13]=="1"){?>{methoddesc:'从十位、个位中的“大、小、单、双”中至少各选一个组成一注。',
+    methodhelp:'对十位和个位的“大（56789）小（01234）、单（13579）双（02468）”形态进行购买，所选号码的位置、形态与开奖号码的位置、形态相同，即为中奖。',
+                                        selectarea:{
+                                                    type:'dxds',
+                                                    layout: [{title:'十位', no:'大|小|单|双', place:0, cols:1},
+                                                             {title:'个位', no:'大|小|单|双', place:1, cols:1}]
+                                                  },
+                                        show_str : 'X,X',
+                                        code_sp : '',
+                                                      methodid : 38,
+                                                      name:'后二',
+                                                      prize:{1:'<?=$rate[38][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[13]/100?>","prize":<?=$rate[38][0]?>},{"point":0,"prize":<?=floor($rate[38][0]*(1+$rebate[13]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'后二大小单双'
+                                                    }<?php }?>]}<?php if($zt[391]=="1" || $zt[13]=="392" || $zt[390]=="1"){echo ",";}?>
+                                        <?php }?>
+
+                                        <?php if($zt[391]=="1" || $zt[392]=="1"){?>
+                                                    {title:'任选',label:[<?php if($zt[391]=="1"){?>{methoddesc:'在万位，千位，百位，十位，个位任意3个位置上任意选择1个或1个以上号码。',
+    methodhelp:'从万位、千位、百位、十位、个位任意3个位置上选择3个号码，所选号码与相同位置上的开奖号码一致，即为中奖。',
+                                        selectarea:{
+                                                   type   : 'digital',
+                                                   layout : [
+                                                               {title:'万位', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1},
+                                                               {title:'千位', no:'0|1|2|3|4|5|6|7|8|9', place:1, cols:1},
+                                                               {title:'百位', no:'0|1|2|3|4|5|6|7|8|9', place:2, cols:1},
+                                                               {title:'十位', no:'0|1|2|3|4|5|6|7|8|9', place:3, cols:1},
+                                                               {title:'个位', no:'0|1|2|3|4|5|6|7|8|9', place:4, cols:1}
+                                                              ],
+                                                   noBigIndex : 5,
+                                                   isButton   : true
+                                                  },
+                                        show_str : 'X,X,X,X,X',
+                                        code_sp : '',
+                                                      methodid : 410,
+                                                      name:'任选三',
+                                                      prize:{1:'<?=$rate[410][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[391]/100?>","prize":<?=$rate[410][0]?>},{"point":0,"prize":<?=floor($rate[410][0]*(1+$rebate[391]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'任选三'
+                                                    }<?php if($zt[392]=="1"){echo ",";}?><?php }?><?php if($zt[392]=="1"){?>{methoddesc:'在万位，千位，百位，十位，个位任意2个位置上任意选择1个或1个以上号码。',
+    methodhelp:'从万位、千位、百位、十位、个位任意2个位置上选择3个号码，所选号码与相同位置上的开奖号码一致，即为中奖。',
+                                        selectarea:{
+                                                   type   : 'digital',
+                                                   layout : [
+                                                               {title:'万位', no:'0|1|2|3|4|5|6|7|8|9', place:0, cols:1},
+                                                               {title:'千位', no:'0|1|2|3|4|5|6|7|8|9', place:1, cols:1},
+                                                               {title:'百位', no:'0|1|2|3|4|5|6|7|8|9', place:2, cols:1},
+                                                               {title:'十位', no:'0|1|2|3|4|5|6|7|8|9', place:3, cols:1},
+                                                               {title:'个位', no:'0|1|2|3|4|5|6|7|8|9', place:4, cols:1}
+                                                              ],
+                                                   noBigIndex : 5,
+                                                   isButton   : true
+                                                  },
+                                        show_str : 'X,X,X,X,X',
+                                        code_sp : '',
+                                                      methodid : 411,
+                                                      name:'任选二',
+                                                      prize:{1:'<?=$rate[411][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[392]/100?>","prize":<?=$rate[411][0]?>},{"point":0,"prize":<?=floor($rate[411][0]*(1+$rebate[392]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'任选二'
+                                                    }<?php }?>]},
+                                        <?php }?>
+                                        <?php if($zt[390]=="1"){?>
+                                                    {title:'百家乐',label:[{methoddesc:'从庄、闲中的“庄闲、对子、豹子、天王”中选一个组成一注。',
+    methodhelp:'对庄位(万位、千位)和闲位(十位、个位)的“庄闲（庄位和值与闲位和值比大小，或庄大则庄赢，反之闲赢）、对子（万位=千位或十位=个位）、豹子（万位=千位=百位或百位=十位=个位）、天王（庄位或闲位的和值等于8、9）”形态进行购买，所选号码的位置、形态与开奖号码的位置、形态相同，即为中奖。',
+                                        selectarea:{
+                                                    type:'dxds',
+                                                    layout: [{title:'庄', no:'庄闲|对子|豹子|天王', place:0, cols:1},
+                                                             {title:'闲', no:'庄闲|对子|豹子|天王', place:1, cols:1}]
+                                                  },
+                                        show_str : 'X,X',
+                                        code_sp : '',
+                                                      methodid : 409,
+                                                      name:'百家乐',
+                                                      prize:{1:'<?=$rate[409][0]?>'},
+                                                      dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[390]/100?>","prize":<?=$rate[409][0]?>},{"point":0,"prize":<?=floor($rate[409][0]*(1+$rebate[390]/90)*10)/10?>}]}],
+                                                      modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
+                                                      desc:'百家乐'
+                                                    }]}
+                                        <?php }?>
+
+                                                    ],
+            cur_issue : {issue:'<?=$issue?>',endtime:'<?=$endtime?>',opentime:'<?=$opentime?>'},
+            issues    : {//所有的可追号期数集合
+                             today:[
+    <?php
+    if($nums==0){
+        $sqlb="select * from ssc_nums where cid='1' order by id asc";
+    }else{
+        $sqlb="select * from ssc_nums where cid='1' and endtime>='".date("H:i:s")."' order by id asc";
+    }
+        $rsb=mysql_query($sqlb) or  die("数据库修改出错!".mysql_error());
+        while ($rowb = mysql_fetch_array($rsb)){
+            echo "{issue:'".$dymd.$rowb['nums']."',endtime:'".$dymd2." ".$rowb['endtime']."'}";
+            if($rowb['nums']!="120"){echo ",";}
+        }
+
+    ?>
+                               ],
+                             tomorrow: [
+                                                                   ]
+                         },
+            servertime: '<?=date("Y-m-d H:i:s")?>',
+            lotteryid : parseInt(1,10),
+            isdynamic : 1,
+            //onfinishbuy: function(){window.parent.abcd();},
+            ajaxurl   : 'play_cqssc.php'
+        });
+    });
+    })(jQuery);
 </SCRIPT>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<!-- jQuery UI 1.10.3 -->
+<script src="boost/js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>
+<!-- Bootstrap -->
+<script src="boost/js/bootstrap.min.js" type="text/javascript"></script>
+<!-- Morris.js charts -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="boost/js/plugins/morris/morris.min.js" type="text/javascript"></script>
+<!-- Sparkline -->
+<script src="boost/js/plugins/sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
+<!-- jvectormap -->
+<script src="boost/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" type="text/javascript"></script>
+<script src="boost/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
+<!-- fullCalendar -->
+<script src="boost/js/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
+<!-- jQuery Knob Chart -->
+<script src="boost/js/plugins/jqueryKnob/jquery.knob.js" type="text/javascript"></script>
+<!-- daterangepicker -->
+<script src="boost/js/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
+<!-- Bootstrap WYSIHTML5 -->
+<script src="boost/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>
+<!-- iCheck -->
+<script src="boost/js/plugins/iCheck/icheck.min.js" type="text/javascript"></script>
+
+<!-- AdminLTE App -->
+<script src="boost/js/AdminLTE/app.js" type="text/javascript"></script>
+
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="boost/js/AdminLTE/dashboard.js" type="text/javascript"></script>
+
+
 
 <aside class="right-side">
 <div id="rightcon">
@@ -1315,10 +1315,7 @@ if($nums==0){
     <a class="wb_p" href="#" onclick="javascript:prenotice();" id="msgpre">上一条</a><a class="wb_n" href="#" onclick="javascript:nextnotice();">下一条</a>
 </div>            <div class=" game_rc"> 
                 <form>
-				
-				
-				
-				
+		
                     <!--奖期基本信息开始-->
                     <div class="gm_con">
                         <div class="gm_con_lt"></div>
@@ -1341,11 +1338,11 @@ if($nums==0){
                             </div>
                             <div class="gct_r">
                                 <h3>重庆时时彩  第 <b><span class=nn id="lt_gethistorycode"><?=$rowc['issue']?></span> </b> 期 
-								<span id="lt_opentimebox" style="display:none;">&nbsp;&nbsp;<span id="waitopendesc">等待开奖</span>&nbsp;<span style="color:#F9CE46;" id="lt_opentimeleft" ></span></span><span id="lt_opentimebox2" style="display:none; color:#F9CE46;"><strong>&nbsp;&nbsp;正在开奖</strong></span></h3>
-								
-								<div style="display:none;" class="tad" id="showadvbox"><a href="promotion_center.php"><img src='images/v1/ad.jpg' border="0" /></a></div>
-								
-								<div class="gct_r_nub" id="showcodebox">
+                                        <span id="lt_opentimebox" style="display:none;">&nbsp;&nbsp;<span id="waitopendesc">等待开奖</span>&nbsp;<span style="color:#F9CE46;" id="lt_opentimeleft" ></span></span><span id="lt_opentimebox2" style="display:none; color:#F9CE46;"><strong>&nbsp;&nbsp;正在开奖</strong></span></h3>
+
+                                        <div style="display:none;" class="tad" id="showadvbox"><a href="promotion_center.php"><img src='images/v1/ad.jpg' border="0" /></a></div>
+
+                                        <div class="gct_r_nub" id="showcodebox">
                                     <div class="gr_s gr_s<?=$rowc['n1']?>" name="historycode" flag="normal"></div>
                                     <div class="gr_s gr_s<?=$rowc['n2']?>" name="historycode" flag="normal"></div>
                                     <div class="gr_s gr_s<?=$rowc['n3']?>" name="historycode" flag="normal"></div>
@@ -1377,10 +1374,10 @@ if($nums==0){
                                             <div class="nl_rt"></div>
                                             <div class="nl_lb"></div>
                                             <div class="nl_rb"></div>
-											<div class=bd><div class=bd2 id="general_txt_0">
-		<table class="tabbar-div-s3" id="tabbar-div-s3" width='100%'></table>
-        <div class=bl3p></div>
-	</div></div>
+                                            <div class=bd><div class=bd2 id="general_txt_0">
+                                            <table class="tabbar-div-s3" id="tabbar-div-s3" width='100%'></table>
+                                            <div class=bl3p></div>
+                                            </div></div>
                                             <ul id="tabbar-div-s3"></ul>
                                         </div>
                                     </div>
