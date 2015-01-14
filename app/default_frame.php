@@ -201,7 +201,7 @@ html {overflow: hidden;}
     </tr>
     <tr>
         <td id="mainbox" valign="top">
-            <iframe name="mainframe" id="mainframe" frameborder="0" width="100%" height="100%" scrolling="no" style="overflow:hidden;" src="help_security.php"></iframe>
+            <iframe name="mainframe" id="mainframe" frameborder="0" width="100%" height="100%" scrolling="yes" style="overflow:hidden;" src="help_security.php"></iframe>
         </td>
     </tr>
 </table>
