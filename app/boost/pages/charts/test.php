@@ -1964,4 +1964,4 @@ if($flag=="gettime"){
             <script src="http://s6.cp.360.cn/trade/2013/static/v1/js/lottery/jxssc/index.js?v1.0.83.js"></script>
         <script>
 </BODY>
-</HTML>
+</HTML><?php }?>
