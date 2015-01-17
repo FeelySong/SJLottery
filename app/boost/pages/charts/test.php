@@ -1,8 +1,8 @@
 <?php
 session_start();
 error_reporting(0);
-require_once '../../../conn.php';
-require_once '../../../check.php';
+require_once '../../conn.php';
+require_once '../../check.php';
 
 $flag=$_REQUEST['flag'];
 $lotteryid="1";
