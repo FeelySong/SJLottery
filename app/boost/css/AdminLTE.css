@@ -73,14 +73,14 @@ body > .header {
   }
   /*Right side strech mode*/
   .right-side.strech {
-    margin-left: 0;
+    margin-left: 80;
   }
   .right-side.strech > .content-header {
     margin-top: 0px;
   }
   /* Left side collapse */
   .left-side.collapse-left {
-    left: -140px;
+    left: -220px;
   }
 }
 /*Give content full width on xs screens*/
