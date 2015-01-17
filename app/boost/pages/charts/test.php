@@ -2,6 +2,105 @@
 
 require_once '../../../conn.php';
 
+$flag=$_REQUEST['flag'];
+$lotteryid="1";
+$lottery="重庆时时彩";
+
+$sqls="select * from ssc_nums where cid='1' and endtime>='".date("H:i:s")."' order by id asc limit 1";
+$rss=mysql_query($sqls) or  die("数据库修改出错1".mysql_error());
+$nums=mysql_num_rows($rss);
+$dymd=date("Ymd");
+$dymd2=date("Y-m-d");
+if($nums==0){
+	$sqls="select * from ssc_nums where cid='1' and endtime>='".date("H:i:s")."' order by id asc limit 1";
+	$rss=mysql_query($sqls) or  die("数据库修改出错2".mysql_error());
+	$dymd=date("ymd");
+	$dymd2=date("Y-m-d");
+}
+$rows = mysql_fetch_array($rss);
+$salenums=intval($rows['nums'])-1;
+$leftnums=intval(120-$salenums);
+$issue=intval($dymd.$rows['nums']);
+$opentime=$dymd2." ".$rows['opentime'];
+$endtime=$dymd2." ".$rows['endtime'];
+
+
+//$salenums=31;
+//$leftnums=89;
+//$issue=121231032;
+//$opentime=iconv("UTF-8","GB2312", "2012-12-31 11:19:10");
+//$endtime=iconv("UTF-8","GB2312", "2012-12-31 11:19:10");
+
+//echo($salenums."<br>");
+//echo($leftnums."<br>");
+//echo($issue."<br>");
+//echo($opentime."<br>");
+//echo($endtime."<br>");
+
+if($rows['nums']=="024"){
+	if(date("H:i:s")<$rows['starttime']){
+		$signss=1;	
+	}
+}
+
+if($flag=="gettime"){
+//	$lotteryid=$_REQUEST['lotteryid'];
+//	$issue=$_REQUEST['issue'];	//120225076
+	echo abs(strtotime($endtime)-time());
+}else if($flag=="gethistory"){
+	$sqla="select * from ssc_data where cid='1' and issue='".$_REQUEST['issue']."'";
+	$rsa=mysql_query($sqla) or  die("数据库修改出错3".mysql_error());
+	$rowa = mysql_fetch_array($rsa);
+	if(empty($rowa)){
+		echo "empty";
+	}else{
+		echo "{\"code\":[\"".$rowa['n1']."\",\"".$rowa['n2']."\",\"".$rowa['n3']."\",\"".$rowa['n4']."\",\"".$rowa['n5']."\"],\"issue\":\"".$_REQUEST['issue']."\",\"statuscode\":\"2\"}";//empty
+	}
+}else if($flag=="read"){
+	if($signss==1){
+		echo "empty";
+	}else{
+		echo "{issue:'".$issue."',nowtime:'".date("Y-m-d H:i:s")."',opentime:'".$opentime."',saleend:'".$endtime."',sale:'".$salenums."',left:'".$leftnums."'}";//empty未到销售时间
+	}
+}else if($flag=="save"){
+	require_once 'playact.php';
+}else{
+
+	$sqlc="select * from ssc_data where cid='1' order by issue desc limit 1";
+	$rsc=mysql_query($sqlc) or  die("数据库修改出错!!".mysql_error());
+	$rowc = mysql_fetch_array($rsc);
+	
+	$sqld = "select * from ssc_class WHERE cid='1' order by id asc";
+	$rsd = mysql_query($sqld);
+	while ($rowd = mysql_fetch_array($rsd)){
+		$strd=explode(";",$rowd['rates']);
+		for ($i=0; $i<count($strd); $i++) {
+			$rate[$rowd['mid']][$i]=$strd[$i];
+		}
+	}
+
+	$sqld = "select * from ssc_classb WHERE cid='".$lotteryid."' order by id asc";
+	$rsd = mysql_query($sqld);
+	while ($rowd = mysql_fetch_array($rsd)){
+		$zt[$rowd['mid']]=$rowd['zt'];
+	}
+	
+	$rstra=explode(";",Get_member(rebate));
+	for ($i=0; $i<count($rstra)-1; $i++) {
+		$rstrb=explode(",",$rstra[$i]);
+		$rstrc=explode("_",$rstrb[0]);
+		$rebate[$rstrc[1]]=$rstrb[1];
+//		$zt[$rstrc[1]]=$rstrb[2];
+	}
+	
+	if($signss==1){
+		$_SESSION["backtitle"]="未到销售时间";
+		$_SESSION["backurl"]="help_security.php";
+		$_SESSION["backzt"]="failed";
+		$_SESSION["backname"]="系统公告";
+		echo "<script language=javascript>window.location='sysmessage.php';</script>";
+		exit;	
+	}
 //	print_r($rate);
 ?>
 
