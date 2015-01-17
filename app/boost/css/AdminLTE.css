@@ -58,8 +58,8 @@ body > .header {
 /*right side - contins main content*/
 .right-side {
   background-color: #f9f9f9;
-  margin-left: 320px;
-  margin-right: 100px;
+  margin-left: 300px;
+  margin-right: 80px;
 }
 /*left side - contains sidebar*/
 .left-side {
