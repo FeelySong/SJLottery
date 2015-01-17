@@ -63,7 +63,7 @@ if($flag=="gettime"){
 		echo "{issue:'".$issue."',nowtime:'".date("Y-m-d H:i:s")."',opentime:'".$opentime."',saleend:'".$endtime."',sale:'".$salenums."',left:'".$leftnums."'}";//empty未到销售时间
 	}
 }else if($flag=="save"){
-	require_once 'playact.php';
+	require_once '../../../playact.php';
 }else{
 
 	$sqlc="select * from ssc_data where cid='1' order by issue desc limit 1";
@@ -95,10 +95,10 @@ if($flag=="gettime"){
 	
 	if($signss==1){
 		$_SESSION["backtitle"]="未到销售时间";
-		$_SESSION["backurl"]="help_security.php";
+		$_SESSION["backurl"]="../../../help_security.php";
 		$_SESSION["backzt"]="failed";
 		$_SESSION["backname"]="系统公告";
-		echo "<script language=javascript>window.location='sysmessage.php';</script>";
+		echo "<script language=javascript>window.location='../../../sysmessage.php';</script>";
 		exit;	
 	}
 //	print_r($rate);
