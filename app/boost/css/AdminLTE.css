@@ -80,7 +80,7 @@ body > .header {
   }
   /* Left side collapse */
   .left-side.collapse-left {
-    left: -220px;
+    left: -140px;
   }
 }
 /*Give content full width on xs screens*/
