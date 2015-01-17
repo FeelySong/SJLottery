@@ -1956,6 +1956,8 @@ if($flag=="gettime"){
             ds_pre_max_count : '20000' * 1//限制注数是多少
             }; 
             </script>
+            <script language="javascript" src="../../../js/lottery/jquery.lottery.js"></script>
+            
             <script src="http://s5.cp.360.cn/trade/2013/static/v1/js/src/lib/jquery-1.10.2.min.js"></script>
             <script src="http://s6.cp.360.cn/trade/2013/static/v1/js/src/lib/underscore-min.js"></script>
             <script src="http://s6.cp.360.cn/trade/merge/BNzyAvI3euey.js?v1.0.83.js"></script>
