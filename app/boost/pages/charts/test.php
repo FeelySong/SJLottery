@@ -3,6 +3,8 @@ session_start();
 error_reporting(0);
 require_once '../../../conn.php';
 
+
+
 $flag=$_REQUEST['flag'];
 $lotteryid="1";
 $lottery="重庆时时彩";
@@ -502,10 +504,10 @@ if($flag=="gettime"){
             <div class="cz-logo cz-xssclogo">
             <a href="#"></a>
         </div>
-        <h1 class="cz-name">老时时彩 <span> 第<em id="curr_issue"><?php <?=$issue?>;?></em>期</span></h1>
+        <h1 class="cz-name">老时时彩 <span> 第<em id="curr_issue"><?php echo $issue ?></em>期</span></h1>
         <ul class="cz-params cz-params-kp">
             <li>
-            <span class="k countdown_tag">投注还剩：</span><span countdownstyle="&lt;b&gt;DD&lt;/b&gt;天&lt;b&gt;hh&lt;/b&gt;时&lt;b&gt;mm&lt;/b&gt;分&lt;b&gt;ss&lt;/b&gt;秒" class="v countdown"><b>01</b>分<b>15</b>秒</span>            </li>
+            <span class="k countdown_tag">投注还剩：</span><b>01</b>分<b>15</b>秒</span>            </li>
             <li>
                                  销售：10:00～22:00～02:00（120期）  返奖<b>50%</b>
             </li>
