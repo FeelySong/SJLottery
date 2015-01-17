@@ -1,8 +1,8 @@
 <?php
 session_start();
 error_reporting(0);
-require_once '../../conn.php';
-
+require_once 'conn.php';
+require_once 'check.php';
 
 $flag=$_REQUEST['flag'];
 $lotteryid="1";
@@ -105,7 +105,6 @@ if($flag=="gettime"){
 	}
 //	print_r($rate);
 ?>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <HTML xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -1966,6 +1965,5 @@ if($flag=="gettime"){
             <script src="http://s5.cp.360.cn/trade/2013/static/v1/js/lottery/public/filter.js?v1.0.83.js"></script>
             <script src="http://s6.cp.360.cn/trade/2013/static/v1/js/lottery/jxssc/index.js?v1.0.83.js"></script>
         <script>
-    <?php echo $count;?>
 </BODY></HTML>
 <?php }?>
